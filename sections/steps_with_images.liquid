@@ -1,0 +1,94 @@
+<style>
+    #shopify-section-{{ section.id }} {
+    }
+    @media all and (max-width: 900px){
+      #shopify-section-{{ section.id }} {
+      }
+    }
+</style>
+
+{{ 'steps_with_images.css' | asset_url | stylesheet_tag }}
+
+{%- case section.blocks.size -%}
+  {%- when 1 -%}
+    {%- assign item-width-large = 'one-whole' -%}
+  {%- when 2 -%}
+    {%- assign item-width-large = 'one-half' -%}
+  {%- else -%}
+    {%- assign item-width-large = 'one-third' -%}
+{%- endcase -%}
+
+<div class="container">
+  {%- if section.settings.title != blank -%}
+    <h2>{{section.settings.title}}</h2>
+  {%- endif -%}
+  <div class="steps grid">
+    {%- for block in section.blocks -%}
+      <div class="step grid__item {{item-width-large}} small--one-whole flex direction-column justify-content-between" {{ block.shopify_attributes }}>
+        <div class="text-container">
+          {%- if block.settings.title != blank -%}
+            <h3>{{block.settings.title}}</h3>
+          {%- endif -%}
+          {%- if block.settings.subtitle != blank -%}
+            <h4>{{block.settings.subtitle}}</h4>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+            {{block.settings.text}}
+          {%- endif -%}
+        </div>
+        {%- if block.settings.image != blank -%}
+          <div class="Image--lazyLoad image-container" data-bgset="{% render 'lazy_src', image: block.settings.image %}" {% if block.settings.image.alt != blank %} aria-label="{{block.settings.image.alt}}"{% endif %} style="padding-top: {{block.settings.image_height}};"></div>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name":"Steps With Images",
+  "tag":"section",
+  "class":"steps-with-images",
+  "settings":[
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"HOW IT WORKS"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"step",
+      "name":"Step",
+      "settings":[
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        },
+        {
+          "type":"text",
+          "id":"subtitle",
+          "label":"Subtitle"
+        },
+        {
+          "type":"richtext",
+          "id":"text",
+          "label":"Text"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"image_height",
+          "label":"Image Height"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

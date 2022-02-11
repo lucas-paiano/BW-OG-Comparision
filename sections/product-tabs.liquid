@@ -1,0 +1,93 @@
+{% assign tabs_links = '' %}
+{% assign tabs_content = '' %}
+
+{%- for block in section.blocks -%}
+  {%- assign _block = block.settings -%}
+  {%- assign block_title = _block.title -%}
+  {%- assign block_page = _block.page -%}
+
+  {% if block_title != blank and block_page != blank %}
+    {% capture tabs_links %}
+      {{ tabs_links }}
+    
+      <li>
+        <a href="#{{- block_title | handle -}}-{{ forloop.index }}" class="js-tab-link product-tabs__link">
+          {{- block_title -}}
+        </a><!-- /.product-tabs__link -->
+      </li>
+    {% endcapture %}
+
+    {% capture tabs_content %}
+      {{ tabs_content }}
+
+      <div id="{{- block_title | handle -}}-{{ forloop.index }}" class="js-tab product-tab">
+        {{ pages[block_page].content }}
+      </div><!-- /.tab -->
+    {% endcapture %}
+  {% endif %}
+{%- endfor -%}
+
+{% if product.metafields.accentuate.tab_title %}
+  {% assign tabs_links = '' %}
+  {% assign tabs_content = '' %}
+
+  {% for i in product.metafields.accentuate.tab_title %}
+    {% capture tabs_links %}
+      {{ tabs_links }}
+    
+      <li>
+        <a href="#{{- product.metafields.accentuate.tab_title[forloop.index0] | handle -}}-{{ forloop.index }}" class="js-tab-link product-tabs__link">
+          {{- product.metafields.accentuate.tab_title[forloop.index0] -}}
+        </a><!-- /.product-tabs__link -->
+      </li>
+    {% endcapture %}
+
+    {% capture tabs_content %}
+      {{ tabs_content }}
+
+      <div id="{{- product.metafields.accentuate.tab_title[forloop.index0] | handle -}}-{{ forloop.index }}" class="js-tab product-tab">
+        {{ product.metafields.accentuate.tab_content[forloop.index0] }}
+      </div><!-- /.tab -->
+    {% endcapture %}
+  {% endfor %}
+{% endif %}
+
+{% if tabs_links != blank and tabs_content != blank %}
+  <div class="product-tabs">
+    <div class="product-tabs__head">
+      <ul class="js-tabs-nav">
+        {{ tabs_links }}
+      </ul>
+    </div><!-- /.product-tabs__head -->
+
+    <div class="product-tabs__body">
+      <div class="product-tabs__inner">
+        {{ tabs_content }}
+      </div><!-- /.product-tabs__inner -->
+    </div><!-- /.product-tabs__body -->
+  </div><!-- /.product-tabs -->
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Tabs",
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

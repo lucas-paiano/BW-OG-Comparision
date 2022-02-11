@@ -1,0 +1,4510 @@
+{
+  "current": {
+    "heading_color": "#141316",
+    "text_color": "#141316",
+    "text_light_color": "#282828",
+    "link_color": "#282828",
+    "background": "#efefef",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#141316",
+    "button_text_color": "#ffffff",
+    "header_background": "#ffffff",
+    "header_heading_color": "#141316",
+    "header_light_color": "#999999",
+    "footer_background": "#141316",
+    "footer_heading_color": "#cccccc",
+    "footer_text_color": "#999999",
+    "navigation_background": "#141316",
+    "navigation_text_color": "#ffffff",
+    "newsletter_popup_background": "#141316",
+    "newsletter_popup_text_color": "#ffffff",
+    "secondary_elements_background": "#1c1b1b",
+    "secondary_elements_text_color": "#ffffff",
+    "heading_font": "montserrat_n5",
+    "heading_size": "small",
+    "uppercase_heading": true,
+    "text_font": "nunito_sans_n4",
+    "base_text_font_size": 14,
+    "currency_conversion_enabled": true,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD CAD",
+    "currency_conversion_money_format": "money_format",
+    "show_page_transition": false,
+    "show_image_zooming": false,
+    "show_element_staggering": false,
+    "search_mode": "product,page",
+    "size_chart_page": "",
+    "product_show_price_on_hover": false,
+    "product_show_secondary_image": false,
+    "product_info_alignment": "center",
+    "product_image_size": "square",
+    "product_list_horizontal_spacing": "extra_small",
+    "product_list_vertical_spacing": "extra_small",
+    "cart_type": "page",
+    "cart_enable_notes": false,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": 10,
+    "cart_free_shipping_static_message": "<strong>FREE SHIPPING ON ALL ORDERS! PLUS RECEIVE A FREE GIFT OVER $50<\/strong>",
+    "side_cart_upsells_title": "<p>MORE GREAT ITEMS FROM<br\/>BLACK WOLF®<\/p>",
+    "side_cart_upsell_prod_1": "acne-body-spray",
+    "side_cart_upsell_prod_2": "body-scrubber",
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/blackwolfnation",
+    "social_twitter": "https:\/\/twitter.com\/blackwolfnation",
+    "social_google_plus": "",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/www.instagram.com\/blackwolfnation\/",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "",
+    "social_linkedin": "",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/favicon_6efb5a88-7362-43da-abe5-0919f80618d7.png",
+    "free_prod_pdp_message": "<p><strong>FREE SHIPPING ON ALL ORDERS FREE GIFT ON ORDERS OVER $50<\/strong><\/p>",
+    "free_prod_1_variant_id": "",
+    "free_prod_2_variant_id": "39354334937147",
+    "free_prod_2_min_cart_total": 50,
+    "free_prod_2_pending_message": "You are $$ away from your free gift.",
+    "free_prod_2_success_message": "Congratulations! Enjoy your free gift.",
+    "free_prod_2_excluded_products": "",
+    "no_qty_selector_products": "6657617133627,6657613824059,6657613791291,6687108366395,6687251693627,6687107252283,6687251791931,6687106760763,6687251890235,6723933208635",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/BW_logo_b_2x_fdd1e6c7-f5ff-473b-91c1-ca85001e2799.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f3f3f3",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "mega-menu-mobile-v2",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "content": "MADE IN USA | FREE SHIPPING ON ALL ORDERS | FREE GIFT WITH ALL ORDERS OVER $50",
+          "link": ""
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1533845271493": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Shop",
+              "push_1_image": "shopify:\/\/shop_images\/Megamenu_b6f92988-1d9e-4a1b-b2b9-2cfe76d285a9.jpg",
+              "push_1_heading": "New",
+              "push_1_subheading": "Oily Skin Duo",
+              "push_1_url": "shopify:\/\/collections\/collection-1",
+              "push_2_image": "shopify:\/\/shop_images\/Megamenu_2_165c6499-1161-4515-829c-b8be2c6fa2c5.jpg",
+              "push_2_heading": "SKINCARE BUNDLE",
+              "push_2_subheading": "Try Our Best-Selling Products",
+              "push_2_url": "shopify:\/\/products\/black-wolf-bundles"
+            }
+          },
+          "1533845431537": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "About",
+              "push_1_image": "shopify:\/\/shop_images\/Megamenu_3_blog_1349be1b-07f9-4dcf-a405-a486e52aacc5.jpg",
+              "push_1_heading": "From the blog",
+              "push_1_subheading": "8 GUYS WHO ARE KILLING THE FACIAL HAIR GAME",
+              "push_1_url": "shopify:\/\/blogs\/news\/8-guys-who-are-killing-the-facial-hair-game",
+              "push_2_image": "shopify:\/\/shop_images\/Megamenu_3_blog_2_504adc23-05c2-48a3-9ed9-09b1b0c925ba.jpg",
+              "push_2_heading": "From the blog",
+              "push_2_subheading": "How to upgrade your look from fall",
+              "push_2_url": "shopify:\/\/blogs\/news\/how-to-upgrade-your-look-for-fall"
+            }
+          }
+        },
+        "block_order": [
+          "1533845271493",
+          "1533845431537"
+        ],
+        "settings": {
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/BW_logo_b_2x_fdd1e6c7-f5ff-473b-91c1-ca85001e2799.png",
+          "logo_max_width": 160,
+          "mobile_logo_max_width": 120,
+          "navigation_menu": "mega-menu-desktop-v2",
+          "navigation_style": "inline",
+          "enable_transparent_header": true,
+          "enable_transparent_header_collection": false,
+          "transparent_text_color": "#ffffff",
+          "transparent_logo": "shopify:\/\/shop_images\/BW_logo_w_2x_cbe64694-4f6a-42df-9aa1-e43463af3f31.png"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "Black Wolf",
+              "content": "<p>Extra effective skincare for guys. Without the extra. A simple formula for better skin, created specifically for a guy’s chemistry. Black Wolf is made with the best possible active ingredients to clean, soothe, and hydrate your skin. And it’s reasonably priced, meaning that any guy can look and feel his best. Any guy can be a Black Wolf Guy.<\/p>",
+              "show_social_media": true
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "1532700931989": {
+            "type": "links",
+            "settings": {
+              "menu": "customer-service-accessibility"
+            }
+          },
+          "1532701002796": {
+            "type": "links",
+            "settings": {
+              "menu": "purchase"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "1532700931989",
+          "1532701002796"
+        ],
+        "settings": {
+          "show_payment_methods": true
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "slide-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BWNewHero2_e9c1b9d7-e045-4d4f-9da6-0f92917fa669.png",
+              "mobile_image": "shopify:\/\/shop_images\/BWNewHeroMobile.png",
+              "apply_overlay": false,
+              "content_position": "middleLeft",
+              "subheading": "",
+              "title": "EXTRA EFFECTIVE SKINCARE FOR GUYS",
+              "heading_text_align": "center",
+              "title_width": "19em",
+              "button_1_text": "SHOP BEST SELLERS",
+              "button_1_link": "shopify:\/\/collections\/best-sellers",
+              "button_1_alignment": "center",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "slide-0"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": false,
+          "cycle_speed": 8,
+          "text_color": "#ffffff",
+          "button_color": "#141316"
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "1534352771381": {
+            "type": "collection",
+            "settings": {
+              "collection": "bundles-1",
+              "image": "shopify:\/\/shop_images\/Home_collections_44ddb332-71d4-442a-acfa-b70b1e6b6c0c.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Black Wolf Bundles",
+              "title": "GET MORE FOR LESS!",
+              "button_text": "Save now",
+              "apply_overlay": true
+            }
+          },
+          "collection-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "treat-your-oily-skin",
+              "image": "shopify:\/\/shop_images\/Home_collections_2_3685c8c5-ea8c-4431-b413-601b3aadbabf.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "NEW PRODUCT!",
+              "title": "A MOISTURIZER JUST FOR GUYS",
+              "button_text": "Learn more",
+              "apply_overlay": true
+            }
+          }
+        },
+        "block_order": [
+          "1534352771381",
+          "collection-0"
+        ],
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": false,
+          "expand_collection": true,
+          "text_color": "#ffffff",
+          "button_color": "#141316"
+        }
+      },
+      "timeline": {
+        "type": "timeline",
+        "disabled": true,
+        "blocks": {
+          "item-0": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/worlds_best_skincare_for_men_1200x1200_v2.jpg",
+              "apply_overlay": false,
+              "title": "MADE FOR GUYS",
+              "subheading": "Why Black Wolf",
+              "heading": "Made for guys",
+              "content": "<p>Unlike many men’s skincare products, Black Wolf was made specifically for guys and the tough challenges our skin faces day-in and day-out.<\/p><p><\/p><p><a href=\"\/collections\/all\" title=\"All Products\">Shop Black Wolf<\/a><\/p>"
+            }
+          },
+          "1533040609791": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mens-face-wash-splash.jpg",
+              "apply_overlay": false,
+              "title": "REMOVES TOXINS",
+              "subheading": "Why Black Wolf",
+              "heading": "REMOVE TOXINS",
+              "content": "<p>Our face wash contains activated charcoal which power cleans toxins and impurities out of your life.<\/p><p><\/p><p><a href=\"\/products\/activated-charcoal-facewash\" title=\"activated charcoal face wash\">Shop Face Wash<\/a><\/p>"
+            }
+          },
+          "1533040697659": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/exfoliates-gently_1200x1200_a2d56436-15b9-4f66-99de-46a8160c406e.jpg",
+              "apply_overlay": false,
+              "title": "EXFOLIATES GENTLY",
+              "subheading": "Why Black Wolf",
+              "heading": "EXFOLIATE GENTLY",
+              "content": "<p>Our face wash and razor bump cream contain salicylic acid which exfoliates gently while cleaning and soothing your face.<\/p><p><\/p><p><a href=\"\/products\/activated-charcoal-facewash\" title=\"activated charcoal face wash\">Shop Face Wash<\/a><br\/><a href=\"\/products\/razor-bump-cream\" title=\"soothing razor bump cream\">Shop Razor Bump Cream<\/a><\/p>"
+            }
+          },
+          "1533040871441": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/anti_fungal_skincare_1200x1200_e90f497b-dbd2-4863-834d-ba7492ddb5ff.jpg",
+              "apply_overlay": false,
+              "title": "ANTI-FUNGAL",
+              "subheading": "Why Black Wolf",
+              "heading": "ANTI-FUNGAL",
+              "content": "<p>Our face wash and razor bump cream contain a special anti-fungal, Lykos AF, that provides unparalleled protection from microbial infections.<\/p><p><\/p><p><a href=\"\/products\/razor-bump-cream\" title=\"soothing razor bump cream\">Shop Razor Bump Cream<br\/><\/a><a href=\"\/products\/activated-charcoal-facewash\" title=\"activated charcoal face wash\">Shop Face Wash<\/a><\/p>"
+            }
+          },
+          "1533134285166": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/confident_guy_good_skin_1200x1200_3b275898-a2c7-47ef-81e5-36ce3bb8425a.jpg",
+              "apply_overlay": false,
+              "title": "BE SMOOTHER",
+              "subheading": "WHY BLACK WOLF",
+              "heading": "BE SMOOTHER",
+              "content": "<p>The smoother you get, the more the world opens up for you. Life isn’t about being perfect, it’s about being better.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "item-0",
+          "1533040609791",
+          "1533040697659",
+          "1533040871441",
+          "1533134285166"
+        ],
+        "settings": {
+          "text_color": "#ffffff"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": true,
+          "show_collection_image": true,
+          "show_color_swatch": false,
+          "collection_image_size": "small",
+          "show_sort_by": true,
+          "show_layout_switch": true,
+          "toolbar_position": "top",
+          "filter_position": "drawer",
+          "filter_mode": "hidden",
+          "show_filter_color_swatch": false,
+          "filter_menu": "",
+          "grid_items_per_page": 20,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": false,
+          "title": "Recently viewed",
+          "show_product_info": true,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": false,
+          "image": "shopify:\/\/shop_images\/oily_skin_1500x500_v2_422edee7-23f2-4205-b9d1-5870f4978cc5.jpg",
+          "text_color": "#ffffff",
+          "apply_overlay": false,
+          "title": "Products",
+          "content": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "1570024400451": {
+            "type": "icon",
+            "settings": {
+              "title": "Made In\nAmerica",
+              "image": "shopify:\/\/shop_images\/flag.png"
+            }
+          },
+          "1570024421966": {
+            "type": "icon",
+            "settings": {
+              "title": "FREE Shipping \nOn All Orders",
+              "image": "shopify:\/\/shop_images\/truck.png"
+            }
+          },
+          "1570024436475": {
+            "type": "icon",
+            "settings": {
+              "title": "Money-Back Guarantee",
+              "image": "shopify:\/\/shop_images\/dollarsign.png"
+            }
+          }
+        },
+        "block_order": [
+          "1570024400451",
+          "1570024421966",
+          "1570024436475"
+        ],
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": false,
+          "description_below_add_to_cart": false,
+          "show_color_swatch": true,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_payment_button": false,
+          "image_size": "medium",
+          "enable_image_zoom": false,
+          "show_thumbnails": true,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": ""
+        }
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "show_section": true,
+          "title": "Related Products",
+          "show_product_info": true,
+          "show_color_swatch": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "first time joining us?",
+          "content": "<p>Get a code for 20% off your first order + access to moderately entertaining and insightful content<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
+        }
+      },
+      "1532700678327": {
+        "type": "newsletter",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.JPG",
+          "text_color": "#ffffff",
+          "button_color": "#141316",
+          "subheading": "",
+          "title": "",
+          "content": ""
+        }
+      },
+      "1532702341259": {
+        "type": "image-with-text-overlay",
+        "disabled": true,
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/skincare_made_for_men_1500x800_8572efe7-c236-4357-8fea-8cc8d0972d23.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 24,
+          "subheading": "",
+          "title": "be smoother.",
+          "content": "<p>Black Wolf is made with the best possible active ingredients to clean, soothe, and protect your skin. And it’s reasonably priced, meaning that any guy can look and feel his best. <br\/><br\/><strong>Any guy can be smoother.<\/strong><\/p>"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "United States"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": false,
+          "show_tags": false,
+          "show_featured_article": false,
+          "show_category": false
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_color_swatch": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_article_image": true,
+          "show_date": true,
+          "show_category": false,
+          "show_author": true,
+          "show_share_buttons": true
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "image_size": "small",
+          "add_spacing": true,
+          "expand_collection": true,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Products"
+            }
+          },
+          "page-faq-template-5": {
+            "type": "question",
+            "settings": {
+              "title": "How does your activated charcoal face wash work?",
+              "answer": "<p>Meet the hardest working face wash in skincare. Most face washes out there are happy to solve only half of the problem. But half of a solution isn&rsquo;t going to make your skin look better. You wouldn&rsquo;t wash one armpit and expect to smell like daisies, right? Black Wolf activated charcoal face wash tackles all of your face problems by penetrating deep into the pore lining and removing the unwanted toxins, impurities and bacteria that cause breakouts.<\/p>\n<p><\/p>\n<p><strong>Reduces Both Types of Breakouts<\/strong><\/p>\n<p><\/p>\n<p>Did you know there are two types of acne? And one of them is far more difficult to deal with than the other? What the F, right? That&rsquo;s like finding out there are two different ways to get kicked in the balls. They both hurt but one of them hurts on such a fundamentally soul-destroying level that no one will think less of you for crying a little.<\/p>\n<p><\/p>\n<p>The first and most common type of acne is called acne vulgaris. That&rsquo;s the name for your garden-variety whiteheads and blackheads caused by clogged pores and dead skin cells. It&rsquo;s also the type of acne that is easily brought under control by the first two ingredients in our face wash&mdash; activated charcoal and salicylic acid. These two work together to penetrate deep into the skin, unclogging pores and sloughing off some the dying skin cells that become tomorrow&rsquo;s problem. Salicylic acid also brings a knack for soothing to the table, reducing the appearance of redness and discomfort that can occur after a such a deep-cleaning.<\/p>\n<p><\/p>\n<p>Lykos AF is a special formulation of active ingredients that combats the second type of acne. That&rsquo;s cystic acne and, oh man, it&rsquo;s bad. It's caused by the p. acnes bacteria that likes to live deep in your skin. So deep, that the infection it causes never really comes to the surface in the form of a whitehead or blackhead. It just sits there under your skin, mocking you, getting larger and redder and more painful by the day. It is a serious mistake to squeeze a pimple like this, one that, once the pain and bleeding stop, you will never repeat. Lykos AF is designed to attack &ldquo;gram-positive&rdquo; bacteria like p. acnes effectively inhibiting its growth. It also has anti-fungal properties (that&rsquo;s the AF), that protect you from other microbial infections that can cause breakouts. It does so much and asks so little in return. Not all heroes wear capes.<\/p>\n<p><\/p>\n<p><strong>Only Black Wolf<\/strong><\/p>\n<p><\/p>\n<p>Only Black Wolf activated charcoal face wash provides protection from Gram-negative and Gram-positive bacteria. Other skincare brands charge you for two different products. They&rsquo;re not extra effective. They&rsquo;re just extra.<\/p>\n<p><\/p>\n<p><strong>Full Ingredient List:<\/strong><\/p>\n<p><\/p>\n<p>Purified Water, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamidopropyl Betaine, Sodium Chloride, PEG-8, Salicylic Acid, Polysorbate 80, Propylene Glycol, Propylene Glycol Monolaurate, Glyceryl Laurate, Potassium Laurate, Propylene Glycol Dilaurate, Glycerol Dilaurate, Glycerol, Charcoal Powder, Cucumis Sativus (Cucumber) Fruit Extract, Glycerin, Disodium EDTA, Glycol Distearate, Sodium Laureth Sulfate, Cocamide MEA, Laureth-10, Fragrance<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "Why is this razor bump cream so damn effective?",
+              "answer": "<p>If you experience the waking nightmare that is irritation from razor bumps we don&rsquo;t need to tell you that the term &lsquo;irritation&rsquo; is underselling the experience a little bit. It&rsquo;s a constant burning sting that can often leave you feeling like you have two choices in life: a clean shave with a lifetime of pain, or growing a neckbeard and moving into the basement, never to feel the warmth of sunshine or the soft caress of human contact ever again.<\/p>\n<p><\/p>\n<p><strong>Tough Combo<\/strong><\/p>\n<p><\/p>\n<p>Black Wolf razor bump cream uses a combination of active ingredients focused on soothing your razor bumps so you feel immediate relief while also ducking under the hood and rooting out the cause of your bump issue in the first place. The hero of this story is Lykos AF, a special formulation of active ingredients that inhibits the types of bacteria that are the primary cause of razor bumps. Next: cucumber extract. Sure, it sounds like a polite way of describing the final moments of a particularly methodical sexual encounter but in reality, it&rsquo;s a powerful anti-inflammatory that soothes the burning irritation of razor bumps. And finally, salicylic acid plays the role of maintenance man by removing the dead skin cells clogging your pores, limiting the types of places that bacteria love to gather and multiply in.<\/p>\n<p><\/p>\n<p><strong>Use Regularly<\/strong><\/p>\n<p><\/p>\n<p>Black Wolf razor bump cream is most effective when it&rsquo;s used consistently as a part of your daily skincare routine. Unlike other bump treatments out there that dry out your skin, Black Wolf&rsquo;s active ingredients are balanced specifically for daily use.<\/p>\n<p><\/p>\n<p>Use as a part of our 3-step system for best results.<\/p>\n<p><\/p>\n<p><strong>Only Black Wolf<\/strong><\/p>\n<p><\/p>\n<p>No other razor bump treatment on the market uses Lykos AF. That means no other razor bump treatment is as extra effective as Black Wolf. They&rsquo;re just extra.<\/p>\n<p><\/p>\n<p><strong>Full Ingredient List<\/strong><\/p>\n<p><\/p>\n<p>Purified Water, Alcohol Denat., Glycerin, Cetyl Alcohol, Glyceryl Stearate, Salicylic Acid, Capric\/Caprylic Triglyceride, Isopropyl Palmitate, Polysorbate 20, Propylene Glycol, Propylene Glycol Monolaurate, Glycerin, Potassium Laurate, Glycerol Monolaurate, Propylene Glycol Dilaurate, Cucumis Sativus (Cucumber) Fruit Extract, Cellulose Gum, Carbomer, Disodium EDTA, Sodium Hydroxide, Fragrance<\/p>"
+            }
+          },
+          "1532956313483": {
+            "type": "question",
+            "settings": {
+              "title": "So you think this oil-free moisturizing gel is pretty special, do you?",
+              "answer": "<p>Yes, we do actually. Pound-for-pound, dollar-for-dollar, Black Wolf oil-free moisturizing gel is the most effective moisturizer on the market. Period. Full stop. End of argument. RIP discussion. Pour a little out.<\/p>\n<p><\/p>\n<p>What makes it so effective is hyaluronic acid, an ultra-premium ingredient found in the world's most expensive moisturizers. Seriously, these creams will punch you right in the dollars. Just google \"hyaluronic acid moisturizer\" and listen to your wallet weep. Now promise your wallet you'll never do that again and listen up.<\/p>\n<p><\/p>\n<p><strong>Fountain of Youth<\/strong><\/p>\n<p><\/p>\n<p>Our moisturizing gel is about as close to the Fountain of Youth as you&rsquo;re ever going to get. It keeps your skin hydrated by repairing the natural moisture barrier and providing additional protection from the harmful UVB rays that can cause skin cancer. It also promotes collagen synthesis which, to put it mildly, is the most important thing that ever happens ever. When used by suburban moms, collagen is injected into the lips and makes them look like they are having an allergic reaction. When used by your body, or in say, an extra effective skincare formula for guys, it increases the elasticity in the skin and slows the natural aging process. Get this stuff on you, or in you, stat!<\/p>\n<p><\/p>\n<p><strong>Oil-free<\/strong>&nbsp;&nbsp;<\/p>\n<p><\/p>\n<p>Our oil-free moisturizing gel is, uh, oil-free. It&rsquo;s water-based so rather than penetrating into the skin like our face wash, it forms a protective layer on top of your skin allowing air to flow freely while preventing further contaminants from getting too comfortable.<\/p>\n<p><\/p>\n<p><strong>Finishing Move<\/strong><\/p>\n<p><\/p>\n<p>Our oil-free moisturizing gel is the knock-out punch in our three-step skin regimen. On its own, it's a powerful restorative moisturizer that protects your skin. As a part of our system, it ensures the positive effects gained from our face wash and razor bump cream go the distance leaving your skin looking and feeling smoother.<\/p>\n<p><\/p>\n<p><strong>Only Black Wolf<\/strong><\/p>\n<p><\/p>\n<p>Moisturizers with a comparable concentration of hyaluronic acid typically retail at more than $40 per bottle, while competitors in Black Wolf&rsquo;s price range use second-rate ingredients or lower concentrations of premium ingredients. They&rsquo;re not extra effective. They&rsquo;re just extra.<\/p>\n<p><\/p>\n<p><strong>Full Ingredient List<\/strong><\/p>\n<p><\/p>\n<p>Chondrus Crispus (seaweed) Extract, Purified Water (Aqua), Hyaluronic Acid, Phenoxyethanol, Exthylhexyglycerin.<\/p>"
+            }
+          },
+          "1532956376418": {
+            "type": "question",
+            "settings": {
+              "title": "Will any of your products make me smell like honey?",
+              "answer": "<p>Listen, we're not going to tell you how to run your life, but no one wants you to smell like honey. Or flowers. Including you.<\/p>"
+            }
+          },
+          "1532956633548": {
+            "type": "separator",
+            "settings": {
+              "title": "Ingredients"
+            }
+          },
+          "1532957014074": {
+            "type": "question",
+            "settings": {
+              "title": "What is activated charcoal all about anyway?",
+              "answer": "<p>Activated charcoal, or activated carbon, has been used for over a century and is one of the most common and most essential medicinal substances on the planet. We use it to purify water, neutralize poisons and even cure hangovers. It is so essential that a medical facility without it should make you wonder what else they don't have. Like bandages or staff with medical training.<\/p>\n<p><\/p>\n<p>The process of activating charcoal is what makes it special. Exposure to extremely high temperatures creates a negative charge allowing it to bind with any molecule or atom with a positive charge. And as it happens, many of the bacteria, toxins and impurities you collect on your skin just from walking around and breathing everyday have a positive charge. Like that friend with a taste for high-maintenance girls, it's a magnet for shit you just don't need in your life.<\/p>\n<p><\/p>\n<p><strong>Grilling Season?<\/strong><\/p>\n<p><\/p>\n<p>Now before you head to your local big box to pick up a value-sized bag of Kingsford Charcoal Briquets to rub on your face later, there's something you should know. That type of charcoal is not activated charcoal. And it's got some rather unpleasant additives that you don't want on your skin. So, you know, don&rsquo;t.<\/p>\n<p><\/p>\n<p><strong>It's All About Surface Area<\/strong><\/p>\n<p><\/p>\n<p>Regular charcoal, like the charred remains of a bonfire, has natural ridges that give it more surface area than you might otherwise suspect. But really, it's just a lump of carbon. Charcoal that has been activated, however, has thousands and thousands of tiny holes in its surface, exponentially increasing the available surface area to around 3000 square meters per gram. We're not charcoal scientists, but it's safe to say that unless you've made billions off cat videos, a single gram of activated charcoal has vastly more surface area than the inside of wherever it is you call home.<\/p>\n<p><\/p>\n<p>And that additional surface area is what makes activated charcoal such a champ. Charcoal's ability to detoxify is powered by a process called 'adsorption.' Unlike 'absorption' which is limited by how much toxin can be dissolved by volume, adsorption binds those nasty molecules to the surface. The greater the surface area, the greater the capacity to cleanse. Science wins again.<\/p>"
+            }
+          },
+          "1532956464470": {
+            "type": "question",
+            "settings": {
+              "title": "Does the ‘AF’ in ‘Lykos AF’ stand for what I think it stands for?",
+              "answer": "<p>C&rsquo;mon, man. It stands for &lsquo;Anti-fungal&rsquo;. What would &lsquo;Lykos as fuck&rsquo; even mean? We&rsquo;ve been trying to use it in a sentence but we&rsquo;re coming up empty. If you have an example that works please let us know at <a href=\"mailto:lykosasfuck@blackwolfnation.com\" title=\"mailto:lykosasfuck@blackwolfnation.com\">lykosasfuck@blackwolfnation.com<\/a><\/p>"
+            }
+          },
+          "1532956972413": {
+            "type": "question",
+            "settings": {
+              "title": "What the heck is Lykos AF?",
+              "answer": "<p><strong>(treats and prevents your razor bumps\/anti-fungal and microbial\/botanical-base)<\/strong><\/p>\n<p><\/p>\n<p>Lykos AF is our special formulation of active botanicals and proven anti-bacterial &amp; anti-fungal agents that eliminate razor bumps, keeping your skin looking smoother and protected from future irritation.<\/p>\n<p><\/p>\n<p><strong>Caused by critters<\/strong><\/p>\n<p><\/p>\n<p>Using a dull razor can tear your skin, no doubt, but it&rsquo;s actually the bacteria on your skin that causes the worst of the inflammation. If you are unlucky enough to experience razor bumps, even a fresh blade right out of the pack won&rsquo;t save you. Lykos AF works to relieve the suffering by slowing the growth of Gram-positive bacteria, the nasty little critters causing all that trouble in the first place.<\/p>\n<p><\/p>\n<p>But they aren&rsquo;t the only unwanted invaders. Lykos AF uses a combination of active botanical ingredients to protect your skin from the other microbes, including fungi (AF stands for anti-fungal), that your body might identify as not welcome thereby causing more painful inflammation.<\/p>\n<p><\/p>\n<p><strong>Keeps on giving<\/strong><\/p>\n<p><\/p>\n<p>Lykos AF is a pretty complex solution with more than its fair-share of positive effects. Its anti-microbial properties not only make it perfect for combatting razor bumps but also helps slow the natural aging of your skin and prevents acne breakouts.<\/p>"
+            }
+          },
+          "1532957050164": {
+            "type": "question",
+            "settings": {
+              "title": "I've been hearing a lot about this hyaluronic acid stuff. What's the deal?",
+              "answer": "<p><strong>(repairs your natural moisture barrier naturally\/hydrates your skin\/promotes anti-aging and collagen synthesis\/water-based preventing further skin contamination\/protects your skin from cancer-causing UVB rays\/boosts skin elasticity\/increases your skin&rsquo;s smoothness)<\/strong><\/p>\n<p><\/p>\n<p>Hyaluronic acid occurs naturally in the body. If you look hard enough, you&rsquo;ll find it in your scalp, your eyes, your gums, your joints and in the greatest concentrations, your skin. Young skin has extremely high concentrations of hyaluronic acid promoting collagen production giving it its youthful elasticity. As you age your skin doesn&rsquo;t produce nearly the amount of collagen necessary to keep it looking firm and smooth.<\/p>\n<p><\/p>\n<p><strong>Slows Effects of Aging<\/strong><\/p>\n<p><\/p>\n<p>&ldquo;But I&rsquo;m never going to grow old!&rdquo; Relax, Peter Pan. You are going to get old. We all will. But that doesn&rsquo;t mean you can&rsquo;t fight it. You don&rsquo;t have to look so old. Using a skincare product with high levels of hyaluronic acid like Black Wolf oil-free moisturizing gel restores many of the naturally occurring compounds and processes that keep skin looking more youthful and less oldful.<\/p>\n<p><\/p>\n<p><strong>Natural Sources<\/strong><\/p>\n<p><\/p>\n<p>Does all this mean that hyaluronic acid is harvested from &mdash;gasp&mdash; people?!? That&rsquo;s a really dumb question. We&rsquo;re not allowed to do that (anymore). It&rsquo;s harvested in labs from Staphylococcus bacteria cultures which sounds gross, but given the options and how people generally feel about human organ harvesting, feels like the right thing to do.<\/p>"
+            }
+          },
+          "1532956694177": {
+            "type": "question",
+            "settings": {
+              "title": "Does Black Wolf use all-natural ingredients?",
+              "answer": "<p>No, we decided to use ingredients that work instead. Some ingredients are natural, like our seaweed and cucumber extracts. But we only use them because they work. The&nbsp;bulk of our ingredients are scientifically-proven to give you the best results. They're safe-to-use premium&nbsp;agents you'd normally only find in the most expensive skincare products on the market.<\/p>\n<p><\/p>\n<p>If you're only buying skincare products because a brand&nbsp;claims to use&nbsp;'all-natural' ingredients and you don't care about results, well, maybe you don't need to be spending your money on skincare.&nbsp;<br><br>But if&nbsp;you care about getting great&nbsp;skincare results for less and want to feel more confidence in yourself,&nbsp;Black Wolf is for you.<\/p>"
+            }
+          },
+          "1532956884460": {
+            "type": "question",
+            "settings": {
+              "title": "Salicylic acid sounds pretty scary.",
+              "answer": "<p><strong>(oil-soluble allowing penetration of your pores\/dissolves whiteheads and blackheads\/acts as anti-inflammatory to soothe your skin\/gently removes dead skin\/makes your pores visibly smaller\/acts as anti-bacterial limiting future infections)<\/strong><\/p>\n<p><\/p>\n<p>Technically not a question, but OK.&nbsp;<\/p>\n<p>If you have skin, and we sincerely hope you do, salicylic acid is your friend. A loyal friend, in fact. The type of friend that won't hang up on you when you ask them to come over and pop a couple of very angry, very hard-to-reach pimples for you. That's pretty gross. But also really loyal.<\/p>\n<p><\/p>\n<p>And because it is such a good friend, your enemies are its enemies. Salicylic acid&rsquo;s ability to get in there and clean out your pores makes short work of the whiteheads and blackheads you have today and greatly reduces the chances you&rsquo;ll be seeing them again tomorrow. That's why 'Big Acne' charges ungodly sums for products containing salicylic acid. It's the magic ingredient. &nbsp;<\/p>\n<p><\/p>\n<p><strong>The Deepest Clean<\/strong><\/p>\n<p><\/p>\n<p>Listen, we're going to talk about chemistry for a brief moment here, so don't drift off. Salicylic acid is a beta hydroxy acid. That's different from an alpha hydroxy acid in one important way: it's oil-soluble. Chemistry lesson over. Oil-solubility allows it to penetrate deep into the pore lining where it does its best work acting as a gentle exfoliator, removing the dead skin cells responsible for the majority of breakouts and infections. &nbsp;<\/p>\n<p><\/p>\n<p><strong>It's Soothing<\/strong><\/p>\n<p><\/p>\n<p>Removing all those dead skin cells is serious work that can leave your skin red and irritated and that's not a good look for anyone. Lucky for you, salicylic acid is also an anti-inflammatory that reduces the puffiness and irritation sometimes associated with a really deep cleanse.<\/p>\n<p><\/p>\n<p><strong>A Smoother Appearance<\/strong><\/p>\n<p><\/p>\n<p>Along with the reduction of breakouts, salicylic acid also visibly reduces the size of your pores leaving your skin feeling, and most importantly, looking much smoother.<\/p>"
+            }
+          },
+          "1532956731066": {
+            "type": "question",
+            "settings": {
+              "title": "Are Black Wolf products tested on animals?",
+              "answer": "<p>Of course not. We&rsquo;re not savages.<\/p>"
+            }
+          },
+          "1532956550611": {
+            "type": "question",
+            "settings": {
+              "title": "What's in the activated charcoal face wash?",
+              "answer": "<p>Purified Water, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamidopropyl Betaine, Sodium Chloride, PEG-8, Salicylic Acid, Polysorbate 80, Propylene Glycol, Propylene Glycol Monolaurate, Glyceryl Laurate, Potassium Laurate, Propylene Glycol Dilaurate, Glycerol Dilaurate, Glycerol, Charcoal Powder, Cucumis Sativus (Cucumber) Fruit Extract, Glycerin, Disodium EDTA, Glycol Distearate, Sodium Laureth Sulfate, Cocamide MEA, Laureth-10, Fragrance<\/p>"
+            }
+          },
+          "1532956579154": {
+            "type": "question",
+            "settings": {
+              "title": "What's in the razor bump cream?",
+              "answer": "<p>Purified Water, Alcohol Denat., Glycerin, Cetyl Alcohol, Glyceryl Stearate, Salicylic Acid, Capric\/Caprylic Triglyceride, Isopropyl Palmitate, Polysorbate 20, Propylene Glycol, Propylene Glycol Monolaurate, Glycerin, Potassium Laurate, Glycerol Monolaurate, Propylene Glycol Dilaurate, Cucumis Sativus (Cucumber) Fruit Extract, Cellulose Gum, Carbomer, Disodium EDTA, Sodium Hydroxide, Fragrance<\/p>"
+            }
+          },
+          "1532956617180": {
+            "type": "question",
+            "settings": {
+              "title": "What's in the oil-free moisturizing gel?",
+              "answer": "<p>Chondrus Crispus (seaweed) Extract, Purified Water (Aqua), Hyaluronic Acid, Phenoxyethanol, Exthylhexyglycerin<\/p>"
+            }
+          },
+          "1532956933928": {
+            "type": "question",
+            "settings": {
+              "title": "Do I really want to use something with cucumber extract in it?",
+              "answer": "<p><strong>(reduces swelling)<\/strong><\/p>\n<p><\/p>\n<p>Yes, you do. It turns out that cucumber has some pretty surprising soothing, anti-inflammatory and hydration properties and putting cucumber slices over your eyes helps reduce puffiness. It also turns out that putting cucumber slices anywhere on your body looks stupid and your friends will, rightfully, make fun of you. And we&rsquo;ll be right there with them. Luckily, we&rsquo;ve saved you the humiliation by including cucumber extract in our razor bump cream. All the benefits, none of the social shame.<\/p>"
+            }
+          },
+          "1532956416928": {
+            "type": "separator",
+            "settings": {
+              "title": "Lifestyle"
+            }
+          },
+          "1532956425139": {
+            "type": "question",
+            "settings": {
+              "title": "Will Black Wolf make me sexier?",
+              "answer": "<p>Asking for a friend.<\/p>\n<p>Tell your 'friend' that&nbsp;we can't guarantee Black Wolf will make you sexier or more attractive to your target audience. That would be irresponsible. But we can guarantee that Black Wolf will make your skin look its best, and when you look your best, you feel your best. Sounds pretty sexy to us.&nbsp;<\/p>"
+            }
+          },
+          "1532957086545": {
+            "type": "question",
+            "settings": {
+              "title": "Did the founders buy a razor factory in Germany?",
+              "answer": "<p>No, we did not. But we (Alex &amp; Sam) did drop out of school so we could make the best men's skincare products we possibly could for guys like us.&nbsp;<\/p>"
+            }
+          },
+          "1532957128184": {
+            "type": "question",
+            "settings": {
+              "title": "How frequently were any of these questions actually asked?",
+              "answer": "<p>It's a good question that, like the others in this FAQ, we totally made up. So technically, very infrequently. It's all part of our effort to anticipate your concerns and bring you the most accurate information we can because we like you.&nbsp;<\/p>"
+            }
+          },
+          "1532956825139": {
+            "type": "separator",
+            "settings": {
+              "title": "Shipping"
+            }
+          },
+          "1532956835601": {
+            "type": "question",
+            "settings": {
+              "title": "Did somebody say free shipping?",
+              "answer": "<p>That's right, free shipping on all orders over $30. Clearly the best kind of shipping and it's not even close. Within the old US of A and Canada if you spend $30 or more shipping is&nbsp;<strong>FREE! <\/strong>On orders under $30 we have a small flat fee of $3.99.&nbsp;And if you're the type that can't wait around for standard shipping, you can upgrade to expedited shipping for just $6.99.&nbsp;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-4",
+          "page-faq-template-5",
+          "page-faq-template-6",
+          "1532956313483",
+          "1532956376418",
+          "1532956633548",
+          "1532957014074",
+          "1532956464470",
+          "1532956972413",
+          "1532957050164",
+          "1532956694177",
+          "1532956884460",
+          "1532956731066",
+          "1532956550611",
+          "1532956579154",
+          "1532956617180",
+          "1532956933928",
+          "1532956416928",
+          "1532956425139",
+          "1532957086545",
+          "1532957128184",
+          "1532956825139",
+          "1532956835601"
+        ],
+        "settings": {
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {
+        }
+      },
+      "1533135474911": {
+        "type": "timeline",
+        "disabled": true,
+        "blocks": {
+          "1533135474911-0": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/great_skincare_men_d25c04ad-d45f-4d1e-a0a4-4b86ca16bab1.jpg",
+              "apply_overlay": true,
+              "title": "GREAT SKINCARE",
+              "subheading": "Black Wolf",
+              "heading": "GREAT MEN'S SKINCARE",
+              "content": "<p>This isn&#x27;t some women&#x27;s skincare line repackaged to look manly. Nope. Black Wolf was developed using the highest quality ingredients that solve specific skincare problems for guys like us.<\/p>"
+            }
+          },
+          "1533135474911-1": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/affordable-mens-skincare2_1200x1200_54276388-b736-4923-8e31-146a56c63da2.jpg",
+              "apply_overlay": true,
+              "title": "SAVE MONEY",
+              "subheading": "BLACK WOLF",
+              "heading": "EVEN BETTER 'WALLETCARE'",
+              "content": "<p>The highest quality ingredients and the best results, offered at awesome prices. Mens skincare products of similar quality start at $40 a bottle.<\/p><p><\/p><p><a href=\"\/collections\/all\" title=\"All Products\">Shop Skincare<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1533135474911-0",
+          "1533135474911-1"
+        ],
+        "settings": {
+          "text_color": "#ffffff"
+        }
+      },
+      "1533318754548": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "1533318842886": {
+            "type": "collection",
+            "settings": {
+              "collection": "skincare-bundle",
+              "image": "shopify:\/\/shop_images\/worlds_best_skincare_for_men_740x460_fa866f39-08bc-46c9-97cd-907fbaae6c6c.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Skincare bundle",
+              "title": "Try our best-selling products",
+              "button_text": "View bundle",
+              "apply_overlay": false
+            }
+          }
+        },
+        "block_order": [
+          "1533318842886"
+        ],
+        "settings": {
+          "image_size": "small",
+          "add_spacing": false,
+          "expand_collection": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "1533328917005": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "1534250581687": {
+            "type": "collection",
+            "settings": {
+              "collection": "holiday-shop",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "1534250581687"
+        ],
+        "settings": {
+          "title": "GIVE SANTA A RUN FOR HIS MONEY",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 2
+        }
+      },
+      "1534251669467": {
+        "type": "text-with-image",
+        "disabled": true,
+        "settings": {
+          "subheading": "",
+          "title": "Why Black Wolf",
+          "image": "shopify:\/\/shop_images\/great_skincare_men_d25c04ad-d45f-4d1e-a0a4-4b86ca16bab1.jpg",
+          "image_position": "left",
+          "content": "<p>— <strong>FREE Shipping<\/strong> on all orders over $30<\/p><p>— Effective and high quality ingredients<\/p><p>— Made in the USA<\/p><p>— Made by guys, for guys<\/p><p>— Formulated to fight free-radicals and other skin toxins<\/p>",
+          "link_text": "Learn more",
+          "link_url": "shopify:\/\/pages\/why-black-wolf"
+        }
+      },
+      "image-with-text-overlay": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "section_size": "small",
+          "image": "shopify:\/\/shop_images\/Reviews_header.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#141316",
+          "overlay_opacity": 30,
+          "subheading": "Reviews",
+          "title": "What people are saying",
+          "content": ""
+        }
+      },
+      "instagram-feed": {
+        "type": "instagram-feed",
+        "settings": {
+          "subheading": "@blackwolfnation",
+          "title": "Follow us",
+          "access_token": "1274070814.6a7999e.d5d2ffa946cb4ed8916ebd5cbc0b570d",
+          "image_count": 6,
+          "button_text": "",
+          "button_url": ""
+        }
+      },
+      "text-with-image": {
+        "type": "text-with-image",
+        "settings": {
+          "subheading": "",
+          "title": "\"I am really satisfied with my face wash. My skin is clearer than it has ever been. Great product, I will definitely be ordering again!\"",
+          "image": "shopify:\/\/shop_images\/Reviews.jpg",
+          "image_position": "right",
+          "content": "<p>&mdash;&nbsp; Anam O<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "blocks": {
+          "1535121820382": {
+            "type": "collection",
+            "settings": {
+              "collection": "related-products",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1535121820382"
+        ],
+        "settings": {
+          "title": "",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "text-with-image-2": {
+        "type": "text-with-image-2",
+        "settings": {
+          "subheading": "",
+          "title": "\"The packaging is really cool especially the box. Love the way it looks in my bathroom. I'm trying not to throw the box out LOL.\"",
+          "image": "shopify:\/\/shop_images\/Reviews_2.jpg",
+          "image_position": "left",
+          "content": "<p>&mdash;&nbsp; Dimitri N<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-3": {
+        "type": "text-with-image-3",
+        "settings": {
+          "subheading": "",
+          "title": "\"Best product ever! I really didn’t think I would ever find anything that would help my razor burn. What's in this stuff??\"",
+          "image": "shopify:\/\/shop_images\/Reviews_3.jpg",
+          "image_position": "right",
+          "content": "<p>&mdash; Jimmy C<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-4": {
+        "type": "text-with-image-4",
+        "settings": {
+          "subheading": "",
+          "title": "\"OMG. This stuff is actually black!!! lol\"",
+          "image": "shopify:\/\/shop_images\/Reviews_4.jpg",
+          "image_position": "left",
+          "content": "<p>&mdash;&nbsp; Darian R<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-5": {
+        "type": "text-with-image-5",
+        "settings": {
+          "subheading": "",
+          "title": "\"I STRONGLY recommend this moisturizer to EVERYONE interested getting rid of dry skin! I use it right after I wash my face. Killer stuff!\"",
+          "image": "shopify:\/\/shop_images\/Reviews_5.jpg",
+          "image_position": "right",
+          "content": "<p>&mdash;&nbsp; Wil G<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "1535550845338": {
+        "type": "image-with-text-overlay",
+        "disabled": true,
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/Home_OurStory_d71cef12-9bb5-4d76-8337-ced2aaf10c16.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#141316",
+          "overlay_opacity": 35,
+          "subheading": "",
+          "title": "Our Story",
+          "content": "<p>We made a hard-working, no-nonsense skincare line for real guys with real-life everyday skincare problems.<\/p><p><a href=\"\/pages\/our-story\" title=\"Our Story\">Learn more<\/a><\/p>"
+        }
+      },
+      "why-custom": {
+        "type": "why-custom",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/Home_Why.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 30,
+          "subheading": "Why Black Wolf",
+          "title": "Confidence Starts with Clear Skin",
+          "list-item_1": "FREE Shipping on all order over $30",
+          "list-item_2": "Effective and high quality ingredients",
+          "list-item_3": "Made in the USA",
+          "list-item_4": "Made by guys, for guys",
+          "list-item_5": "Formulated to fight free-radicals and other skin toxins",
+          "list-item_6": "",
+          "list-item_7": "",
+          "list-item_8": "",
+          "list-item_9": "",
+          "list-item_10": "",
+          "content": "<p><a href=\"\/pages\/why-black-wolf\" title=\"Why Black Wolf\">Learn More<br><\/a><\/p>"
+        }
+      },
+      "testimonials-custom": {
+        "type": "testimonials-custom",
+        "settings": {
+          "text_color": "#999999",
+          "background_color": "#ffffff",
+          "subheading": "",
+          "title": "What People Are Saying",
+          "avatar_1": "shopify:\/\/shop_images\/blank-avatar.png",
+          "ratings_1": "shopify:\/\/shop_images\/5-stars.png",
+          "testimonial-headline_1": "\"I am so pleased with this product. I love the design. And no more bumps!\"",
+          "testimonial-name_1": "<p>&minus;&nbsp;Brodie L.<\/p>",
+          "avatar_2": "shopify:\/\/shop_images\/blank-avatar.png",
+          "ratings_2": "shopify:\/\/shop_images\/5-stars.png",
+          "testimonial-headline_2": "\"I am so pleased with this product. I love the design. And no more bumps!\"",
+          "testimonial-name_2": "<p>&minus;&nbsp;Brodie L.<\/p>",
+          "avatar_3": "shopify:\/\/shop_images\/blank-avatar.png",
+          "ratings_3": "shopify:\/\/shop_images\/5-stars.png",
+          "testimonial-headline_3": "\"I am so pleased with this product. I love the design. And no more bumps!\"",
+          "testimonial-name_3": "<p>&minus;&nbsp;Brodie L.<\/p>",
+          "content": "<p>Read More Reviews<\/p>"
+        }
+      },
+      "more-custom": {
+        "type": "more-custom",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "Even More Reasons to Love Black Wolf",
+          "icon_1": "shopify:\/\/shop_images\/shipping-icon.png",
+          "reason-headline_1": "FREE Shipping on all orders over $30",
+          "icon_2": "shopify:\/\/shop_images\/return-icon.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/support-icon.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/secure-icon.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "1536581162859": {
+        "type": "why-custom",
+        "disabled": true,
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/Home_Why_db8b57b7-8a59-406c-b82b-3683b61da60f.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#141316",
+          "overlay_opacity": 50,
+          "subheading": "WHY BLACK WOLF",
+          "title": "CONFIDENCE STARTS WITH CLEAR SKIN",
+          "list-item_1": "FREE Shipping on all US domestic orders",
+          "list-item_2": "Effective and high quality ingredients",
+          "list-item_3": "Made in the USA",
+          "list-item_4": "Made by guys, for guys",
+          "list-item_5": "Formulated to fight free-radicals and other skin toxins",
+          "list-item_6": "",
+          "list-item_7": "",
+          "list-item_8": "",
+          "list-item_9": "",
+          "list-item_10": "",
+          "content": "<p><a href=\"\/pages\/why-black-wolf\" title=\"Why Black Wolf\">Learn more<\/a><\/p>"
+        }
+      },
+      "1536581713681": {
+        "type": "more-custom",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#282828",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/shipping_15e71425-5a30-47af-836d-f3d547912876.png",
+          "reason-headline_1": "Free Shipping On All Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_6304aff0-7c26-47de-931d-f176fa00361c.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/support_5e83b759-446f-41d0-bfed-64c470a5dfbb.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/secure_d7a47ec9-8031-4eb7-85fc-708ddd8af046.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "1536582110653": {
+        "type": "testimonials-custom",
+        "disabled": true,
+        "settings": {
+          "text_color": "#141316",
+          "background_color": "rgba(0,0,0,0)",
+          "subheading": "",
+          "title": "WHAT PEOPLE ARE SAYING",
+          "avatar_1": "shopify:\/\/shop_images\/IMG_B3A8E95665F5-1.png",
+          "ratings_1": "shopify:\/\/shop_images\/4_stars.png",
+          "testimonial-headline_1": "\"I NORMALLY USE A $130 FACE CREAM TO HELP MY REDNESS AND I LOVE IT. I GAVE THE RAZOR BUMP CREAM A TRY AND IT'S DOING THE SAME THING!\"",
+          "testimonial-name_1": "<p>—  Pedro Curiel <\/p>",
+          "avatar_2": "shopify:\/\/shop_images\/IMG_51D859413AAB-1.png",
+          "ratings_2": "shopify:\/\/shop_images\/5_stars.png",
+          "testimonial-headline_2": "\"I NEVER USED ANY SKINCARE PRODUCTS, LET ALONE EVEN WASH MY FACE. I DIDN’T REALIZE HOW MUCH CLEARER IT MAKES MY SKIN.\"",
+          "testimonial-name_2": "<p>—  James Vance <\/p>",
+          "avatar_3": "shopify:\/\/shop_images\/IMG_393766F5F4E5-1.png",
+          "ratings_3": "shopify:\/\/shop_images\/5_stars.png",
+          "testimonial-headline_3": "“BLACK WOLF GIVES ME THE CONFIDENCE TO SHAVE BECAUSE I KNOW THE RELIEF WILL COME. NO MORE FEAR OF THE PAIN AND BUMPS.”",
+          "testimonial-name_3": "<p>— George Foreman IV<\/p>",
+          "content": "<p><a href=\"\/pages\/reviews\" title=\"Reviews\">Read more reviews<\/a><\/p>"
+        }
+      },
+      "1542737050471": {
+        "type": "text-with-image-2",
+        "disabled": true,
+        "settings": {
+          "subheading": "",
+          "title": "AS SEEN IN",
+          "image": "shopify:\/\/shop_images\/As_Seen_IN_eebc331c-2a4e-45ad-856d-5adad124b9aa.png",
+          "image_position": "right",
+          "content": "",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "1561515124903": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "subheading": "Newest from our lab",
+          "title": "BLOCK BREAKOUTS 👊🏼",
+          "show_headings_on_mobile": true,
+          "product": "breakout-and-black-head-bundle",
+          "show_vendor": false,
+          "show_description": false,
+          "description_below_add_to_cart": true,
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_payment_button": false
+        }
+      },
+      "product-tabs": {
+        "type": "product-tabs",
+        "blocks": {
+          "1570022775389": {
+            "type": "tab",
+            "settings": {
+              "title": "About",
+              "page": "returns"
+            }
+          },
+          "1570022823094": {
+            "type": "tab",
+            "settings": {
+              "title": "The Results",
+              "page": "whats-in-the-body-wash"
+            }
+          },
+          "1570022853079": {
+            "type": "tab",
+            "settings": {
+              "title": "Ingredients",
+              "page": "ingredients"
+            }
+          },
+          "1570022872309": {
+            "type": "tab",
+            "settings": {
+              "title": "FAQ",
+              "page": "faqs"
+            }
+          }
+        },
+        "block_order": [
+          "1570022775389",
+          "1570022823094",
+          "1570022853079",
+          "1570022872309"
+        ],
+        "settings": {
+        }
+      },
+      "product-reviews": {
+        "type": "product-reviews",
+        "settings": {
+          "reviews_enabled": true
+        }
+      },
+      "product-usp": {
+        "type": "product-usp",
+        "blocks": {
+          "1570192893359": {
+            "type": "block",
+            "settings": {
+              "text": "<p><strong>FREE GIFT<\/strong><\/p><p>ON ALL US ORDERS OVER $50<\/p>"
+            }
+          },
+          "1570192903116": {
+            "type": "block",
+            "settings": {
+              "text": "<p><strong>30-DAY<\/strong><\/p><p>Money-Back Guarantee<\/p>"
+            }
+          },
+          "1570192913675": {
+            "type": "block",
+            "settings": {
+              "text": "<p><strong>100%<\/strong><\/p><p>Safe &amp; Secure Checkout<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1570192893359",
+          "1570192903116",
+          "1570192913675"
+        ],
+        "settings": {
+        }
+      },
+      "landing-page-1": {
+        "type": "landing-page-1",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/Pic1_Final.png",
+          "text_color": "#141316",
+          "overlay_color": "#000000",
+          "overlay_opacity": 0,
+          "subheading": "",
+          "title": "TIME FOR AN UPGRADE.",
+          "content": "<p>GET A SIMPLE, POWERFUL DUO THAT WORKS.<\/p>"
+        }
+      },
+      "landing-page-2": {
+        "type": "landing-page-2",
+        "settings": {
+          "section_size": "normal",
+          "image": "shopify:\/\/shop_images\/Landing_Section_2_NoText.png",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 0,
+          "subheading": "",
+          "title": "A new phenomenon called \"science\"",
+          "content": "<p>Excess oil? Occasional breakouts? We use a powerful combination of activated charcoal, salicylic acid, and our antibacterial coconut extract to hit acne where it hurts: In your pores.<\/p>"
+        }
+      },
+      "landing-page-3": {
+        "type": "landing-page-3",
+        "settings": {
+          "section_size": "normal",
+          "image": "shopify:\/\/shop_images\/Landing-Section3.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 0,
+          "subheading": "Meet:",
+          "title": "face + body wash bundle",
+          "content": "<p><em>Our two best sellers for only $29 bucks.<\/em><\/p><p><em>Damn, we&#x27;re almost giving it away.<\/em><\/p>"
+        }
+      },
+      "landing-page-4": {
+        "type": "landing-page-4",
+        "settings": {
+          "section_size": "normal",
+          "image": "shopify:\/\/shop_images\/Landing-Section4.png",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 0,
+          "subheading": "",
+          "title": "Tell your story",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+        }
+      },
+      "landing-page-5": {
+        "type": "landing-page-5",
+        "blocks": {
+          "landing-page-5-0": {
+            "type": "separator",
+            "settings": {
+              "title": "FAQ"
+            }
+          },
+          "landing-page-5-1": {
+            "type": "question",
+            "settings": {
+              "title": "How do I use it?",
+              "answer": "<p>Don&#x27;t worry, no one taught us how to wash our face or body either. Squeeze a quarter-sized amount in hands and gently massage onto wet skin. Rinse clean with warm water. Use twice daily.<\/p>"
+            }
+          },
+          "landing-page-5-2": {
+            "type": "question",
+            "settings": {
+              "title": "How do I know if I need a body wash?",
+              "answer": "<p>Do people tell you you smell? If you aren&#x27;t using a body wash, you definitely smell. If you&#x27;re experiencing body breakouts then our body wash is perfect for helping you fight acne.<\/p>"
+            }
+          },
+          "landing-page-5-3": {
+            "type": "question",
+            "settings": {
+              "title": "How do I know if I need a face wash?",
+              "answer": "<p>If you&#x27;re experiencing skincare issues like acne breakouts or dry or oily skin, the random bar of soap you&#x27;re using on your face is probably not up to the task. The skin on your face is special and it deserves a special solution.<\/p>"
+            }
+          },
+          "landing-page-5-4": {
+            "type": "question",
+            "settings": {
+              "title": "Why should I use this face wash?",
+              "answer": "<p>Activated charcoal is a powerful tool for removing all the nastiness that life throws at your face. It also contains salicylic acid which gets into your pores and gently exfoliates, removing the dead skin cells that cause most acne flare-ups.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "landing-page-5-0",
+          "landing-page-5-1",
+          "landing-page-5-2",
+          "landing-page-5-3",
+          "landing-page-5-4"
+        ],
+        "settings": {
+        }
+      },
+      "product-reviews-landing-page": {
+        "type": "product-reviews-landing-page",
+        "settings": {
+          "reviews_enabled": true
+        }
+      },
+      "1606923456bf002acc": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "1606923456bf002acc-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "stocking-stuffers",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "1606923456bf002acc-0"
+        ],
+        "settings": {
+          "title": "Gifting someone naughty? Throw in some char(coal)",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 2
+        }
+      },
+      "16069266407310235f": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "subheading": "Detoxifying charcoal peel-off face mask",
+          "title": "free with orders over $60",
+          "show_headings_on_mobile": true,
+          "product": "detoxifying-peel-off-face-mask",
+          "show_vendor": false,
+          "show_description": false,
+          "description_below_add_to_cart": false,
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_payment_button": false
+        }
+      },
+      "specialoffer_fb_hero": {
+        "type": "specialoffer_fb_hero",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "shopify:\/\/products\/the-stuff-you-should-use-everyday-pack",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/hero_1.png",
+          "padding_img_1_dkp": 40,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/515392286",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFBLanderMobileHero_2.png",
+          "padding_img_1_sm": 135,
+          "img_2_sm": "shopify:\/\/shop_images\/hero_mobile_GIF.gif",
+          "padding_img_2_sm": 100,
+          "padding_img_3_sm": 20
+        }
+      },
+      "specialoffer_fb_banner": {
+        "type": "specialoffer_fb_banner",
+        "settings": {
+          "link_url": "shopify:\/\/products\/face-body-wash-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWFreeFaceScrubBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWFreeFaceScrubBannerMobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_products": {
+        "type": "specialoffer_fb_products",
+        "blocks": {
+          "e4caed87-f4de-41f0-b95a-1df738f2f3f2": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-body-wash-1"
+            }
+          },
+          "b5390c74-e07c-4d28-b6c9-00be728fe35d": {
+            "type": "product",
+            "settings": {
+              "product": "body-face-wash-bundle"
+            }
+          },
+          "e623328d-1ded-4206-8669-9e73b8e8b932": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-facewash"
+            }
+          },
+          "5760e1bd-9c14-4888-bfda-8338e498892e": {
+            "type": "product",
+            "settings": {
+              "product": "exfoliating-bamboo-face-scrub-1"
+            }
+          }
+        },
+        "block_order": [
+          "e4caed87-f4de-41f0-b95a-1df738f2f3f2",
+          "b5390c74-e07c-4d28-b6c9-00be728fe35d",
+          "e623328d-1ded-4206-8669-9e73b8e8b932",
+          "5760e1bd-9c14-4888-bfda-8338e498892e"
+        ],
+        "settings": {
+          "title": "SHOP OUR BESTSELLERS"
+        }
+      },
+      "specialoffer_fb_why-custom": {
+        "type": "specialoffer_fb_why-custom",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/WhyBlackWolfImage2.png",
+          "text_color": "#ffffff",
+          "overlay_color": "#141316",
+          "overlay_opacity": 65,
+          "subheading": "WHY BLACK WOLF",
+          "title": "CONFIDENCE STARTS WITH CLEAR SKIN",
+          "list-item_1": "FREE Shipping on Subscription orders!",
+          "list-item_2": "Effective and high quality ingredients",
+          "list-item_3": "Made in the USA",
+          "list-item_4": "Made by guys, for guys",
+          "list-item_5": "Formulated to fight free-radicals and other skin toxins",
+          "list-item_6": "",
+          "list-item_7": "",
+          "list-item_8": "",
+          "list-item_9": "",
+          "list-item_10": "",
+          "content": ""
+        }
+      },
+      "specialoffer_fb_banner_2": {
+        "type": "specialoffer_fb_banner_2",
+        "settings": {
+          "link_url": "shopify:\/\/products\/face-body-wash-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_more_custom": {
+        "type": "specialoffer_fb_more_custom",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#282828",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/shipping_f6903dc6-9ebf-4147-9986-13f4e19813b8.png",
+          "reason-headline_1": "Free Shipping On All  Subscriptions Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_3836fd33-59af-4817-802d-de9f8ae13f19.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/support_66883f70-07e1-443c-8eaf-94a298c614c7.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/secure_dce6f9e2-cbef-4435-9e50-4084cf38ec04.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_newsletter": {
+        "type": "specialoffer_fb_newsletter",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#141316",
+          "subheading": "",
+          "title": "",
+          "content": ""
+        }
+      },
+      "specialoffer_fb_hero_v2": {
+        "type": "specialoffer_fb_hero_v2",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "shopify:\/\/products\/face-body-wash-bundle-2-0",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFBLander_BodyFace2.0HeroImg.png",
+          "padding_img_1_dkp": 36,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/546529904",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFBLander_BodyFace2.0HeroImg.png",
+          "padding_img_1_sm": 83,
+          "video_url_mobile": "https:\/\/vimeo.com\/546529904",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_banner_3": {
+        "type": "specialoffer_fb_banner_3",
+        "settings": {
+          "link_url": "shopify:\/\/products\/face-body-wash-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/bw-phenomenon.jpg",
+          "padding_dkp": 41,
+          "padding_sm": 43
+        }
+      },
+      "specialoffer_fb_hero_v3": {
+        "type": "specialoffer_fb_hero_v3",
+        "settings": {
+          "bg_color": "#000000",
+          "link_url": "shopify:\/\/products\/shower-bundle-2-0",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFBLander_Shower2.0_HeroImg_9f069198-3a19-4aff-9d07-c9d45d913583.png",
+          "padding_img_1_dkp": 36,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/535998132",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFBLander_Shower2.0_HeroImg_9f069198-3a19-4aff-9d07-c9d45d913583.png",
+          "padding_img_1_sm": 83,
+          "video_url_mobile": "https:\/\/vimeo.com\/535998132",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_banner_v3": {
+        "type": "specialoffer_fb_banner_v3",
+        "settings": {
+          "link_url": "shopify:\/\/products\/shower-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWFreeFaceScrubBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWFreeFaceScrubBannerMobile.png",
+          "padding_sm": 89
+        }
+      },
+      "specialoffer_fb_products_v3": {
+        "type": "specialoffer_fb_products_v3",
+        "blocks": {
+          "8bb63888-7703-48bb-bc92-8e31c5376a5c": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-body-wash-1"
+            }
+          },
+          "3fdd8352-fbb3-4001-9656-3f0eba79816f": {
+            "type": "product",
+            "settings": {
+              "product": "body-face-wash-bundle"
+            }
+          },
+          "9190a1ef-c241-47a5-b227-2699e05904ee": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-facewash"
+            }
+          },
+          "cf9f98ea-202a-4937-b537-69de9174a353": {
+            "type": "product",
+            "settings": {
+              "product": "exfoliating-bamboo-face-scrub-1"
+            }
+          }
+        },
+        "block_order": [
+          "8bb63888-7703-48bb-bc92-8e31c5376a5c",
+          "3fdd8352-fbb3-4001-9656-3f0eba79816f",
+          "9190a1ef-c241-47a5-b227-2699e05904ee",
+          "cf9f98ea-202a-4937-b537-69de9174a353"
+        ],
+        "settings": {
+          "title": "SHOP OUR BESTSELLERS"
+        }
+      },
+      "specialoffer_fb_banner_v4": {
+        "type": "specialoffer_fb_banner_v4",
+        "settings": {
+          "link_url": "shopify:\/\/products\/shower-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_why-custom_v3": {
+        "type": "specialoffer_fb_why-custom_v3",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/WhyBlackWolfImage2.png",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 65,
+          "subheading": "WHY BLACK WOLF",
+          "title": "CONFIDENCE STARTS WITH CLEAR SKIN",
+          "list-item_1": "FREE Shipping on all US orders!",
+          "list-item_2": "Effective and high quality ingredients",
+          "list-item_3": "Made in the USA",
+          "list-item_4": "Made by guys, for guys",
+          "list-item_5": "Formulated to fight free-radicals and other skin toxins",
+          "list-item_6": "",
+          "list-item_7": "",
+          "list-item_8": "",
+          "list-item_9": "",
+          "list-item_10": "",
+          "content": ""
+        }
+      },
+      "specialoffer_fb_banner_3_v3": {
+        "type": "specialoffer_fb_banner_3_v3",
+        "settings": {
+          "link_url": "shopify:\/\/products\/shower-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/bw-phenomenon.jpg",
+          "padding_dkp": 41,
+          "padding_sm": 43
+        }
+      },
+      "specialoffer_fb_more_custom_v3": {
+        "type": "specialoffer_fb_more_custom_v3",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/shipping_f6903dc6-9ebf-4147-9986-13f4e19813b8.png",
+          "reason-headline_1": "Free Shipping On All  Subscriptions Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_3836fd33-59af-4817-802d-de9f8ae13f19.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/support_66883f70-07e1-443c-8eaf-94a298c614c7.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/secure_dce6f9e2-cbef-4435-9e50-4084cf38ec04.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_newsletter_v3": {
+        "type": "specialoffer_fb_newsletter_v3",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "",
+          "title": "",
+          "content": ""
+        }
+      },
+      "specialoffer_fb_hero_v4": {
+        "type": "specialoffer_fb_hero_v4",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "shopify:\/\/products\/blackout-bundle-2-0",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFBLander_Blackout2.0_HeroImg.png",
+          "padding_img_1_dkp": 36,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/543675938",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFBLander_Blackout2.0_HeroImg.png",
+          "padding_img_1_sm": 64,
+          "video_url_mobile": "https:\/\/vimeo.com\/543675938",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_banner_v2": {
+        "type": "specialoffer_fb_banner_v2",
+        "settings": {
+          "link_url": "shopify:\/\/products\/blackout-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWFreeFaceScrubBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWFreeFaceScrubBannerMobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_products_v2": {
+        "type": "specialoffer_fb_products_v2",
+        "blocks": {
+          "d468ffdc-b1e2-4b39-be03-cfa227230a0d": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-body-wash-1"
+            }
+          },
+          "c0658449-a6d2-4ed8-8dd2-8087bd51f719": {
+            "type": "product",
+            "settings": {
+              "product": "body-face-wash-bundle"
+            }
+          },
+          "85b2f639-cd5d-4202-92f9-3e3ff366ff4a": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-facewash"
+            }
+          },
+          "62bd13eb-cf4c-461e-975d-1942059716a0": {
+            "type": "product",
+            "settings": {
+              "product": "exfoliating-bamboo-face-scrub-1"
+            }
+          }
+        },
+        "block_order": [
+          "d468ffdc-b1e2-4b39-be03-cfa227230a0d",
+          "c0658449-a6d2-4ed8-8dd2-8087bd51f719",
+          "85b2f639-cd5d-4202-92f9-3e3ff366ff4a",
+          "62bd13eb-cf4c-461e-975d-1942059716a0"
+        ],
+        "settings": {
+          "title": "SHOP OUR BESTSELLERS"
+        }
+      },
+      "specialoffer_fb_banner_v5": {
+        "type": "specialoffer_fb_banner_v5",
+        "settings": {
+          "link_url": "shopify:\/\/products\/blackout-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_why-custom_v2": {
+        "type": "specialoffer_fb_why-custom_v2",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/WhyBlackWolfImage2.png",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 65,
+          "subheading": "WHY BLACK WOLF",
+          "title": "CONFIDENCE STARTS WITH CLEAR SKIN",
+          "list-item_1": "FREE Shipping on Subscription orders!",
+          "list-item_2": "Effective and high quality ingredients",
+          "list-item_3": "Made in the USA",
+          "list-item_4": "Made by guys, for guys",
+          "list-item_5": "Formulated to fight free-radicals and other skin toxins",
+          "list-item_6": "",
+          "list-item_7": "",
+          "list-item_8": "",
+          "list-item_9": "",
+          "list-item_10": "",
+          "content": ""
+        }
+      },
+      "specialoffer_fb_banner_3_v2": {
+        "type": "specialoffer_fb_banner_3_v2",
+        "settings": {
+          "link_url": "shopify:\/\/products\/the-stuff-you-should-use-everyday-pack",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/bw-phenomenon.jpg",
+          "padding_dkp": 41,
+          "padding_sm": 43
+        }
+      },
+      "specialoffer_fb_more_custom_v2": {
+        "type": "specialoffer_fb_more_custom_v2",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/shipping_f6903dc6-9ebf-4147-9986-13f4e19813b8.png",
+          "reason-headline_1": "Free Shipping On All  Subscriptions Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_3836fd33-59af-4817-802d-de9f8ae13f19.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/support_66883f70-07e1-443c-8eaf-94a298c614c7.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/secure_dce6f9e2-cbef-4435-9e50-4084cf38ec04.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_newsletter_v2": {
+        "type": "specialoffer_fb_newsletter_v2",
+        "settings": {
+          "section_size": "small",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "",
+          "title": "",
+          "content": ""
+        }
+      },
+      "1619722638bf535bc4": {
+        "type": "featured_products",
+        "disabled": true,
+        "blocks": {
+          "4f22a107-12b3-4472-87c0-0f9e7b5cdf63": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5piecebundle_2_1.jpg",
+              "title": "NEW! Shower Bundle 2.0",
+              "subtitle": "<p><em>$94.99 <\/em>46.00<\/p>",
+              "button_url": "shopify:\/\/products\/shower-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          },
+          "003ff4a2-a7ac-440a-bc48-d5d14de5f031": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackoutBundle2.png",
+              "title": "NEW! Blackout Bundle 2.0",
+              "subtitle": "<p><em>$143.00<\/em> $75.00<\/p>",
+              "button_url": "shopify:\/\/products\/blackout-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "4f22a107-12b3-4472-87c0-0f9e7b5cdf63",
+          "003ff4a2-a7ac-440a-bc48-d5d14de5f031"
+        ],
+        "settings": {
+          "title": "Featured Products",
+          "header_font_size_dkp": 2.5,
+          "header_font_size_sm": 1.8,
+          "subtitle": "",
+          "image_border_radius": 5,
+          "image_size": 250
+        }
+      },
+      "1619723958a74d311b": {
+        "type": "specialoffer_fb_banner",
+        "settings": {
+          "link_url": "shopify:\/\/collections\/best-sellers",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/FaceMaskFree_50_Dsktp.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/FaceMaskFree_50_Mbl.png",
+          "padding_sm": 90
+        }
+      },
+      "1619724334e7903d50": {
+        "type": "featured_products_2",
+        "blocks": {
+          "9b69cbaf-55f0-40ed-a366-25edcbfc78bb": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-body-wash-1"
+            }
+          },
+          "e21b99e1-7268-4763-af73-93df27578e08": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-facewash"
+            }
+          },
+          "d0ec7aea-de63-46ba-8626-79e1c4309b02": {
+            "type": "product",
+            "settings": {
+              "product": "exfoliating-body-scrub"
+            }
+          },
+          "6acb7535-23e6-4fe3-bfed-0d0f10c59756": {
+            "type": "product",
+            "settings": {
+              "product": "oil-free-moisturizing-gel"
+            }
+          }
+        },
+        "block_order": [
+          "9b69cbaf-55f0-40ed-a366-25edcbfc78bb",
+          "e21b99e1-7268-4763-af73-93df27578e08",
+          "d0ec7aea-de63-46ba-8626-79e1c4309b02",
+          "6acb7535-23e6-4fe3-bfed-0d0f10c59756"
+        ],
+        "settings": {
+          "title": "SHOP OUR BESTSELLERS"
+        }
+      },
+      "1619724815a5dc3dc4": {
+        "type": "specialoffer_fb_banner_2",
+        "settings": {
+          "link_url": "https:\/\/blackwolfnation.com\/pages\/specialoffer-fb-6?subscribe-and-save%EF%BB%BF%EF%BB%BF",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "16197251055647e420": {
+        "type": "specialoffer_fb_why-custom",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/WhyBlackWolfImage2.png",
+          "text_color": "#ffffff",
+          "overlay_color": "#141316",
+          "overlay_opacity": 65,
+          "subheading": "WHY BLACK WOLF",
+          "title": "CONFIDENCE STARTS WITH CLEAR SKIN",
+          "list-item_1": "FREE Shipping on All Orders!",
+          "list-item_2": "Effective and high quality ingredients",
+          "list-item_3": "Made in the USA",
+          "list-item_4": "Made by guys, for guys",
+          "list-item_5": "Formulated to fight free-radicals and other skin toxins",
+          "list-item_6": "",
+          "list-item_7": "",
+          "list-item_8": "",
+          "list-item_9": "",
+          "list-item_10": "",
+          "content": ""
+        }
+      },
+      "16197253623e262438": {
+        "type": "specialoffer_fb_banner_3",
+        "settings": {
+          "link_url": "https:\/\/blackwolfnation.com\/pages\/specialoffer-fb-6?subscribe-and-save%EF%BB%BF%EF%BB%BF",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/PhenomenScience.png",
+          "padding_dkp": 41,
+          "padding_sm": 43
+        }
+      },
+      "specialoffer_featured_products": {
+        "type": "specialoffer_featured_products",
+        "blocks": {
+          "b65d3e9f-c5d0-45bf-aaae-51530693b1ef": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FaceBodyWashBundle2.0_MAIN.png",
+              "title": "NEW! Body + Face Wash Bundle 2.0",
+              "subtitle": "<p><em>$79.99 <\/em>31.00<\/p>",
+              "button_url": "shopify:\/\/products\/face-body-wash-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          },
+          "b40bac43-02e2-47dd-bf98-42c3668e7692": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5piecebundle_2_1.jpg",
+              "title": "NEW! Shower Bundle 2.0",
+              "subtitle": "<p><em>$94.99 <\/em>46.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/shower-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          },
+          "0f4045cc-2093-45c3-9c33-b4b5f208b299": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackoutBundle2.png",
+              "title": "NEW! Blackout Bundle 2.0",
+              "subtitle": "<p><em>$143.00<\/em> $75.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/blackout-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "b65d3e9f-c5d0-45bf-aaae-51530693b1ef",
+          "b40bac43-02e2-47dd-bf98-42c3668e7692",
+          "0f4045cc-2093-45c3-9c33-b4b5f208b299"
+        ],
+        "settings": {
+          "title": "Save On Our New Bundles",
+          "header_font_size_dkp": 2.5,
+          "header_font_size_sm": 1.9,
+          "subtitle": "",
+          "image_border_radius": 5,
+          "image_size": 250
+        }
+      },
+      "specialoffer_featured_products_v2": {
+        "type": "specialoffer_featured_products_v2",
+        "blocks": {
+          "330bb173-6c9a-4434-99f6-1c6e57f214cb": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BodyWashScrubber.png",
+              "title": "Charcoal Body Wash + Body Scrubber",
+              "subtitle": "<p><em>$31.00 <\/em>25.00<\/p>",
+              "button_url": "shopify:\/\/products\/charcoal-body-wash-body-scrubber",
+              "button_label": "Shop Now"
+            }
+          },
+          "9f582ebe-379d-4132-9ce3-805265184cda": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5piecebundle_2_1.jpg",
+              "title": "NEW! Shower Bundle 2.0",
+              "subtitle": "<p><em>$94.99 <\/em>46.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/shower-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          },
+          "cd82a076-59f8-4b21-8ecd-439b37e139de": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackoutBundle2.png",
+              "title": "NEW! Blackout Bundle 2.0",
+              "subtitle": "<p><em>$143.00<\/em> $75.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/blackout-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "330bb173-6c9a-4434-99f6-1c6e57f214cb",
+          "9f582ebe-379d-4132-9ce3-805265184cda",
+          "cd82a076-59f8-4b21-8ecd-439b37e139de"
+        ],
+        "settings": {
+          "title": "Save On Our New Bundles",
+          "header_font_size_dkp": 2.5,
+          "header_font_size_sm": 1.8,
+          "subtitle": "",
+          "image_border_radius": 5,
+          "image_size": 250
+        }
+      },
+      "specialoffer_featured_products_v3": {
+        "type": "specialoffer_featured_products_v3",
+        "blocks": {
+          "d30498aa-829e-454d-b960-27cea9e8fd08": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BodyWashScrubber.png",
+              "title": "Charcoal Body Wash + Body Scrubber",
+              "subtitle": "<p><em>$31.00 <\/em>25.00<\/p>",
+              "button_url": "shopify:\/\/products\/charcoal-body-wash-body-scrubber",
+              "button_label": "Shop Now"
+            }
+          },
+          "b2a76d9c-0875-44dd-a832-73cfedb138a8": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5piecebundle_2_1.jpg",
+              "title": "NEW! Shower Bundle 2.0",
+              "subtitle": "<p><em>$94.99 <\/em>46.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/shower-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          },
+          "ac7a6a86-2ec6-496a-a894-126826cc24a2": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackoutBundle2.png",
+              "title": "NEW! Blackout Bundle 2.0",
+              "subtitle": "<p><em>$143.00<\/em> $75.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/blackout-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "d30498aa-829e-454d-b960-27cea9e8fd08",
+          "b2a76d9c-0875-44dd-a832-73cfedb138a8",
+          "ac7a6a86-2ec6-496a-a894-126826cc24a2"
+        ],
+        "settings": {
+          "title": "Save On Our New Bundles",
+          "header_font_size_dkp": 2.5,
+          "header_font_size_sm": 2,
+          "subtitle": "",
+          "image_border_radius": 5,
+          "image_size": 250
+        }
+      },
+      "specialoffer_fb_hero_v5": {
+        "type": "specialoffer_fb_hero_v5",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "#shopify-section-subscribe_and_save_featured_products",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFB_Sub_Save_Lander3_d835efc8-bb63-47fb-a0f1-e89da81f1b1e.png",
+          "padding_img_1_dkp": 36,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFB_Sub_Save_Lander3_d835efc8-bb63-47fb-a0f1-e89da81f1b1e.png",
+          "padding_img_1_sm": 64,
+          "video_url_mobile": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_featured_products_v4": {
+        "type": "specialoffer_featured_products_v4",
+        "blocks": {
+          "4ec2e7e3-ab08-4bc0-ae13-9ba46ad957f3": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5piecebundle_2_1.jpg",
+              "title": "NEW! Shower Bundle 2.0",
+              "subtitle": "<p><em>$94.99 <\/em>46.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/shower-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          },
+          "3853857a-1876-4db4-b5f5-79700d4e72f4": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackoutBundle2.png",
+              "title": "NEW! Blackout Bundle 2.0",
+              "subtitle": "<p><em>$143.00<\/em> $75.00<\/p>",
+              "button_url": "https:\/\/blackwolfnation.myshopify.com\/products\/blackout-bundle-2-0",
+              "button_label": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "4ec2e7e3-ab08-4bc0-ae13-9ba46ad957f3",
+          "3853857a-1876-4db4-b5f5-79700d4e72f4"
+        ],
+        "settings": {
+          "title": "Save On Our New Bundles",
+          "header_font_size_dkp": 2.5,
+          "header_font_size_sm": 1.8,
+          "subtitle": "",
+          "image_border_radius": 5,
+          "image_size": 250
+        }
+      },
+      "specialoffer_fb_banner_v6": {
+        "type": "specialoffer_fb_banner_v6",
+        "settings": {
+          "link_url": "shopify:\/\/products\/blackout-bundle-2-0",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/FreeBodyScrubber_60_Dsktp_4a7528d3-7b18-4ca7-89f7-6992ca11b6cb.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/FreeBodyScrubber_60_Mbl_1a2d186e-02a7-4db7-a4dc-a0c82e4b6eee.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_products_v4": {
+        "type": "specialoffer_fb_products_v4",
+        "blocks": {
+          "a32d335e-5ccc-4860-a2e6-292410e28ca0": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-body-wash-1"
+            }
+          },
+          "298695f5-047d-45ce-b13a-9d6894587253": {
+            "type": "product",
+            "settings": {
+              "product": "body-face-wash-bundle"
+            }
+          },
+          "049aa654-5ba4-4c87-9f7c-c8ad70b40076": {
+            "type": "product",
+            "settings": {
+              "product": "activated-charcoal-facewash"
+            }
+          },
+          "6b10667c-010d-4d65-8303-70fbb96a001f": {
+            "type": "product",
+            "settings": {
+              "product": "exfoliating-bamboo-face-scrub-1"
+            }
+          }
+        },
+        "block_order": [
+          "a32d335e-5ccc-4860-a2e6-292410e28ca0",
+          "298695f5-047d-45ce-b13a-9d6894587253",
+          "049aa654-5ba4-4c87-9f7c-c8ad70b40076",
+          "6b10667c-010d-4d65-8303-70fbb96a001f"
+        ],
+        "settings": {
+          "title": "SHOP OUR BESTSELLERS"
+        }
+      },
+      "specialoffer_fb_banner_v7": {
+        "type": "specialoffer_fb_banner_v7",
+        "settings": {
+          "link_url": "#shopify-section-subscribe_and_save_featured_products",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_why-custom_v4": {
+        "type": "specialoffer_fb_why-custom_v4",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/WhyBlackWolfImage2.png",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 65,
+          "subheading": "WHY BLACK WOLF",
+          "title": "CONFIDENCE STARTS WITH CLEAR SKIN",
+          "list-item_1": "FREE Shipping on all US orders!",
+          "list-item_2": "Effective and high quality ingredients",
+          "list-item_3": "Made in the USA",
+          "list-item_4": "Made by guys, for guys",
+          "list-item_5": "Formulated to fight free-radicals and other skin toxins",
+          "list-item_6": "",
+          "list-item_7": "",
+          "list-item_8": "",
+          "list-item_9": "",
+          "list-item_10": "",
+          "content": ""
+        }
+      },
+      "specialoffer_fb_banner_3_v4": {
+        "type": "specialoffer_fb_banner_3_v4",
+        "settings": {
+          "link_url": "#shopify-section-subscribe_and_save_featured_products",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/bw-phenomenon.jpg",
+          "padding_dkp": 45,
+          "padding_sm": 44
+        }
+      },
+      "specialoffer_fb_more_custom_v4": {
+        "type": "specialoffer_fb_more_custom_v4",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/shipping_f6903dc6-9ebf-4147-9986-13f4e19813b8.png",
+          "reason-headline_1": "Free Shipping On All  Subscriptions Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_3836fd33-59af-4817-802d-de9f8ae13f19.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/support_66883f70-07e1-443c-8eaf-94a298c614c7.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/secure_dce6f9e2-cbef-4435-9e50-4084cf38ec04.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_newsletter_v4": {
+        "type": "specialoffer_fb_newsletter_v4",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "Keep updated",
+          "title": "Newsletter",
+          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        }
+      },
+      "subscribe_and_save_featured_products": {
+        "type": "subscribe_and_save_featured_products",
+        "blocks": {
+          "03d7d91f-686a-4df9-8af8-a75a4d1832f8": {
+            "type": "product",
+            "settings": {
+              "product": "face-body-wash-bundle-2-1",
+              "custom_title": "FACE + BODY WASH<br>BUNDLE 2.0",
+              "includes_title": "WHAT THE BUNDLE INCLUDES",
+              "includes_text": "<p>Body Wash - Activated Charcoal <br\/>Face Wash - Activated Charcoal <\/p>",
+              "gifts_title": "PLUS! RECEIVE <b>A FREE<\/b> GIFT<br> ON YOUR FIRST ORDER:",
+              "gifts_text": "<p><strong>FREE!<\/strong> BODY SCRUBBER*<\/p>",
+              "free_shipping": "PLUS FREE SHIPPING"
+            }
+          },
+          "787aaeb7-0695-4f9d-8bad-54bc030985a7": {
+            "type": "product",
+            "settings": {
+              "product": "shower-bundle-2-0",
+              "custom_title": "SHOWER<br>BUNDLE 2.0",
+              "includes_title": "WHAT THE BUNDLE INCLUDES",
+              "includes_text": "<p>Body Wash - Activated Charcoal <br\/>Face Wash - Activated Charcoal <br\/>Exfoliating Body Scrub<\/p>",
+              "gifts_title": "PLUS! RECEIVE <b>TWO FREE<\/b> GIFTS ON YOUR FIRST ORDER:",
+              "gifts_text": "<p><strong>FREE!<\/strong> TOILETRY BAG*<br\/><strong>FREE!<\/strong> BODY SCRUBBER*<br\/><\/p>",
+              "free_shipping": "PLUS FREE SHIPPING"
+            }
+          },
+          "9bb11f2c-d80a-47fb-bcfa-7d7dd9918a21": {
+            "type": "product",
+            "settings": {
+              "product": "blackout-bundle-2-0",
+              "custom_title": "BLACKOUT<br>BUNDLE 2.0",
+              "includes_title": "WHAT THE BUNDLE INCLUDES",
+              "includes_text": "<p>Body Wash - Activated Charcoal <br\/>Face Wash - Activated Charcoal<br\/>Face Scrub - Exfoliating Bamboo<br\/>Exfoliating Body Scrub<br\/>Face Mask - Detoxifying Charcoal <br\/>Oil Free Moisturizer<br\/>Double Duty Glacier Eye Gel<\/p>",
+              "gifts_title": "PLUS! RECEIVE <b>TWO FREE<\/b> GIFTS ON YOUR FIRST ORDER:",
+              "gifts_text": "<p><strong>FREE!<\/strong> TOILETRY BAG*<br\/><strong>FREE!<\/strong> BODY SCRUBBER*<\/p>",
+              "free_shipping": "PLUS FREE SHIPPING"
+            }
+          }
+        },
+        "block_order": [
+          "03d7d91f-686a-4df9-8af8-a75a4d1832f8",
+          "787aaeb7-0695-4f9d-8bad-54bc030985a7",
+          "9bb11f2c-d80a-47fb-bcfa-7d7dd9918a21"
+        ],
+        "settings": {
+          "bg_color": "#efefef",
+          "title": "SAVE ON OUR FEATURED BUNDLES",
+          "subtitle": "SUBSCRIBE & SAVE 15% ON EVERY ORDER",
+          "disclaimer": "<p>* SUBSCRIBE & SAVE ON FUTURE DELIVERIES (FREE GIFTS ON FIRST ORDER ONLY*)<\/p>",
+          "products_bg_color": "#ffffff",
+          "products_padding": "1em",
+          "products_image_height_dkp": 100,
+          "products_image_height_mobile": 100
+        }
+      },
+      "specialoffer_fb_hero_5": {
+        "type": "specialoffer_fb_hero_5",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "#shopify-section-specialoffer_subscribe_and_save_feat_products_5",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFB_Sub_Save_Lander3_d835efc8-bb63-47fb-a0f1-e89da81f1b1e.png",
+          "padding_img_1_dkp": 36,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFB_Sub_Save_Lander3_d835efc8-bb63-47fb-a0f1-e89da81f1b1e.png",
+          "padding_img_1_sm": 64,
+          "video_url_mobile": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_first_banner_5": {
+        "type": "specialoffer_fb_first_banner_5",
+        "settings": {
+          "link_url": "#shopify-section-specialoffer_subscribe_and_save_feat_products_5",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/bw-phenomenon.jpg",
+          "padding_dkp": 45,
+          "padding_sm": 44
+        }
+      },
+      "specialoffer_fb_second_banner_5": {
+        "type": "specialoffer_fb_second_banner_5",
+        "settings": {
+          "link_url": "#shopify-section-specialoffer_subscribe_and_save_feat_products_5",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_subscribe_and_save_feat_products_5": {
+        "type": "specialoffer_subscribe_and_save_feat_products_5",
+        "blocks": {
+          "1773ff9c-6d93-43c9-941b-8b2c35b600e8": {
+            "type": "product",
+            "settings": {
+              "product": "face-body-wash-bundle-2-0-one-time",
+              "custom_title": "FACE + BODY WASH<br>BUNDLE 2.0",
+              "custom_price": "<p><em>$46<\/em> <strong>$31<\/strong><\/p>",
+              "includes_title": "SUBSCRIPTION INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Face Wash<\/p>",
+              "gifts_title": "FREE GIFTS WITH SUBSCRIPTION",
+              "gifts_text": "<p><strong>FREE!<\/strong> BODY SCRUBBER* ($19 VALUE)<\/p>",
+              "free_shipping": "PLUS FREE SHIPPING<br><small> (Choose Your Delivery Schedule)<\/small>"
+            }
+          },
+          "a4c31955-5c0d-432a-87ee-6edf4f7df186": {
+            "type": "product",
+            "settings": {
+              "product": "shower-bundle-2-0-one-time",
+              "custom_title": "SHOWER<br>BUNDLE 2.0",
+              "custom_price": "<p><em>$94.99<\/em> <strong>$46<\/strong><\/p>",
+              "includes_title": "SUBSCRIPTION INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Face Wash <br\/>Body Scrub<\/p>",
+              "gifts_title": "FREE GIFTS WITH SUBSCRIPTION",
+              "gifts_text": "<p><strong>FREE!<\/strong> TOILETRY BAG* ($29 VALUE)<br\/><strong>FREE!<\/strong> BODY SCRUBBER* ($19 VALUE)<\/p>",
+              "free_shipping": "PLUS FREE SHIPPING<br><small> (Choose Your Delivery Schedule)<\/small>"
+            }
+          },
+          "115fdd7a-083e-4632-9a9c-9cbec07879cb": {
+            "type": "product",
+            "settings": {
+              "product": "blackout-bundle-2-0-one-time",
+              "custom_title": "BLACKOUT<br>BUNDLE 2.0",
+              "custom_price": "<p><em>$143<\/em> <strong>$75<\/strong><\/p>",
+              "includes_title": "SUBSCRIPTION INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Face Wash<br\/>Face Scrub<br\/>Body Scrub<br\/>Face Mask <br\/>Oil Free Moisturizer<br\/>Double Duty Glacier Eye Gel<\/p>",
+              "gifts_title": "FREE GIFTS WITH SUBSCRIPTION",
+              "gifts_text": "<p><strong>FREE!<\/strong> TOILETRY BAG* ($29 VALUE)<br\/><strong>FREE!<\/strong> BODY SCRUBBER* ($19 VALUE)<\/p>",
+              "free_shipping": "PLUS FREE SHIPPING<br><small> (Choose Your Delivery Schedule)<\/small>"
+            }
+          }
+        },
+        "block_order": [
+          "1773ff9c-6d93-43c9-941b-8b2c35b600e8",
+          "a4c31955-5c0d-432a-87ee-6edf4f7df186",
+          "115fdd7a-083e-4632-9a9c-9cbec07879cb"
+        ],
+        "settings": {
+          "bg_color": "#efefef",
+          "title": "SAVE ON OUR FEATURED BUNDLES",
+          "subtitle": "FREE GIFTS FOR NEW SUBSCRIBERS",
+          "disclaimer": "<p>* SUBSCRIBE & SAVE FREE GIFTS ARE ONLY INCLUDED IN YOUR FIRST DELIVERY *<\/p>",
+          "products_bg_color": "#ffffff",
+          "products_padding": "1em",
+          "products_image_height_dkp": 100,
+          "products_image_height_mobile": 100,
+          "products_price": "discount_price",
+          "products_buttons_info": "price"
+        }
+      },
+      "specialoffer_fb_more_custom_5": {
+        "type": "specialoffer_fb_more_custom_5",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/globe.png",
+          "reason-headline_1": "Free Shipping On All  Subscriptions Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_a49e900d-966f-4490-b514-d5d5ce40f6b0.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/phone.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/lock.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_newsletter_5": {
+        "type": "specialoffer_fb_newsletter_5",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "Keep updated",
+          "title": "Newsletter",
+          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        }
+      },
+      "specialoffer_fb_hero_6": {
+        "type": "specialoffer_fb_hero_6",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "#shopify-section-specialoffer_subscribe_and_save_feat_products_6",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero4.png",
+          "padding_img_1_dkp": 40,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero4.png",
+          "padding_img_1_sm": 75,
+          "video_url_mobile": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_first_banner_6": {
+        "type": "specialoffer_fb_first_banner_6",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/FB6LanderScience_New2.png",
+          "padding_dkp": 45,
+          "padding_sm": 44
+        }
+      },
+      "specialoffer_fb_second_banner_6": {
+        "type": "specialoffer_fb_second_banner_6",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_subscribe_and_save_feat_products_6": {
+        "type": "specialoffer_subscribe_and_save_feat_products_6",
+        "blocks": {
+          "64de03bf-8bbd-49fa-97cc-c6bdcd0ca7e3": {
+            "type": "product",
+            "settings": {
+              "product": "face-body-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Face & Body Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Face Wash<br\/>Body Wash<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$26.35<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $31.00",
+              "popup_custom_price": "41.65",
+              "one_time_custom_product": "blackwolf-face-body-kit"
+            }
+          },
+          "a5559c80-54b7-4e04-9661-c138de5725ba": {
+            "type": "product",
+            "settings": {
+              "product": "body-acne-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Body Acne Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Acne Body Spray<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$28.05 <\/strong>that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $33.00",
+              "popup_custom_price": "28.05",
+              "one_time_custom_product": "body-acne-kit-one-time"
+            }
+          },
+          "9b93f145-d7d1-41aa-8074-d637bf90b152": {
+            "type": "product",
+            "settings": {
+              "product": "best-sellers-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Best Sellers Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Face Wash<br\/>Face Scrub<br\/>Oil Free Moisturizer<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$55.25<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $65.00",
+              "popup_custom_price": "55.25",
+              "one_time_custom_product": "blackwolf-best-sellers-kit"
+            }
+          },
+          "3197dc2a-fa61-4808-87e6-1b3577ef64db": {
+            "type": "slider-content",
+            "settings": {
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "Here's How Our Offer Works:",
+              "text": ""
+            }
+          },
+          "241d09fb-b8b4-4eb3-8e28-83e03c2a1a14": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p><strong>Try your first month of products for the limited time low price! <\/strong>If you’re not loving the experience, cancel your subscription at anytime in your account settings during your trial.<\/p>"
+            }
+          },
+          "6e183819-e101-492c-82d1-dcaae62e2ee7": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/redo-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p>If you choose not to cancel, in <strong>60 Days<\/strong> we’ll send you another <strong>60 Day supply subscription box + a FREE Gift<\/strong> for only $$ ( 15% discount to retail price) AND free shipping. Your new subscription box will be shipped and billed <strong>every 2 months.<\/strong><\/p>"
+            }
+          },
+          "81eb24e0-8e5d-4e27-94fc-648fdac5bb6a": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "",
+              "text": "<p>You can delay an order, add\/remove products to your box at any time.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "64de03bf-8bbd-49fa-97cc-c6bdcd0ca7e3",
+          "a5559c80-54b7-4e04-9661-c138de5725ba",
+          "9b93f145-d7d1-41aa-8074-d637bf90b152",
+          "3197dc2a-fa61-4808-87e6-1b3577ef64db",
+          "241d09fb-b8b4-4eb3-8e28-83e03c2a1a14",
+          "6e183819-e101-492c-82d1-dcaae62e2ee7",
+          "81eb24e0-8e5d-4e27-94fc-648fdac5bb6a"
+        ],
+        "settings": {
+          "bg_color": "#efefef",
+          "title": "<small>CHARCOAL WASH SUBSCRIPTION OFFERS<\/small>",
+          "subtitle": "<small> Your Choice! Just Pay $4.95 + FREE Shipping!<\/small>",
+          "disclaimer": "<p><\/p><p>*SUBSCRIBE & SAVE 15% + FREE SHIPPING ON ALL DELIVERIES + FREE GIFT ON NEXT DELIVERY!<\/p>",
+          "products_bg_color": "#ffffff",
+          "products_padding": "1em",
+          "products_image_height_dkp": 100,
+          "products_image_height_mobile": 100,
+          "products_price": "discount_price",
+          "products_buttons_info": "none"
+        }
+      },
+      "specialoffer_fb_more_custom_6": {
+        "type": "specialoffer_fb_more_custom_6",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/globe.png",
+          "reason-headline_1": "Free Shipping On All US Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_a49e900d-966f-4490-b514-d5d5ce40f6b0.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/phone.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/lock.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_newsletter_6": {
+        "type": "specialoffer_fb_newsletter_6",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "Keep updated",
+          "title": "Newsletter",
+          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        }
+      },
+      "1626974338a2dd5df9": {
+        "type": "specialoffer_fb_banner",
+        "disabled": true,
+        "settings": {
+          "link_url": "shopify:\/\/collections\/best-sellers",
+          "alt": "Buy 2 Get 1 Free",
+          "bg_dkp": "shopify:\/\/shop_images\/B2G1BWBanner_Dsktp_072c3eee-f5ef-4213-9139-c1e2a9c4101d.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/B2G1BWBanner_Mbl_3af31ffe-fc14-4073-a6da-31e143326bb1.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_fb_hero_7": {
+        "type": "specialoffer_fb_hero_7",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFB_Trial_LanderHero_026d2c0b-67ad-48a6-b6be-ec2d1386b8a8.png",
+          "padding_img_1_dkp": 36,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFB_Trial_LanderHero_026d2c0b-67ad-48a6-b6be-ec2d1386b8a8.png",
+          "padding_img_1_sm": 64,
+          "video_url_mobile": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_first_banner_7": {
+        "type": "specialoffer_fb_first_banner_7",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/bw-phenomenon.jpg",
+          "padding_dkp": 45,
+          "padding_sm": 44
+        }
+      },
+      "specialoffer_fb_second_banner_7": {
+        "type": "specialoffer_fb_second_banner_7",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_subscribe_and_save_feat_products_7": {
+        "type": "specialoffer_subscribe_and_save_feat_products_7",
+        "blocks": {
+          "353d0531-269f-4417-ad2d-16a9fd6a2b10": {
+            "type": "product",
+            "settings": {
+              "product": "shower-bundle-basic",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Acne Fighting <br>Body kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE BUNDLE INCLUDES",
+              "includes_text": "<p>Body Wash <br\/>Face Wash<br\/>Body Scrub <br\/>Acne Spray<\/p>",
+              "gifts_title": "Try Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After your trial we will ship your bundle every 60 days for <strong>$39.10 <\/strong>that's <strong>15% OFF + FREE Shipping!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "$4.95 - SUBSCRIBE & SAVE",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "$61 - ONE TIME PURCHASE",
+              "popup_custom_price": "39.10",
+              "one_time_custom_product": "shower-bundle-basic-2"
+            }
+          },
+          "6cd333e1-bfff-489b-82e4-d7c758d42530": {
+            "type": "product",
+            "settings": {
+              "product": "shower-bundle-plus",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "SHOWER BUNDLE <br>PLUS TRIAL",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE BUNDLE INCLUDES",
+              "includes_text": "<p>Body Wash <br\/>Face Wash<br\/>Body Scrub<br\/>Oil Free Moisturizer<\/p>",
+              "gifts_title": "Try Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After your trial we will ship your bundle every 60 days for <strong>$55.25<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "$4.95 - SUBSCRIBE & SAVE",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "$65 - ONE TIME PURCHASE",
+              "popup_custom_price": "55.25",
+              "one_time_custom_product": "shower-bundle-plus-2"
+            }
+          },
+          "8b2d131b-b810-4486-a7c8-009727e41246": {
+            "type": "slider-content",
+            "settings": {
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "How our Trial Works!",
+              "text": "<p>It’s actually a no commitment free trial!<br\/>But here is how it works just in case:<\/p>"
+            }
+          },
+          "07486188-e646-4493-b905-e01a72fde15b": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p>Try your first 60 Days of products on us. If you’re not loving the experience, cancel your subscription at anytime in your account settings during your trial.<\/p>"
+            }
+          },
+          "9755faa8-63dc-45a8-9762-620c362104ea": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/redo-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p>If you choose not to cancel, in 60 Days we’ll send you a new subscription box for only $$ ( 15% discount to retail price) AND free shipping. Your new subscription box will be shipped and billed every 60 Days.<\/p>"
+            }
+          },
+          "acc36a48-02b7-4dfa-a53d-2f03cdad5471": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "",
+              "text": "<p>You can delay an order, add\/remove products to your box at any time.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "353d0531-269f-4417-ad2d-16a9fd6a2b10",
+          "6cd333e1-bfff-489b-82e4-d7c758d42530",
+          "8b2d131b-b810-4486-a7c8-009727e41246",
+          "07486188-e646-4493-b905-e01a72fde15b",
+          "9755faa8-63dc-45a8-9762-620c362104ea",
+          "acc36a48-02b7-4dfa-a53d-2f03cdad5471"
+        ],
+        "settings": {
+          "bg_color": "#efefef",
+          "title": "<small>TRY OUR TRIAL BUNDLES<\/small>",
+          "subtitle": "<small>Just Pay $4.95 + FREE Shipping!<\/small>",
+          "disclaimer": "<p>*SUBSCRIBE & SAVE 15% + FREE SHIPPING ON FUTURE DELIVERIES<\/p>",
+          "products_bg_color": "#ffffff",
+          "products_padding": "1em",
+          "products_image_height_dkp": 100,
+          "products_image_height_mobile": 100,
+          "products_price": "discount_price",
+          "products_buttons_info": "none"
+        }
+      },
+      "specialoffer_fb_more_custom_7": {
+        "type": "specialoffer_fb_more_custom_7",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/globe.png",
+          "reason-headline_1": "Free Shipping On All US Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_a49e900d-966f-4490-b514-d5d5ce40f6b0.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/phone.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/lock.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_newsletter_7": {
+        "type": "specialoffer_fb_newsletter_7",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "Keep updated",
+          "title": "Newsletter",
+          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        }
+      },
+      "specialoffer_fb_text_banner_6": {
+        "type": "specialoffer_fb_text_banner_6",
+        "settings": {
+          "bg_color": "#000000",
+          "text_color": "#ffffff",
+          "url": "shopify:\/\/pages\/trial-offer-policy",
+          "text": "<p>CLICK FOR MORE INFORMATION ON OUR LIMITED TIME OFFER POLICY<\/p>",
+          "font_size": "2em",
+          "font_size_mobile": "1.5em"
+        }
+      },
+      "specialoffer_fb_hero_8": {
+        "type": "specialoffer_fb_hero_8",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "#shopify-section-specialoffer_subscribe_and_save_feat_products_8",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero_FB8.png",
+          "padding_img_1_dkp": 40,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin": true,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero4.png",
+          "padding_img_1_sm": 75,
+          "video_url_mobile": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_first_banner_8": {
+        "type": "specialoffer_fb_first_banner_8",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/FB9LanderScience_New_10818408-0530-4ae1-80a4-fe7713a289e6.png",
+          "padding_dkp": 45,
+          "padding_sm": 44
+        }
+      },
+      "specialoffer_fb_second_banner_8": {
+        "type": "specialoffer_fb_second_banner_8",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner_d68c53a0-e653-4897-a8bc-b1ce39779d8c.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile_92b5ae58-8a4b-4853-9c4c-12bd071659ec.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_subscribe_and_save_feat_products_8": {
+        "type": "specialoffer_subscribe_and_save_feat_products_8",
+        "blocks": {
+          "1fdd20dc-1890-46a3-acbc-1503c07e3490": {
+            "type": "product",
+            "settings": {
+              "product": "face-body-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Face & Body Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Face Wash<br\/>Body Wash<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$26.35<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $31.00",
+              "popup_custom_price": "41.65",
+              "one_time_custom_product": "blackwolf-face-body-kit"
+            }
+          },
+          "954768dc-a5b8-4a0b-b0a3-4d42488f15cc": {
+            "type": "product",
+            "settings": {
+              "product": "face-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "FACE Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Face Wash<br\/>Oil Free Moisturizer<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$28.90 <\/strong>that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $34.00",
+              "popup_custom_price": "26.35",
+              "one_time_custom_product": "blackwolf-face-kit"
+            }
+          },
+          "80340d1c-2e54-41c8-937e-3395747ab733": {
+            "type": "product",
+            "settings": {
+              "product": "acne-fighting-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Acne Fighting Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Body Scrub<br\/>Acne Body Spray<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$40.80<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $48.00",
+              "popup_custom_price": "40.80",
+              "one_time_custom_product": "acne-fighting-kit-one_time"
+            }
+          },
+          "97d2b242-91b9-4291-b644-f7c6bb26cc2c": {
+            "type": "slider-content",
+            "settings": {
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "Here's How Our Offer Works:",
+              "text": ""
+            }
+          },
+          "29c375ff-4675-46aa-af2e-66b48a562028": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p><strong>Try your first month of products for the limited time low price! <\/strong>If you’re not loving the experience, cancel your subscription at anytime in your account settings during your trial.<\/p>"
+            }
+          },
+          "f9955e71-c2fe-48a2-a2b1-0b419d15423e": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/redo-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p>If you choose not to cancel, in <strong>60 Days<\/strong> we’ll send you another <strong>60 Day supply subscription box + a FREE Gift<\/strong> for only $$ ( 15% discount to retail price) AND free shipping. Your new subscription box will be shipped and billed <strong>every 2 months.<\/strong><\/p>"
+            }
+          },
+          "77f97a82-7a80-4a97-8d9d-d08ace14e89a": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "",
+              "text": "<p>You can delay an order, add\/remove products to your box at any time.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1fdd20dc-1890-46a3-acbc-1503c07e3490",
+          "954768dc-a5b8-4a0b-b0a3-4d42488f15cc",
+          "80340d1c-2e54-41c8-937e-3395747ab733",
+          "97d2b242-91b9-4291-b644-f7c6bb26cc2c",
+          "29c375ff-4675-46aa-af2e-66b48a562028",
+          "f9955e71-c2fe-48a2-a2b1-0b419d15423e",
+          "77f97a82-7a80-4a97-8d9d-d08ace14e89a"
+        ],
+        "settings": {
+          "bg_color": "#efefef",
+          "title": "<small>LIMITED TIME SUBSCRIPTION OFFER<\/small>",
+          "subtitle": "<small> Your Choice! Just Pay $4.95 + FREE Shipping!<\/small>",
+          "disclaimer": "<p>*SUBSCRIBE & SAVE 15% + FREE SHIPPING ON ALL DELIVERIES + FREE GIFT ON NEXT DELIVERY!<\/p>",
+          "products_bg_color": "#ffffff",
+          "products_padding": "1em",
+          "products_image_height_dkp": 100,
+          "products_image_height_mobile": 100,
+          "products_price": "discount_price",
+          "products_buttons_info": "none"
+        }
+      },
+      "specialoffer_fb_more_custom_8": {
+        "type": "specialoffer_fb_more_custom_8",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/globe.png",
+          "reason-headline_1": "Free Shipping On All US Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_a49e900d-966f-4490-b514-d5d5ce40f6b0.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/phone.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/lock.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_text_banner_8": {
+        "type": "specialoffer_fb_text_banner_8",
+        "settings": {
+          "bg_color": "#000000",
+          "text_color": "#ffffff",
+          "url": "shopify:\/\/pages\/trial-offer-policy",
+          "text": "<p>CLICK FOR MORE INFORMATION ON OUR LIMITED TIME OFFER POLICY<\/p>",
+          "font_size": "2em",
+          "font_size_mobile": "1.5em"
+        }
+      },
+      "specialoffer_fb_newsletter_8": {
+        "type": "specialoffer_fb_newsletter_8",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "Keep updated",
+          "title": "Newsletter",
+          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        }
+      },
+      "specialoffer_fb_hero_9": {
+        "type": "specialoffer_fb_hero_9",
+        "settings": {
+          "bg_color": "#353132",
+          "link_url": "#shopify-section-specialoffer_subscribe_and_save_feat_products_9",
+          "alt": "",
+          "img_1": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero_FB9.png",
+          "padding_img_1_dkp": 40,
+          "padding_img_2_dkp": 40,
+          "video_url": "https:\/\/vimeo.com\/644805101",
+          "video_custom_width_and_margin": false,
+          "video_custom_width": 100,
+          "video_custom_height": 125,
+          "video_custom_margin_left": 0,
+          "video_custom_margin_top": 0,
+          "img_1_sm": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero4.png",
+          "padding_img_1_sm": 75,
+          "video_url_mobile": "https:\/\/vimeo.com\/536007938",
+          "video_custom_width_and_margin_mobile": true,
+          "video_custom_width_mobile": 100,
+          "video_custom_height_mobile": 123,
+          "video_custom_margin_left_mobile": 0,
+          "video_custom_margin_top_mobile": 0
+        }
+      },
+      "specialoffer_fb_first_banner_9": {
+        "type": "specialoffer_fb_first_banner_9",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/FB9LanderScience_New_10818408-0530-4ae1-80a4-fe7713a289e6.png",
+          "padding_dkp": 45,
+          "padding_sm": 44
+        }
+      },
+      "specialoffer_fb_second_banner_9": {
+        "type": "specialoffer_fb_second_banner_9",
+        "settings": {
+          "link_url": "",
+          "alt": "",
+          "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner_d68c53a0-e653-4897-a8bc-b1ce39779d8c.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile_92b5ae58-8a4b-4853-9c4c-12bd071659ec.png",
+          "padding_sm": 90
+        }
+      },
+      "specialoffer_subscribe_and_save_feat_products_9": {
+        "type": "specialoffer_subscribe_and_save_feat_products_9",
+        "blocks": {
+          "31001d29-50f8-4459-88af-06bac4fd16d4": {
+            "type": "product",
+            "settings": {
+              "product": "acne-fighting-face-body-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Acne Fighting Face & Body Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Face Wash<br\/>Body Wash<br\/>Acne Spray<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$40.80<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $48.00",
+              "popup_custom_price": "40.80",
+              "one_time_custom_product": "acne-fighting-face-body-kit-one-time"
+            }
+          },
+          "3c4146cd-7614-49fb-b663-c302e70a4068": {
+            "type": "product",
+            "settings": {
+              "product": "acne-fighting-body-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "ACNE FIGHTING BODY KIT",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Face Wash<br\/>Body Scrub<br\/>Acne Spray<br\/><\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$53.55 <\/strong>that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $63.00",
+              "popup_custom_price": "53.55",
+              "one_time_custom_product": "acne-fighting-body-kit-one-time"
+            }
+          },
+          "e280ff49-b048-4b0f-8d59-1632858f9dff": {
+            "type": "product",
+            "settings": {
+              "product": "best-sellers-kit",
+              "its_free_trial": true,
+              "subscription_slider_trigger": true,
+              "custom_title": "Best Sellers Kit",
+              "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+              "includes_title": "WHAT THE KIT INCLUDES",
+              "includes_text": "<p>Body Wash<br\/>Face Wash<br\/>Face Scrub<br\/>Oil Free Moisturizer<\/p>",
+              "gifts_title": "Your First 60 Days of <br>Products For Just $4.95",
+              "gifts_text": "<p>After today, your 60 day supply is just <strong>$55.25<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+              "free_shipping": "",
+              "subscription_options_btn_label": "Just $4.95 <br> Subscribe Today",
+              "add_subscription_btn_label": "ADD SUBSCRIPTION",
+              "onetime_btn_label": "One-Time (60 Day Supply) $65.00",
+              "popup_custom_price": "55.25",
+              "one_time_custom_product": "blackwolf-best-sellers-kit"
+            }
+          },
+          "babeab8d-3cc3-45cd-b1cf-f34fbd1da5f2": {
+            "type": "slider-content",
+            "settings": {
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "Here's How Our Offer Works:",
+              "text": ""
+            }
+          },
+          "75f4b08c-942f-43a2-98f4-2a517f3c4f35": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p><strong>Try your first month of products for the limited time low price! <\/strong>If you’re not loving the experience, cancel your subscription at anytime in your account settings during your trial.<\/p>"
+            }
+          },
+          "2586f0c1-a7ca-4b08-9f13-b20a94889987": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/redo-icon.png",
+              "icon_height": 7,
+              "icon_size": 80,
+              "title": "",
+              "text": "<p>If you choose not to cancel, in <strong>60 Days<\/strong> we’ll send you another <strong>60 Day supply subscription box + a FREE Gift<\/strong> for only $$ ( 15% discount to retail price) AND free shipping. Your new subscription box will be shipped and billed <strong>every 2 months.<\/strong><\/p>"
+            }
+          },
+          "7d475e82-e206-42b0-9fe7-c5ac51e832f4": {
+            "type": "slider-content",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+              "icon_height": 7,
+              "icon_size": 100,
+              "title": "",
+              "text": "<p>You can delay an order, add\/remove products to your box at any time.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "31001d29-50f8-4459-88af-06bac4fd16d4",
+          "3c4146cd-7614-49fb-b663-c302e70a4068",
+          "e280ff49-b048-4b0f-8d59-1632858f9dff",
+          "babeab8d-3cc3-45cd-b1cf-f34fbd1da5f2",
+          "75f4b08c-942f-43a2-98f4-2a517f3c4f35",
+          "2586f0c1-a7ca-4b08-9f13-b20a94889987",
+          "7d475e82-e206-42b0-9fe7-c5ac51e832f4"
+        ],
+        "settings": {
+          "bg_color": "#efefef",
+          "title": "<small>ACNE BODY SPRAY SUBSCRIPTION OFFERS<\/small>",
+          "subtitle": "<small> Your Choice! Just Pay $4.95 + FREE Shipping!<\/small>",
+          "disclaimer": "<p>*SUBSCRIBE & SAVE 15% + FREE SHIPPING ON ALL DELIVERIES + FREE GIFT ON NEXT DELIVERY!<\/p>",
+          "products_bg_color": "#ffffff",
+          "products_padding": "1em",
+          "products_image_height_dkp": 100,
+          "products_image_height_mobile": 100,
+          "products_price": "discount_price",
+          "products_buttons_info": "none"
+        }
+      },
+      "specialoffer_fb_more_custom_9": {
+        "type": "specialoffer_fb_more_custom_9",
+        "settings": {
+          "text_color": "#ffffff",
+          "background_color": "#000000",
+          "subheading": "",
+          "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+          "icon_1": "shopify:\/\/shop_images\/globe.png",
+          "reason-headline_1": "Free Shipping On All US Orders",
+          "icon_2": "shopify:\/\/shop_images\/return_a49e900d-966f-4490-b514-d5d5ce40f6b0.png",
+          "reason-headline_2": "Easy 30-day exchange & return",
+          "icon_3": "shopify:\/\/shop_images\/phone.png",
+          "reason-headline_3": "24 \/ 7 Customer Support",
+          "icon_4": "shopify:\/\/shop_images\/lock.png",
+          "reason-headline_4": "100% Secure Checkout"
+        }
+      },
+      "specialoffer_fb_text_banner_9": {
+        "type": "specialoffer_fb_text_banner_9",
+        "settings": {
+          "bg_color": "#000000",
+          "text_color": "#ffffff",
+          "url": "shopify:\/\/pages\/trial-offer-policy",
+          "text": "<p>CLICK FOR MORE INFORMATION ON OUR LIMITED TIME OFFER POLICY<\/p>",
+          "font_size": "2em",
+          "font_size_mobile": "1.5em"
+        }
+      },
+      "specialoffer_fb_newsletter_9": {
+        "type": "specialoffer_fb_newsletter_9",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "Keep updated",
+          "title": "Newsletter",
+          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        }
+      },
+      "1637598663bbe1ba9e": {
+        "type": "specialoffer_fb_banner_3",
+        "settings": {
+          "link_url": "shopify:\/\/products\/acne-body-spray",
+          "alt": "NEW! Acne Body Spray",
+          "bg_dkp": "shopify:\/\/shop_images\/BWAcneSprayLaunch_DsktpJA_e141b5d2-50b1-4541-84d3-32b30c79ba18.png",
+          "padding_dkp": 18,
+          "bg_sm": "shopify:\/\/shop_images\/BWAcneSprayLaunch_MblJA_d2117d07-4ae3-42c5-8df9-6e21d35fdc59.png",
+          "padding_sm": 90
+        }
+      },
+      "sezzle-widget": {
+        "type": "sezzle-widget",
+        "settings": {
+          "show-sezzle-widget": true,
+          "color": "inherit",
+          "font-size": 14,
+          "font-family": "inherit",
+          "product-page-alignment": "auto",
+          "cart-page-alignment": "auto"
+        }
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "1619722638bf535bc4",
+      "1626974338a2dd5df9",
+      "1637598663bbe1ba9e",
+      "1619724334e7903d50",
+      "1619723958a74d311b",
+      "1619724815a5dc3dc4",
+      "16197251055647e420",
+      "16197253623e262438",
+      "16069266407310235f",
+      "1542737050471",
+      "1533328917005",
+      "1606923456bf002acc",
+      "1535550845338",
+      "collection-list",
+      "timeline",
+      "1561515124903",
+      "1536582110653",
+      "1536581162859",
+      "1536581713681",
+      "1532700678327",
+      "1534251669467",
+      "1533318754548",
+      "1532702341259",
+      "1533135474911"
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": 50,
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "enable_image_zoom": true,
+            "show_thumbnails": false
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "show_section": true,
+            "title": "Related Products",
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": 50,
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "enable_image_zoom": true,
+            "show_thumbnails": false
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "show_section": true,
+            "title": "Related Products",
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Vogue": {
+      "heading_color": "#454545",
+      "text_color": "#454545",
+      "text_light_color": "#9d9d9d",
+      "link_color": "#a17c5e",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#c2a284",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#454545",
+      "header_light_color": "#9d9d9d",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#454545",
+      "footer_text_color": "#9d9d9d",
+      "newsletter_popup_background": "#454545",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#f1e4d8",
+      "secondary_elements_text_color": "#373737",
+      "navigation_background": "#454545",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": 50,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "enable_image_zoom": true,
+            "show_thumbnails": false
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "show_section": true,
+            "title": "Related Products",
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    }
+  }
+}

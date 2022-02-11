@@ -1,0 +1,195 @@
+{%- render 'specialoffer_fb_hero', data: section.settings, section_id: section.id -%}
+
+{% schema %}
+{
+   "name":"Hero",
+   "tag": "section",
+   "class": "specialoffer-fb",
+   "settings":[
+      {
+        "type":"color",
+        "id":"bg_color",
+        "label":"Background Color",
+        "default":"#353132"
+      },
+      {
+        "type":"url",
+        "id":"link_url",
+        "label":"Link URL",
+        "info":"Paste or search."
+      },
+      {
+        "type":"text",
+        "id":"alt",
+        "label":"Link Alt Text"
+      },
+      {
+         "type":"header",
+         "content":"Desktop"
+      },
+      {
+         "type":"image_picker",
+         "id":"img_1",
+         "label":"Image 1 (Desktop)"
+      },
+      {
+        "type": "range",
+        "id": "padding_img_1_dkp",
+        "label": "Image 1 Height (Desktop)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 36
+      },
+      {
+         "type":"image_picker",
+         "id":"img_2",
+         "label":"Image 2 (Desktop)"
+      },
+      {
+        "type": "range",
+        "id": "padding_img_2_dkp",
+        "label": "Image 2 Height (Desktop)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 40
+      },
+      {
+        "type": "video_url",
+        "id": "video_url",
+        "accept": ["youtube", "vimeo"],
+        "label": "Video URL (Desktop)",
+        "default": "https://vimeo.com/516893561",
+        "info": "This will replace 'Image 2'"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_thumbnail",
+        "label": "Video Thumbnail"
+      },
+      {
+        "type": "checkbox",
+        "id": "video_custom_width_and_margin",
+        "label": "Use custom video width, height and margin",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "video_custom_width",
+        "label": "Video Custom Width",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "video_custom_height",
+        "label": "Video Custom Height",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 125
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_left",
+        "label": "Video Custom Margin Left",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_top",
+        "label": "Video Custom Margin Top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      },
+      {
+         "type":"header",
+         "content":"Mobile"
+      },
+      {
+         "type":"image_picker",
+         "id":"img_1_sm",
+         "label":"Image 1 (Mobile)"
+      },
+      {
+        "type": "range",
+        "id": "padding_img_1_sm",
+        "label": "Image 1 Height (Mobile)",
+        "min": 50,
+        "max": 150,
+        "step": 1,
+        "default": 64
+      },
+      {
+        "type": "video_url",
+        "id": "video_url_mobile",
+        "accept": ["youtube", "vimeo"],
+        "label": "Video URL (Mobile)",
+        "default": "https://vimeo.com/515392286"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_thumbnail_mobile",
+        "label": "Video Thumbnail (Mobile)"
+      },
+      {
+        "type": "checkbox",
+        "id": "video_custom_width_and_margin_mobile",
+        "label": "Use custom video width, height and margin",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "video_custom_width_mobile",
+        "label": "Video Custom Width (Mobile)",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "video_custom_height_mobile",
+        "label": "Video Custom Height (Mobile)",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 123
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_left_mobile",
+        "label": "Video Custom Margin Left (Mobile)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_top_mobile",
+        "label": "Video Custom Margin Top (Mobile)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      }
+   ]
+}
+{% endschema %}

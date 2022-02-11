@@ -1,0 +1,153 @@
+<section id="section-{{ section.id }}" class="more-custom">
+
+  <div class="FlexboxIeFix">
+
+      {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+        
+        <div class="ImageHero__ContentOverlay">
+          {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+            <header class="SectionHeader">
+              
+              {%- if section.settings.subheading != blank -%}
+                <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+              {%- endif -%}
+
+              {%- if section.settings.title != blank -%}
+                <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+              {%- endif -%}
+
+              {%- if section.settings.reason-headline_1 != blank -%}
+                <div class="SectionHeader__Reasons">
+
+                    <div class="reason-custom">                    
+                      <img src="{{ section.settings.icon_1 | img_url: '240x' }}" alt="{{ section.settings.icon_1.alt | escape }}" class="reason_icon">
+                      <p>{{ section.settings.reason-headline_1 }}</p>                   
+                    </div>
+
+
+                    <div class="reason-custom">                    
+                      <img src="{{ section.settings.icon_2 | img_url: '240x' }}" alt="{{ section.settings.icon_2.alt | escape }}" class="reason_icon">
+                      <p>{{ section.settings.reason-headline_2 }}</p>                   
+                    </div>
+
+
+                    <div class="reason-custom">                    
+                      <img src="{{ section.settings.icon_3 | img_url: '240x' }}" alt="{{ section.settings.icon_3.alt | escape }}" class="reason_icon">
+                      <p>{{ section.settings.reason-headline_3 }}</p>                   
+                    </div>                                        
+
+
+                    <div class="reason-custom">                    
+                      <img src="{{ section.settings.icon_4 | img_url: '240x' }}" alt="{{ section.settings.icon_4.alt | escape }}" class="reason_icon">
+                      <p>{{ section.settings.reason-headline_4}}</p>                   
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div><!--/.SectionHeader_Testimonials -->
+              {%- endif -%}
+
+            </header>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+  </div>
+
+</section>
+
+<style>
+  #section-{{ section.id }},
+  #section-{{ section.id }} .Heading {
+    color: {{ section.settings.text_color }}
+  }
+  #section-{{ section.id }} {
+    background-color: {{ section.settings.background_color }}
+  }
+  @media all and (max-width: 640px){
+    #shopify-section-{{section.id}} .more-custom .ImageHero__ContentOverlay{margin-bottom: 2em;}
+    #shopify-section-{{section.id}} .SectionHeader__Reasons{display: flex;flex-wrap: wrap;margin-top: 2em;}
+    #shopify-section-{{section.id}} .more-custom .reason-custom{width: 50%;padding: 0 1em;}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Reasons Custom",
+  "settings": [
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Even More Reasons to Love Black Wolf"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_1",
+      "label": "Icon 1",
+      "info": "300 x 300px png recommended"
+    },
+    {
+      "type": "text",
+      "id": "reason-headline_1",
+      "label": "Reason Headline 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_2",
+      "label": "Icon 2",
+      "info": "300 x 300px png recommended"
+    },
+    {
+      "type": "text",
+      "id": "reason-headline_2",
+      "label": "Reason Headline 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_3",
+      "label": "Icon 3",
+      "info": "300 x 300px png recommended"
+    },
+    {
+      "type": "text",
+      "id": "reason-headline_3",
+      "label": "Reason Headline 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_4",
+      "label": "Icon 4",
+      "info": "300 x 300px png recommended"
+    },
+    {
+      "type": "text",
+      "id": "reason-headline_4",
+      "label": "Reason Headline 4"
+    }    
+  ],
+  "presets": [
+    {
+      "category": "Custom",
+      "name": "Reasons Custom",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

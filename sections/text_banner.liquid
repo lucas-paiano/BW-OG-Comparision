@@ -1,0 +1,72 @@
+<style>
+  #shopify-section-{{section.id}} {background-color: {{section.settings.bg_color}};}
+  #shopify-section-{{section.id}} div{background-color: {{section.settings.bg_color}}; padding: 3em 20px;}
+  #shopify-section-{{section.id}} p{color: {{section.settings.text_color}}; font-size: {{section.settings.font_size}}; text-align: center;}
+
+  @media all and (max-width: 600px){
+    #shopify-section-{{section.id}} p{font-size: {{section.settings.font_size_mobile}};}
+  }
+</style>
+
+{%- if section.settings.url != blank -%}
+  <a href="{{section.settings.url}}">
+{%- endif -%}
+
+  <div class="container">
+    {{section.settings.text}}
+  </div>
+
+{%- if section.settings.url != blank -%}
+  </a>
+{%- endif -%}
+
+{% schema %}
+{
+   "name":"Text Banner",
+   "tag": "section",
+   "class": "text-banner",
+   "presets":[
+      {
+         "name":"Text Banner",
+         "category": "Home"
+      }
+   ],
+   "settings":[
+      {
+        "type":"color",
+        "id":"bg_color",
+        "label":"Background Color",
+        "default":"#000000"
+      },
+      {
+        "type":"color",
+        "id":"text_color",
+        "label":"Text Color",
+        "default":"#FFFFFF"
+      },
+      {
+        "type":"url",
+        "id":"url",
+        "label":"Link",
+        "info":"Paste or search."
+      },
+      {
+         "type":"richtext",
+         "id":"text",
+         "label":"Text"
+      },
+      {
+        "type":"text",
+        "id":"font_size",
+        "label":"Font Size (Desktop)",
+        "default":"2em"
+      },
+      {
+        "type":"text",
+        "id":"font_size_mobile",
+        "label":"Font Size (Mobile)",
+        "default":"1.5em"
+      }
+   ]
+}
+{% endschema %}

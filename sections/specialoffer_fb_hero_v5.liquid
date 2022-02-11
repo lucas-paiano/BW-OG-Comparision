@@ -1,0 +1,343 @@
+{% comment %}
+
+  This version of the hero has the mobile video instead of the gif
+
+{% endcomment %}
+
+ <style>
+  #shopify-section-{{section.id}}{background-color: {{section.settings.bg_color}};}
+  #shopify-section-{{section.id}} .bg-container{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center;background-repeat: no-repeat;}
+
+  #shopify-section-{{section.id}} .images-container>div{position: relative;}
+  #shopify-section-{{section.id}} .images-container>div.first{width: 60%;padding-top: {{section.settings.padding_img_1_dkp}}%;}
+  #shopify-section-{{section.id}} .images-container>div.second{width: 40%;{% if section.settings.img_2 %}padding-top: {{section.settings.padding_img_2_dkp}}%;{% endif %}}
+
+  #shopify-section-{{section.id}} .video-container iframe {position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;}
+  #shopify-section-{{section.id}} .video-container {position: relative; overflow: hidden; padding-top: 100%;}
+  #shopify-section-{{section.id}} .video-container .video-thumbnail {z-index: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
+  #shopify-section-{{section.id}} .video-container .trigger-btn {cursor: pointer; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;}
+  #shopify-section-{{section.id}} .video-container .trigger-btn svg path {fill: #fff;}
+  #shopify-section-{{section.id}} .video-container .trigger-btn svg {width: 5em; height: 5em;}
+  {%- if section.settings.video_custom_width_and_margin -%}
+    #shopify-section-{{section.id}} .video-container.desktop iframe{width: {{section.settings.video_custom_width}}%;height: {{section.settings.video_custom_height}}%;margin-left: -{{section.settings.video_custom_margin_left}}%;margin-top: -{{section.settings.video_custom_margin_top}}%;}
+  {%- endif -%}
+
+  {%- if section.settings.video_custom_width_and_margin_mobile -%}
+    #shopify-section-{{section.id}} .video-container.mobile iframe{width: {{section.settings.video_custom_width_mobile}}%;height: {{section.settings.video_custom_height_mobile}}%;margin-left: -{{section.settings.video_custom_margin_left_mobile}}%;margin-top: -{{section.settings.video_custom_margin_top_mobile}}%;}
+  {%- endif -%}
+
+  @media all and (max-width: 600px){
+    #shopify-section-{{section.id}} .images-container{flex-direction: column;}
+    #shopify-section-{{section.id}} .images-container>div{width: 100% !important;}
+    #shopify-section-{{section.id}} .images-container>div.first{padding-top: {{section.settings.padding_img_1_sm}}%;}
+    #shopify-section-{{section.id}} .images-container>div.second{padding-top: {{section.settings.padding_img_2_sm}}%;}
+    #shopify-section-{{section.id}} .images-container>div.third{padding-top: {{section.settings.padding_img_3_sm}}%;}
+  }
+</style>
+
+<a href="{{section.settings.link_url}}" aria-label="{{section.settings.alt}}" class="gtm-hero">
+  <div class="images-container flex">
+    <div class="first image-container">
+      <div class="Image--lazyLoad bg-container big {% if section.settings.img_2 %}small--hide{% endif %}" data-bgset="{% render 'lazy_src', image: section.settings.img_1 %}"></div>
+
+      {%- if section.settings.img_1_sm -%}
+        <div class="Image--lazyLoad bg-container small hide small--show" data-bgset="{% render 'lazy_src', image: section.settings.img_1_sm %}"></div>
+      {%- endif -%}
+    </div>
+    <div class="second image-container">
+      {%- if section.settings.img_2 -%}
+        <div class="Image--lazyLoad bg-container big {% if section.settings.img_2_sm %}small--hide{% endif %}" data-bgset="{% render 'lazy_src', image: section.settings.img_2 %}"></div>
+      {%- else -%}
+        <div class="video-container {% if section.settings.video_url_mobile != blank %}desktop small--hide{% endif %}">
+          {%- if section.settings.video_thumbnail != nil -%}
+            <div class="video-thumbnail Image--lazyLoad" data-bgset="{% include 'lazy_src', image: section.settings.video_thumbnail %}"></div>
+            <div class="trigger-btn">
+              {% include 'icons', icon: 'trigger' %}
+            </div>
+          {%- endif -%}
+          {% if section.settings.video_url.type == 'youtube' %}
+            <div id="youtube-player"></div>
+          {% elsif section.settings.video_url.type == 'vimeo' %}
+            <iframe 
+              id="vimeo-player"
+              title="vimeo-player" 
+              src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?&autoplay=1&loop=1&muted=1" 
+              width="640" 
+              height="360" 
+              frameborder="0" 
+              allowfullscreen>
+            </iframe>
+          {% endif %}
+        </div>
+
+        {%- if section.settings.video_url_mobile != blank -%}
+          <div class="video-container mobile hide small--show">
+            {%- if section.settings.video_thumbnail_mobile != nil -%}
+              <div class="video-thumbnail Image--lazyLoad" data-bgset="{% include 'lazy_src', image: section.settings.video_thumbnail_mobile %}"></div>
+              <div class="trigger-btn">
+                {% include 'icons', icon: 'trigger' %}
+              </div>
+            {%- endif -%}
+            {% if section.settings.video_url_mobile.type == 'youtube' %}
+              <div id="youtube-player"></div>
+            {% elsif section.settings.video_url_mobile.type == 'vimeo' %}
+              <iframe 
+                id="vimeo-player"
+                title="vimeo-player" 
+                src="https://player.vimeo.com/video/{{ section.settings.video_url_mobile.id }}?&autoplay=1&loop=1&muted=1" 
+                width="640" 
+                height="360" 
+                frameborder="0" 
+                allowfullscreen>
+              </iframe>
+            {% endif %}
+          </div>
+        {%- endif -%}
+
+      {%- endif -%}
+    </div>
+  </div>
+</a>
+
+{%- if section.settings.video_url_mobile != blank -%}
+<script>
+  $(function(){
+
+    var mobileModeEnabled = false;
+    var desktopModeEnabled = false;
+
+    function replaceVideo(mediaQuery) {
+      if (mediaQuery.matches) {
+        //code for mobile (<600)
+        $('.video-container.desktop').remove();
+        mobileModeEnabled = true;
+        if (desktopModeEnabled){
+          window.location.reload();
+        }
+      }else{
+        //code for desktop (>600)
+        $('.video-container.mobile').remove();
+        desktopModeEnabled = true;
+        if (mobileModeEnabled){
+          window.location.reload();
+        }
+      }
+    }
+    var mq = window.matchMedia("(max-width: 600px)");
+    replaceVideo(mq);
+    mq.addListener(replaceVideo);
+
+    // hero link scroll to section
+    var heroLink = $('#shopify-section-{{section.id}} a');
+    var heroLinkUrl = heroLink.attr('href');
+    
+    if (heroLinkUrl.indexOf('#') > -1) {
+      heroLink.click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var section = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section).offset().top-$('#section-header').height()
+        });
+        console.log('hero scroll')
+        // window.scrollTo(section, 1625, {offset : -100});
+      })
+    }
+
+  });
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+   "name":"Hero",
+   "tag": "section",
+   "class": "specialoffer-fb",
+   "settings":[
+      {
+        "type":"color",
+        "id":"bg_color",
+        "label":"Background Color",
+        "default":"#353132"
+      },
+      {
+        "type":"url",
+        "id":"link_url",
+        "label":"Link URL",
+        "info":"Paste or search."
+      },
+      {
+        "type":"text",
+        "id":"alt",
+        "label":"Link Alt Text"
+      },
+      {
+         "type":"header",
+         "content":"Desktop"
+      },
+      {
+         "type":"image_picker",
+         "id":"img_1",
+         "label":"Image 1 (Desktop)"
+      },
+      {
+        "type": "range",
+        "id": "padding_img_1_dkp",
+        "label": "Image 1 Height (Desktop)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 36
+      },
+      {
+         "type":"image_picker",
+         "id":"img_2",
+         "label":"Image 2 (Desktop)"
+      },
+      {
+        "type": "range",
+        "id": "padding_img_2_dkp",
+        "label": "Image 2 Height (Desktop)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 40
+      },
+      {
+        "type": "video_url",
+        "id": "video_url",
+        "accept": ["youtube", "vimeo"],
+        "label": "Video URL (Desktop)",
+        "default": "https://vimeo.com/516893561",
+        "info": "This will replace 'Image 2'"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_thumbnail",
+        "label": "Video Thumbnail"
+      },
+      {
+        "type": "checkbox",
+        "id": "video_custom_width_and_margin",
+        "label": "Use custom video width, height and margin",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "video_custom_width",
+        "label": "Video Custom Width",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "video_custom_height",
+        "label": "Video Custom Height",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 125
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_left",
+        "label": "Video Custom Margin Left",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_top",
+        "label": "Video Custom Margin Top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      },
+      {
+         "type":"header",
+         "content":"Mobile"
+      },
+      {
+         "type":"image_picker",
+         "id":"img_1_sm",
+         "label":"Image 1 (Mobile)"
+      },
+      {
+        "type": "range",
+        "id": "padding_img_1_sm",
+        "label": "Image 1 Height (Mobile)",
+        "min": 50,
+        "max": 150,
+        "step": 1,
+        "default": 64
+      },
+      {
+        "type": "video_url",
+        "id": "video_url_mobile",
+        "accept": ["youtube", "vimeo"],
+        "label": "Video URL (Mobile)",
+        "default": "https://vimeo.com/515392286"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_thumbnail_mobile",
+        "label": "Video Thumbnail (Mobile)"
+      },
+      {
+        "type": "checkbox",
+        "id": "video_custom_width_and_margin_mobile",
+        "label": "Use custom video width, height and margin",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "video_custom_width_mobile",
+        "label": "Video Custom Width (Mobile)",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "video_custom_height_mobile",
+        "label": "Video Custom Height (Mobile)",
+        "min": 100,
+        "max": 200,
+        "step": 1,
+        "unit":"%",
+        "default": 123
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_left_mobile",
+        "label": "Video Custom Margin Left (Mobile)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "video_custom_margin_top_mobile",
+        "label": "Video Custom Margin Top (Mobile)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit":"-%",
+        "default": 0
+      }
+   ]
+}
+{% endschema %}

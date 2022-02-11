@@ -1,0 +1,53 @@
+{%- render 'text_banner', data: section.settings, section_id: section.id -%}
+
+{% schema %}
+{
+   "name":"Text Banner",
+   "tag": "section",
+   "class": "fb-lander-text-banner",
+   "presets":[
+      {
+         "name":"Text Banner",
+         "category": "Home"
+      }
+   ],
+   "settings":[
+      {
+        "type":"color",
+        "id":"bg_color",
+        "label":"Background Color",
+        "default":"#000000"
+      },
+      {
+        "type":"color",
+        "id":"text_color",
+        "label":"Text Color",
+        "default":"#FFFFFF"
+      },
+      {
+        "type":"url",
+        "id":"url",
+        "label":"Link",
+        "info":"Paste or search."
+      },
+      {
+         "type":"richtext",
+         "id":"text",
+         "label":"Text",
+         "default":"<p>CLICK FOR MORE INFORMATION ON OUR LIMITED TIME OFFER POLICY</p>"
+      },
+      {
+        "type":"text",
+        "id":"font_size",
+        "label":"Font Size (Desktop)",
+        "default":"2em"
+      },
+      {
+        "type":"text",
+        "id":"font_size_mobile",
+        "label":"Font Size (Mobile)",
+        "default":"1.5em"
+      }
+   ]
+}
+{% endschema %}

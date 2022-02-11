@@ -1,0 +1,57 @@
+<style>
+    #shopify-section-{{ section.id }} {
+      --background-color: {{section.settings.bg_color}};
+      --text-color: {{section.settings.text_color}};
+    }
+</style>
+
+{{ 'cta_banner.css' | asset_url | stylesheet_tag }}
+
+<div class="container flex">
+  {%- if section.settings.title != blank -%}
+    <h2>{{section.settings.title}}</h2>
+  {%- endif -%}
+  {%- if section.settings.button_url != blank -%}
+    <a href="{{section.settings.button_url}}" class="Button Button--primary">{{section.settings.button_label}}</a>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name":"CTA Banner",
+  "tag":"section",
+  "class":"cta-banner",
+  "settings":[
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"Already have a Black Wolf account?"
+    },
+    {
+      "type":"url",
+      "id":"button_url",
+      "label":"Button URL",
+      "info":"Paste or search."
+    },
+    {
+      "type":"text",
+      "id":"button_label",
+      "label":"Button Label",
+      "default":"LOG IN"
+    },
+    {
+      "type":"color",
+      "id":"bg_color",
+      "label":"Background Color",
+      "default":"#000000"
+    },
+    {
+      "type":"color",
+      "id":"text_color",
+      "label":"Text Color",
+      "default":"#FFFFFF"
+    }
+  ]
+}
+{% endschema %}

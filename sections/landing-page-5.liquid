@@ -1,0 +1,149 @@
+{%- assign has_section_separator = false -%}
+
+{%- for block in section.blocks -%}
+  {%- if block.type == 'separator' -%}
+    {%- assign has_section_separator = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- capture faq_content -%}
+  <div class="Faq-Landing-Page">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'separator' -%}
+          <h1 class="Faq__Section HeadingCustom u-h1" {{ block.shopify_attributes }}>
+            <span class="Anchor" id="block-{{ block.id }}"></span>
+            {{- block.settings.title | escape -}}
+          </h1>
+
+        {%- when 'question' -%}
+          <div class="Faq__Item {% if section.blocks[forloop.index].type == 'separator' or forloop.last %}Faq__Item--lastOfSection{% endif %}" aria-expanded="false" {{ block.shopify_attributes }}>
+
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question_Custom">{{ block.settings.title | escape }}</button>
+
+              <div class="Faq__AnswerWrapper_Custom">
+                <div class="Faq__Answer_Custom Rte">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+    
+    <div class="image-holder">
+		<img class="small_review" src="https://cdn.shopify.com/s/files/1/0017/0118/3547/files/Section5.png?v=1602083244" />
+	</div>
+    
+    <div class="Section5Price">$29</div>
+          
+          <div class="AddToCartSection5">
+                <form method="post" action="/cart/add">
+  					<input type="hidden" name="id" value="30231671046203" />
+                  <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+                  <button class="ProductForm__AddToCart Button Button--primary Button--full" type="submit" data-action="add-to-cart">
+                    <span>ADD TO CART</span>
+                  </button>
+				</form>
+              </div>
+          
+          	<div class="SubButton1">90-DAY SUPPLY. $0.32 PER DAY.</div>
+
+          </div>
+    
+  </div>
+{%- endcapture -%}
+
+<section data-section-type="faq" data-section-id="{{ section.id }}">
+  <div class="Container">
+    <div class="PageContent {% unless has_section_separator %}PageContent--narrow{% endunless %}">
+      {%- if has_section_separator -%}
+        <div class="PageLayout">
+
+          <div class="PageLayout__Section">
+            {{- faq_content -}}
+          </div>
+        </div>
+      {%- else -%}
+        {{- faq_content -}}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "separator",
+      "name": "Section separator",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Default"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "separator",
+        "settings": {
+          "title": "FAQ"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "How do I use it?",
+          "answer": "<p>Don't worry, no one taught us how to wash our face or body either. Squeeze a quarter-sized amount in hands and gently massage onto wet skin. Rinse clean with warm water. Use twice daily.</p>"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "How do I know if I need a body wash?",
+          "answer": "<p>Do people tell you you smell? If you aren't using a body wash, you definitely smell. If you're experiencing body breakouts then our body wash is perfect for helping you fight acne.</p>"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "How do I know if I need a face wash?",
+          "answer": "<p>If you're experiencing skincare issues like acne breakouts or dry or oily skin, the random bar of soap you're using on your face is probably not up to the task. The skin on your face is special and it deserves a special solution.</p>"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "Why should I use this face wash?",
+          "answer": "<p>Activated charcoal is a powerful tool for removing all the nastiness that life throws at your face. It also contains salicylic acid which gets into your pores and gently exfoliates, removing the dead skin cells that cause most acne flare-ups.</p>"
+        }
+      }
+    ]
+  }
+}
+{% endschema %}

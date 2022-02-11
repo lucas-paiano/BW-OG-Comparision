@@ -1,0 +1,13 @@
+<div class="icon-item grid block-{{blockId}}">
+  <div class="grid__item one-fifth icon-container">
+    <img class="Image--lazyLoad Image--fadeIn" data-src="{{ icon | img_url: '200x200' }}" alt="{{ icon.alt | escape }}">
+  </div>
+  <div class="grid__item four-fifths text">
+    {%- if title != blank -%}
+      <h4>{{title}}</h4>
+    {%- endif -%}
+    {%- if text != blank -%}
+      <p>{{text}}</p>
+    {%- endif -%}
+  </div>
+</div>

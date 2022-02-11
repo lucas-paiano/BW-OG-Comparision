@@ -1,0 +1,168 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --content-margin-top: {{section.settings.content_margin_top_desktop}};
+    --content-max-width: {{section.settings.content_max_width_desktop}};
+    --text-color: {{section.settings.text_color}};
+    --text-alignment: {{section.settings.text_alignment}};
+    --title-font-size: {{section.settings.title_font_size_desktop}};
+    --text-font-size: {{section.settings.text_font_size_desktop}};
+    --padding: {{section.settings.padding_desktop}};
+  }
+  @media all and (max-width: 900px){
+    #shopify-section-{{ section.id }} {
+        --content-margin-top: {{section.settings.content_margin_top_mobile}};
+        --content-max-width: {{section.settings.content_max_width_mobile}};
+        --padding: {{section.settings.padding_mobile}};
+        --title-font-size: {{section.settings.title_font_size_mobile}};
+        --text-font-size: {{section.settings.text_font_size_mobile}};
+    }
+  }
+</style>
+
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<div class="Image--lazyLoad bg-container big medium-down--hide" data-bgset="{% render 'lazy_src', image: section.settings.image_desktop %}" {% if section.settings.image_desktop.alt != blank %} aria-label="{{section.settings.image_desktop.alt}}"{% endif %}></div>
+<div class="Image--lazyLoad bg-container small large--hide" data-bgset="{% render 'lazy_src', image: section.settings.image_mobile %}" {% if section.settings.image_mobile.alt != blank %} aria-label="{{section.settings.image_mobile.alt}}"{% endif %}></div>
+<div class="container">
+  <div class="content">
+    {%- if section.settings.title -%}
+      <h2>{{section.settings.title}}</h2>
+    {%- endif -%}
+    {%- if section.settings.text -%}
+      {{section.settings.text}}
+    {%- endif -%}
+    {%- if section.settings.button_url -%}
+      <a href="{{section.settings.button_url}}" class="Button Button--primary">{{section.settings.button_label}}</a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name":"Hero",
+  "tag":"section",
+  "class":"hero",
+  "settings":[
+    {
+      "type":"text",
+      "id":"content_max_width_desktop",
+      "label":"Content Max Width (Desktop)",
+      "default":"40em"
+    },
+    {
+      "type":"text",
+      "id":"content_max_width_mobile",
+      "label":"Content Max Width (Mobile)",
+      "default":"100%"
+    },
+    {
+      "type":"text",
+      "id":"content_margin_top_desktop",
+      "label":"Content Max Width (Desktop)",
+      "default":"0"
+    },
+    {
+      "type":"text",
+      "id":"content_margin_top_mobile",
+      "label":"Content Max Width (Mobile)",
+      "default":"0"
+    },
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"BLACK WOLF SUBSCRIPTION"
+    },
+    {
+      "type":"text",
+      "id":"title_font_size_desktop",
+      "label":"Title Font Size (Desktop)",
+      "default":"2.5em"
+    },
+    {
+      "type":"text",
+      "id":"title_font_size_mobile",
+      "label":"Title Font Size (Mobile)",
+      "default":"2em"
+    },
+    {
+      "type":"richtext",
+      "id":"text",
+      "label":"Text",
+      "default":"<p>Get your favorite skincare delivered right<br>to your door at 15% off retail pricing.<br>Plus, free shipping on every order!</p>"
+    },
+    {
+      "type":"text",
+      "id":"text_font_size_desktop",
+      "label":"Text Font Size (Desktop)",
+      "default":"1.5em"
+    },
+    {
+      "type":"text",
+      "id":"text_font_size_mobile",
+      "label":"Text Font Size (Mobile)",
+      "default":"1em"
+    },
+    {
+      "type":"color",
+      "id":"text_color",
+      "label":"Text Color",
+      "default":"#FFFFFF"
+    },
+    {
+      "type":"select",
+      "id":"text_alignment",
+      "label":"Text Alignment",
+      "options":[
+        {
+          "value":"left",
+          "label":"Left"
+        },
+        {
+          "value":"center",
+          "label":"Center"
+        },
+        {
+          "value":"right",
+          "label":"Right"
+        }
+      ],
+      "default":"center"
+    },
+    {
+      "type":"url",
+      "id":"button_url",
+      "label":"Button Link",
+      "info":"Paste or search."
+    },
+    {
+      "type":"text",
+      "id":"button_label",
+      "label":"Button Label",
+      "default":"Log In"
+    },
+    {
+      "type":"image_picker",
+      "id":"image_desktop",
+      "label":"Image (Desktop)"
+    },
+    {
+      "type":"image_picker",
+      "id":"image_mobile",
+      "label":"Image (Mobile)"
+    },
+    {
+      "type": "text",
+      "id": "padding_desktop",
+      "label": "Height (Desktop)",
+      "default": "4em 0"
+    },
+    {
+      "type": "text",
+      "id": "padding_mobile",
+      "label": "Height (Mobile)",
+      "default": "2em 0 18em"
+    }
+  ]
+}
+{% endschema %}

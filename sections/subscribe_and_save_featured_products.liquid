@@ -1,0 +1,382 @@
+<style>
+  #shopify-section-{{section.id}} {padding-bottom: 1em; background-color: {{section.settings.bg_color}};}
+  #shopify-section-{{section.id}} .container{text-align: center;}
+
+  #shopify-section-{{section.id}} h2,
+  #shopify-section-{{section.id}} h3,
+  #shopify-section-{{section.id}} .top-content p{font-family: {{settings.heading_font.family}}; font-weight: 600;}
+  #shopify-section-{{section.id}} h2{font-size: 4em; margin-bottom: 0;}
+  #shopify-section-{{section.id}} h3{font-size: 2.5em; margin-bottom: 0;}
+
+  #shopify-section-{{section.id}} .products{margin-top: 2em;}
+  #shopify-section-{{section.id}} .product{margin-bottom: 1em;}
+  #shopify-section-{{section.id}} .product>div{background-color: {{section.settings.products_bg_color}}; padding: {{section.settings.products_padding}};}
+  #shopify-section-{{section.id}} .product .image{padding-top: {{section.settings.products_image_height_dkp}}%; background-size: cover; background-position: center; background-repeat: no-repeat; margin-bottom: 1.5em;}
+  #shopify-section-{{section.id}} .product h3{text-transform: uppercase; font-size: 1.5em; line-height: 1.3em;}
+  #shopify-section-{{section.id}} .product .price-container{margin-bottom: 1em;}
+  #shopify-section-{{section.id}} .product .price-container > p{font-size: 1.5em;}
+  #shopify-section-{{section.id}} .product .retail{text-decoration: line-through; font-weight: 400 !important; margin-right: 1em;}
+  #shopify-section-{{section.id}} .product .price{font-weight: 600;}
+  #shopify-section-{{section.id}} .product .specs .heading_font{font-weight: 800; font-size: 1.2em; margin-bottom: 0.5em; line-height: 1.2em;}
+  #shopify-section-{{section.id}} .product .specs .price-container{margin-top: 1em;}
+  #shopify-section-{{section.id}} .product .gifts-title{margin-top: 2em;}
+  #shopify-section-{{section.id}} .product .subscription-widget-container{display: none;}
+  #shopify-section-{{section.id}} .product .subscription-widget-container p{margin-bottom: 0;}
+  #shopify-section-{{section.id}} .product .subscription-widget-container button{margin-bottom: 1em;}
+  #shopify-section-{{section.id}} .product .subscription-widget-container #rc_container{border: none; margin: 0 !important; padding: 0 0 1em !important;}
+  #shopify-section-{{section.id}} .product .subscription-widget-container .rc_label__autodeliver,
+  #shopify-section-{{section.id}} .product .subscription-widget-container .rc_block__type__onetime,
+  #shopify-section-{{section.id}} .product .subscription-widget-container .rc_label__delivery{display: none !important;}
+  #shopify-section-{{section.id}} .product .subscription-widget-container .rc_block__type__autodeliver{padding-bottom: 0 !important;}
+  #shopify-section-{{section.id}} .product .subscription-widget-container select.rc_select{max-width: 100%;}
+  #shopify-section-{{section.id}} .product .buttons-container{margin-top: 1em;}
+  #shopify-section-{{section.id}} .product .not-available .content-available{display: none;}
+  #shopify-section-{{section.id}} .product .not-available .content-soldout{display: block !important;}
+  #shopify-section-{{section.id}} .product:not(.product-with-subscription) .subscription-button{display: none !important;}
+  #shopify-section-{{section.id}} .product .one-time-button{border: 3px solid #000; font-weight: 600;}
+  #shopify-section-{{section.id}} .product .subscription-button{margin-bottom: 1em; font-weight: 600; min-height: 49.2px;}
+  #shopify-section-{{section.id}} .product .atc-button{min-height: 49.2px;}
+  #shopify-section-{{section.id}} .product .mobile-learn-more{font-style: italic; text-decoration: underline; color: #888888;}
+
+  @media all and (max-width: 900px){
+    #shopify-section-{{section.id}}{padding-top: 1.5em;}
+
+    #shopify-section-{{section.id}} h2{font-size: 1.7em; line-height: 1.2em; width: 310px; max-width: 100%; margin: auto;}
+    #shopify-section-{{section.id}} h3{font-size: 1.1em; margin: 0.5em 0;}
+    #shopify-section-{{section.id}} .top-content p{font-size: 0.7em; width: 260px; max-width: 100%; margin: auto;}
+
+    #shopify-section-{{section.id}} .product:not(.active) .mobile-hidden-content{display: none;}
+    #shopify-section-{{section.id}} .product.active .mobile-hidden-content{height: auto; overflow: hidden;}
+
+    #shopify-section-{{section.id}} .products{margin-top: 1em;}
+    #shopify-section-{{section.id}} .product h3{margin-bottom: 0; font-size: 1.4em;}
+    #shopify-section-{{section.id}} .product .price-container > p{font-size: 1.2em;}
+    #shopify-section-{{section.id}} .product:not(.active)>div{padding: 0.5em;}
+    #shopify-section-{{section.id}} .product:not(.active) .price-container{margin-bottom: 0;}
+    #shopify-section-{{section.id}} .product.active .mobile-learn-more{display: none;}
+    #shopify-section-{{section.id}} .product .specs .heading_font{font-size: 1.1em;}
+    #shopify-section-{{section.id}} .product .specs p:not(.heading_font){font-size: 0.9em;}
+  }
+  @media all and (max-width: 600px){
+    #shopify-section-{{section.id}} h2{width: 310px; max-width: 100%; margin: auto;}
+    #shopify-section-{{section.id}} .top-content p{width: 260px; max-width: 100%; margin: auto;}
+  }
+</style>
+
+{%- case section.blocks.size -%}
+  {%- when 1 -%}
+    {%- assign item-width-large = 'one-whole' -%}
+  {%- when 2 -%}
+    {%- assign item-width-large = 'one-half' -%}
+  {%- else -%}
+    {%- assign item-width-large = 'one-third' -%}
+{%- endcase -%}
+
+<div class="container">
+
+  <div class="top-content">
+    <h2>{{section.settings.title}}</h2>
+    <h3>{{section.settings.subtitle}}</h3>
+    {% if section.settings.disclaimer != blank %}
+      {{section.settings.disclaimer}}
+    {% endif %}
+  </div>
+
+  <div class="grid products">
+    {%- for block in section.blocks -%}
+    {%- assign product = all_products[block.settings.product] -%}
+    {%- assign selected_variant = product.selected_or_first_available_variant -%}
+    <div class="product block-{{block.id}} grid__item {{item-width-large}} medium-down--one-whole {% if product.metafields.subscriptions.subscription_id %}product-with-subscription{% endif %}" {{ block.shopify_attributes }}>
+      <div class="flex direction-column justify-content-between">
+        <div class="Image--lazyLoad image" data-bgset="{% render 'lazy_src', image: product.featured_image %}"></div>
+        <div class="title-price-container">
+          {%- if block.settings.custom_title != blank -%}
+            <h3>{{block.settings.custom_title}}</h3>
+          {%- else -%}
+            <h3>{{product.title}}</h3>
+          {%- endif -%}
+          <div class="price-container flex justify-content-center">
+            {%- if product.price_min < product.compare_at_price_min -%}
+              <p data-price="retail" class="heading_font retail">{{ product.compare_at_price | money | remove: '.00' }}</p>
+            {%- endif -%}
+            <p data-price="deal" class="price heading_font">{{ product.price_min | money | remove: '.00' }}</p>
+          </div>
+        </div>
+        <button class="large--hide mobile-learn-more">CLICK TO LEARN MORE</button>
+        <div class="mobile-hidden-content animation">
+          <div class="specs">
+            <div class="includes">
+              {%- if block.settings.includes_title != blank -%}
+                <p class="heading_font">{{block.settings.includes_title}}</p>
+              {%- endif -%}
+              {%- if block.settings.includes_text != blank -%}
+                {{block.settings.includes_text}}
+              {%- endif -%}
+            </div>
+            <div class="gifts">
+              {%- if block.settings.gifts_title != blank -%}
+                <p class="heading_font gifts-title">{{block.settings.gifts_title}}</p>
+              {%- endif -%}
+              {%- if block.settings.gifts_text != blank -%}
+                {{block.settings.gifts_text}}
+              {%- endif -%}
+            </div>
+            <div class="shipping-and-price">
+              {%- if block.settings.free_shipping != blank -%}
+                <p class="heading_font free-shipping">{{block.settings.free_shipping}}</p>
+              {%- endif -%}
+              <div class="price-container flex justify-content-center">
+                {% if product.price_min < product.compare_at_price_min %}
+                <p data-price="retail" class="heading_font retail">{{ product.compare_at_price | money | remove: '.00' }}</p>
+                {% endif %}
+                <p data-price="deal" class="price heading_font">{{ product.price_min | money | remove: '.00' }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="/cart/add" method="post" class="variants add-to-cart-form {%- if product.available -%}available{%- else -%}not-available{%- endif -%}" enctype="multipart/form-data" data-productid="{{product.id}}">
+          <input type="text" class="hide" name="id" data-productid="{{ product.id }}" value="{{product.first_available_variant.id}}" data-productid="{{product.id}}">
+          <div class="buttons-container">
+            <div class="content-available">
+              <button class="subscription-button hide Button Button--primary Button--full">SUBSCRIBE & SAVE {{product.metafields.subscriptions.discount_percentage | round}}%</button>
+              <div class="subscription-widget-container">
+                <p>Choose your delivery schedule:</p>
+                {%- include 'subscription-product' -%}
+                <button class="atc-button Button Button--primary Button--full">ADD SUBSCRIPTION</button>
+              </div>
+              <button class="one-time-button Button Button--secondary Button--full">ONE TIME PURCHASE</button>
+            </div>
+            <div class="content-soldout hide">
+              This product is SOLD OUT.
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    {% comment %}
+    ------------------------------------------------------------------------------
+    Product Data. This must be outputted for all products (including home page).
+
+    IMPORTANT: THIS CODE IS VITAL. DO NOT EDIT IT NOT REMOVE IT. MAKE SURE TO KEEP
+    THE EXACT SAME ATTRIBUTES.
+    ------------------------------------------------------------------------------
+    {% endcomment %}
+    <script type="application/json" data-product-json>
+      {
+        "product": {{ product | json }},
+        "selected_variant_id": {{ selected_variant.id }}
+        {%- if section.settings.show_inventory_quantity -%}
+          ,"inventories": {
+            {%- for variant in product.variants -%}
+              {%- assign inventory_message = '' -%}
+
+              {%- if section.settings.inventory_quantity_threshold == 0 -%}
+                {%- capture inventory_message -%}{{- 'product.form.inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+              {%- else -%}
+                {%- capture inventory_message -%}{{- 'product.form.low_inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+              {%- endif -%}
+
+              "{{ variant.id }}": {
+                "inventory_management": {{ variant.inventory_management | json }},
+                "inventory_policy": {{ variant.inventory_policy | json }},
+                "inventory_quantity": {{ variant.inventory_quantity | json }},
+                "inventory_message": {{ inventory_message | json }}
+              }{% unless forloop.last %},{% endunless %}
+            {%- endfor -%}
+          }
+        {%- endif -%}
+      }
+    </script>
+    {% comment %}
+    ------------------------------------------------------------------------------
+    Product Data End
+    ------------------------------------------------------------------------------
+    {% endcomment %}
+
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+  $(function(){
+    
+    // subscription & one-time 
+    $('#shopify-section-{{section.id}} .product .subscription-button').click(function(e){
+      e.preventDefault();
+      $(this).parents('.product').find('.rc_radio__autodeliver').trigger('click');
+      $(this).siblings('.subscription-widget-container').slideDown();
+    })
+    $('#shopify-section-{{section.id}} .product .one-time-button').click(function(e){
+      e.preventDefault();
+      if ($(this).parents('.product').find('.rc_radio__onetime').length > 0) {
+        $(this).parents('.product').find('.rc_radio__onetime').trigger('click');
+      }
+      $(this).parents('form').unbind('submit').submit();
+    })
+
+    // make all product cards the same height
+    var elementsToEqualHeight = [];
+
+    elementsToEqualHeight.push($('#shopify-section-{{section.id}} .product .title-price-container'));
+    elementsToEqualHeight.push($('#shopify-section-{{section.id}} .product .includes'));
+    elementsToEqualHeight.push($('#shopify-section-{{section.id}} .product .gifts'));
+    elementsToEqualHeight.push($('#shopify-section-{{section.id}} .product .shipping-and-price'));
+
+    function equalHeight(mediaQuery,elements){
+      elements.forEach(function(elementsGroup){
+        if (mediaQuery.matches) {
+          // <900px
+          elementsGroup.css('height','auto');
+        }else{
+          // >900px
+          elementsGroup.css('height','auto');
+          var max_height = 0;
+          elementsGroup.each(function() {
+            var elementHeight = $(this).height();
+            if (elementHeight > max_height) {
+              max_height = elementHeight;
+            }  
+          });
+          elementsGroup.height(max_height);
+        }
+      })
+    }
+
+    var mq = window.matchMedia("(max-width: 900px)");
+    equalHeight(mq,elementsToEqualHeight);
+    mq.addListener(equalHeight(mq,elementsToEqualHeight));
+    
+    // wait until recharge widget is ready for showing the subscription button
+    $('#shopify-section-{{section.id}} .product').on('DOMNodeInserted ', '#rc_container', function(){
+      $('.subscription-button').removeClass('hide');
+      equalHeight(mq,elementsToEqualHeight);
+    });
+
+    // mobile open/close product cards
+    $('#shopify-section-{{section.id}} .mobile-learn-more').click(function(){
+      $('#shopify-section-{{section.id}} .product').removeClass('active');
+      $(this).parents('.product').addClass('active');
+    });
+    $(document).on('keydown', '#shopify-section-{{section.id}} .mobile-learn-more:focus', function(e){
+      if (e.which == 13) { //Enter
+        $(this).click();
+      }
+    });
+  
+  })
+</script>
+
+{% schema %}
+{
+   "name":"Subscribe & Save",
+   "tag": "section",
+   "class": "subscribe-and-save",
+   "settings":[
+      {
+        "type":"color",
+        "id":"bg_color",
+        "label":"Background Color",
+        "default":"#efefef"
+      },
+      {
+         "type":"text",
+         "id":"title",
+         "label":"Title",
+         "default":"SAVE ON OUR FEATURED BUNDLES"
+      },
+      {
+         "type":"text",
+         "id":"subtitle",
+         "label":"Subtitle",
+         "default":"SUBSCRIBE & SAVE 15% ON EVERY ORDER"
+      },
+      {
+         "type":"richtext",
+         "id":"disclaimer",
+         "label":"Disclaimer",
+         "default":"<p>* SUBSCRIBE & SAVE ON FUTURE DELIVERIES<br>(FREE GIFTS ON FIRST ORDER ONLY*)</p>"
+      },
+      {
+        "type":"header",
+        "content":"Products"
+      },
+      {
+        "type":"color",
+        "id":"products_bg_color",
+        "label":"Background Color",
+        "default":"#ffffff"
+      },
+      {
+         "type":"text",
+         "id":"products_padding",
+         "label":"Padding",
+         "default":"1em"
+      },
+      {
+        "type": "range",
+        "id": "products_image_height_dkp",
+        "label": "Image Height (Desktop)",
+        "min": 20,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "products_image_height_mobile",
+        "label": "Image Height (Mobile)",
+        "min": 20,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      }
+   ],
+   "blocks":[
+      {
+         "type":"product",
+         "name":"Product",
+         "settings":[
+            {
+              "type":"product",
+              "id":"product",
+              "label":"Product"
+            },
+            {
+               "type":"text",
+               "id":"custom_title",
+               "label":"Custom Title",
+               "info":"It will replace the product title."
+            },
+            {
+               "type":"text",
+               "id":"includes_title",
+               "label":"Includes Title"
+            },
+            {
+               "type":"richtext",
+               "id":"includes_text",
+               "label":"Includes Text"
+            },
+            {
+               "type":"text",
+               "id":"gifts_title",
+               "label":"Gifts Title"
+            },
+            {
+               "type":"richtext",
+               "id":"gifts_text",
+               "label":"Gifts Text"
+            },
+            {
+               "type":"text",
+               "id":"free_shipping",
+               "label":"Free Shipping"
+            }
+         ]
+      }
+   ]
+}
+{% endschema %}

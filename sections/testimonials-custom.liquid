@@ -1,0 +1,185 @@
+<section id="section-{{ section.id }}" class="testimonials-custom">
+
+  <div class="FlexboxIeFix">
+
+      {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+        
+        <div class="ImageHero__ContentOverlay">
+          {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+            <header class="SectionHeader">
+              
+              {%- if section.settings.subheading != blank -%}
+                <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+              {%- endif -%}
+
+              {%- if section.settings.title != blank -%}
+                <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+              {%- endif -%}
+
+              {%- if section.settings.testimonial-name_1 != blank -%}
+                <div class="SectionHeader__Testimonials">
+
+                    <div class="testimonial-custom">                    
+                      <img src="{{ section.settings.avatar_1 | img_url: '240x' }}" alt="{{ section.settings.avatar_1.alt | escape }}" class="testimonial_avatar">
+                      <img src="{{ section.settings.ratings_1 | img_url: '100x' }}" alt="{{ section.settings.ratings_1.alt | escape }}" class="testimonial_ratings">
+                      <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.testimonial-headline_1 }}</h2>
+                      <div class="SectionHeader__Description Rte">
+                          {{ section.settings.testimonial-name_1 }}
+                      </div>
+                    </div>
+
+                    <div class="testimonial-custom">                    
+                      <img src="{{ section.settings.avatar_2 | img_url: '240x' }}" alt="{{ section.settings.avatar_2.alt | escape }}" class="testimonial_avatar">
+                      <img src="{{ section.settings.ratings_2 | img_url: '100x' }}" alt="{{ section.settings.ratings_2.alt | escape }}" class="testimonial_ratings">
+                      <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.testimonial-headline_2 }}</h2>
+                      <div class="SectionHeader__Description Rte">
+                          {{ section.settings.testimonial-name_2 }}
+                      </div>
+                    </div>
+
+                    <div class="testimonial-custom">                    
+                      <img src="{{ section.settings.avatar_3 | img_url: '240x' }}" alt="{{ section.settings.avatar_3.alt | escape }}" class="testimonial_avatar">
+                      <img src="{{ section.settings.ratings_3 | img_url: '100x' }}" alt="{{ section.settings.ratings_3.alt | escape }}" class="testimonial_ratings">
+                      <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.testimonial-headline_3 }}</h2>
+                      <div class="SectionHeader__Description Rte">
+                          {{ section.settings.testimonial-name_3 }}
+                      </div>
+                    </div>
+	                <div class="clearfix"></div>
+
+                </div><!--/.SectionHeader_Testimonials -->
+              {%- endif -%}
+
+              {%- if section.settings.content != blank -%}
+                <div class="SectionHeader__Description">
+                  {{ section.settings.content }}
+                </div>
+              {%- endif -%}
+
+            </header>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+  </div>
+
+</section>
+
+<style>
+  #section-{{ section.id }},
+  #section-{{ section.id }} .Heading {
+    color: {{ section.settings.text_color }}
+  }
+  #section-{{ section.id }} {
+    background-color: {{ section.settings.background_color }}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Testimonials Custom",
+  "settings": [
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "image_picker",
+      "id": "avatar_1",
+      "label": "Avatar 1",
+      "info": "300 x 300px png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "ratings_1",
+      "label": "Rating 1",
+      "info": "100 x 25px png recommended"
+    },
+    {
+      "type": "text",
+      "id": "testimonial-headline_1",
+      "label": "Testimonial Headline 1"
+    },
+    {
+      "type": "richtext",
+      "id": "testimonial-name_1",
+      "label": "Testimonial Name 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "avatar_2",
+      "label": "Avatar 2",
+      "info": "300 x 300px png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "ratings_2",
+      "label": "Rating 2",
+      "info": "100 x 25px png recommended"
+    },
+    {
+      "type": "text",
+      "id": "testimonial-headline_2",
+      "label": "Testimonial Headline 2"
+    },
+    {
+      "type": "richtext",
+      "id": "testimonial-name_2",
+      "label": "Testimonial Name 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "avatar_3",
+      "label": "Avatar 3",
+      "info": "300 x 300px png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "ratings_3",
+      "label": "Rating 3",
+      "info": "100 x 25px png recommended"
+    },
+    {
+      "type": "text",
+      "id": "testimonial-headline_3",
+      "label": "Testimonial Headline 3"
+    },
+    {
+      "type": "richtext",
+      "id": "testimonial-name_3",
+      "label": "Testimonial Name 3"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Custom",
+      "name": "Testimonials Custom",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,48 @@
+{% include 'subscription-cart-footer' %}
+{% section 'cart-template' %}
+{% section 'recently-viewed-products' %}
+
+
+<script>
+	$(function(){
+
+		{% include 'free_items_script' %}
+		freeItems();
+
+		var contentChanged = false;
+		$('.PageContent').bind('DOMSubtreeModified', function(){
+		  if (!contentChanged) {
+		    console.log('cart page content updated');
+		    freeItems();
+		    contentChanged = true;
+		    setTimeout(function(){
+		      contentChanged = false;
+		    },500);
+		  }
+		});
+	})
+</script>
+
+{% comment %} Sezzle {% endcomment %}
+<script type="text/javascript">
+  document.sezzleConfig =
+  {
+    targetXPath: '.Cart__Total/span/span/span',
+    widgetType: 'product-page',
+    renderToPath: '..',
+    theme: 'light',
+    alignment: 'auto',
+    fontFamily: 'inherit',
+    color: 'inherit',
+    fontSize: 12,
+    fontWeight: 300,
+    logoSize: 1.00,
+    maxWidth: 400,
+    marginTop: 0,
+    marginLeft: 0,
+    marginRight: 0
+  }
+</script>
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=d19bc6c1-c7dd-43d2-9bc6-71144957dd0d" defer></script>
+
+{% section 'sezzle-widget' %}

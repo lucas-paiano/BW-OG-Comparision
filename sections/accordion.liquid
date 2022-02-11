@@ -1,0 +1,80 @@
+{{ 'accordion.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+  {%- if section.settings.title != blank -%}
+    <h2>{{section.settings.title}}</h2>
+  {%- endif -%}
+  <div class="grid">
+    <div class="grid__item one-half medium-down--one-whole">
+      <div class="accordion-container">
+        {%- for block in section.blocks -%}
+          <div class="question-answer" {{ block.shopify_attributes }}>
+            <div class="question" tabindex="0">{{block.settings.title}}<i></i></div>
+            <div class="answer">{{block.settings.text}}</div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  $(function(){
+    $('#shopify-section-{{ section.id }} .question').click(function(){
+      var self = $(this);
+      if($(this).hasClass('active')){
+        $(this).parent().find('.answer').slideUp(300, function() {
+          self.removeClass('active'); //slideUp callback
+        });
+      }else{
+        $('#shopify-section-{{ section.id }} .question').removeClass('active');
+        $('#shopify-section-{{ section.id }} .answer').slideUp();
+        $(this).addClass('active');
+        $(this).parent().find('.answer').slideDown();
+      }
+    });
+    $(document).on('keydown', '.question:focus', function(e){
+      if (e.which == 13) { //Enter
+        $(this).click();
+      }
+    });
+  });  
+</script>
+
+{% schema %}
+{
+  "name":"Accordion",
+  "tag":"section",
+  "class":"accordion",
+  "settings":[
+    {
+      "type":"header",
+      "content":"Main Text"
+    },
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"frequently asked questions"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"item",
+      "name":"Item",
+      "settings":[
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        },
+        {
+          "type":"richtext",
+          "id":"text",
+          "label":"Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

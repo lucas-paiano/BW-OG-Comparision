@@ -1,0 +1,55 @@
+<div class="product-single__meta">
+  {% comment %} {%- if section.settings.show_vendor and product.vendor != blank -%}
+    <h2 class="ProductMeta__Vendor Heading u-h6">
+      {%- assign vendor_handle = product.vendor | handle -%}
+      {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+      {%- unless collection_for_vendor.empty? -%}
+        <a href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
+      {%- else -%}
+        {{- product.vendor -}}
+      {%- endunless -%}
+    </h2>
+  {%- endif -%} {% endcomment %}
+
+  {% if h1 %}
+  <h1 class="product-single__title Heading u-h2">
+    {%- if template.name == 'product' -%}
+      {{- product.title -}}
+
+       <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" data-product-type="{{product.type}}" data-product-title="{{product.title}}"  style="display: inline-block;">{{ product.metafields.stamped.badge }}</span>
+    {%- else -%}
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    {%- endif -%}
+  </h1>
+  {% else %}
+  <h2 class="product-single__title Heading u-h2">
+    {%- if template.name == 'product' -%}
+      {{- product.title -}}
+
+       <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" data-product-type="{{product.type}}" data-product-title="{{product.title}}"  style="display: inline-block;">{{ product.metafields.stamped.badge }}</span>
+    {%- else -%}
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    {%- endif -%}
+  </h2>
+  {% endif %}
+
+  {%- if show_description and section.settings.description_below_add_to_cart == false and product.description != blank -%}
+    <div class="product-single__description Rte hidden-pocket">
+      {{ product.description }}
+    </div>
+  {%- endif -%}
+ 
+  <div class="product-single__price Heading"> 
+    {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+      <div>
+        <span class="ProductMeta__Price Price Price--highlight final-price" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+        <p class="ProductMeta__Price Price Price--compareAt" data-money-convertible>{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</p>
+      </div>
+    {%- else -%}
+      <div>
+        <span class="ProductMeta__Price Price final-price" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+      </div>
+    {%- endif -%}
+  </div>
+</div>

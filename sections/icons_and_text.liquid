@@ -1,0 +1,163 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --background-color: {{section.settings.bg_color}};
+    --text-color: {{section.settings.text_color}};
+    --text-max-width: {{section.settings.text_max_width_desktop}};
+    --icons-position: {{section.settings.icons_position}};
+  }
+  {%- for block in section.blocks -%}
+    #shopify-section-{{section.id}} .block-{{block.id}} img{width: {{block.settings.icon_width_desktop}};} 
+  {%- endfor -%}
+
+  @media all and (max-width: 900px){
+    #shopify-section-{{ section.id }} {
+      --text-max-width: {{section.settings.text_max_width_mobile}};
+    }
+    {%- for block in section.blocks -%}
+      #shopify-section-{{section.id}} .block-{{block.id}} img{width: {{block.settings.icon_width_mobile}};} 
+    {%- endfor -%}
+  }
+</style>
+
+{{ 'icons_and_text.css' | asset_url | stylesheet_tag }}
+
+{%- assign blocksQty = section.blocks.size -%}
+{%- assign blocksQtyModule = blocksQty | modulo:2 -%}
+{%- assign twoColumns = false -%}
+{%- assign columnsBreakpoint = false -%}  
+{%- if blocksQty > 4 -%}
+  {%- assign twoColumns = true -%}
+  {%- comment -%} check if blocks quantity are even or odd {%- endcomment -%}
+  {%- if blocksQtyModule == 0 -%}
+    {%- comment -%} even {%- endcomment -%}
+    {%- assign columnsBreakpoint = blocksQty | divided_by: 2 | round: 1 -%}
+  {%- else -%}
+    {%- comment -%} odd {%- endcomment -%}
+    {%- assign columnsBreakpoint = blocksQty | divided_by: 2 | round: 1 | plus: 1 -%}
+  {%- endif -%}
+{%- endif -%}
+
+<div class="container">
+  {%- if section.settings.title != blank -%}
+    <h2>{{section.settings.title}}</h2>
+  {%- endif -%}
+  <div class="icons grid">
+    <div class="icons-col grid__item {% if twoColumns %}one-half medium-down--one-whole{% else %}one-whole{% endif %}">
+      {%- for block in section.blocks -%}
+        {%- if twoColumns -%}
+          {%- if forloop.index <= columnsBreakpoint -%}
+            {% render "icon_item", icon: block.settings.icon, blockId: block.id, title: block.settings.title, text: block.settings.text %}
+          {%- endif -%}
+        {%- else -%}
+          {% render "icon_item", icon: block.settings.icon, blockId: block.id, title: block.settings.title, text: block.settings.text %}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {%- if twoColumns -%}
+      <div class="icons-col grid__item one-half medium-down--one-whole">
+        {%- for block in section.blocks -%}
+          {%- if forloop.index > columnsBreakpoint -%}
+            {% render "icon_item", icon: block.settings.icon, blockId: block.id, title: block.settings.title, text: block.settings.text %}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name":"Icons & Text",
+  "tag":"section",
+  "class":"icons-and-text",
+  "settings":[
+    {
+      "type":"color",
+      "id":"bg_color",
+      "label":"Background Color",
+      "default":"#000"
+    },
+    {
+      "type":"color",
+      "id":"text_color",
+      "label":"Text Color",
+      "default":"#FFF"
+    },
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"why subscribe?"
+    },
+    {
+      "type":"text",
+      "id":"text_max_width_desktop",
+      "label":"Text Max Width (Desktop)",
+      "default":"90%"
+    },
+    {
+      "type":"text",
+      "id":"text_max_width_mobile",
+      "label":"Text Max Width (Mobile)",
+      "default":"100%"
+    },
+    {
+      "type":"select",
+      "id":"icons_position",
+      "label":"Icons Position",
+      "options":[
+        {
+          "value":"left",
+          "label":"Left"
+        },
+        {
+          "value":"center",
+          "label":"Center"
+        },
+        {
+          "value":"right",
+          "label":"Right"
+        }
+      ],
+      "default":"right"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"item",
+      "name":"Item",
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"icon",
+          "label":"Icon"
+        },
+        {
+          "type":"text",
+          "id":"icon_width_desktop",
+          "label":"Icon Width (Desktop)",
+          "default":"4em"
+        },
+        {
+          "type":"text",
+          "id":"icon_width_mobile",
+          "label":"Icon Width (Mobile)",
+          "default":"4em"
+        },
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title",
+          "default": "Icon Title"
+        },
+        {
+          "type":"textarea",
+          "id":"text",
+          "label":"Text",
+          "default":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

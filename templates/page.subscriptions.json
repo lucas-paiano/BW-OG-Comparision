@@ -1,0 +1,278 @@
+{
+  "wrapper": "div.page",
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "content_max_width_desktop": "40em",
+        "content_max_width_mobile": "100%",
+        "content_margin_top_desktop": "0",
+        "content_margin_top_mobile": "0",
+        "title": "BLACK WOLF SUBSCRIPTION",
+        "title_font_size_desktop": "2.5em",
+        "title_font_size_mobile": "2em",
+        "text": "<p>Get your favorite skincare delivered right<br\/>to your door at 15% off retail pricing.<br\/>Plus, free shipping on every order!<\/p>",
+        "text_font_size_desktop": "1.5em",
+        "text_font_size_mobile": "1em",
+        "text_color": "#ffffff",
+        "text_alignment": "center",
+        "button_url": "\/account\/login",
+        "button_label": "Log In",
+        "image_desktop": "shopify:\/\/shop_images\/hero_dkp.png",
+        "image_mobile": "shopify:\/\/shop_images\/hero_mobile.png",
+        "padding_desktop": "4em 0",
+        "padding_mobile": "2em 0 18em"
+      }
+    },
+    "icons_and_text": {
+      "type": "icons_and_text",
+      "blocks": {
+        "133f1968-1bc4-49bf-a213-2b7b713524c4": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 1",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "bd2010fa-0e3d-4d7b-8bdc-04fa5ef723f1": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 2",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "c606ed35-063f-4658-a19c-253c02edd687": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 3",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "7e3a4e0b-dc3b-4728-9271-9d20de7c9c88": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 4",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "f235c844-d454-49fa-aa3c-b2871e9505f7": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 5",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "d103bf4d-756b-41c3-9619-3aa46423fb0e": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 6",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "ba98ac57-6a67-4a4f-84fd-776e017f7724": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 7",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "6a91e948-c23d-4223-b956-b48dbfd62000": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_placeholder.png",
+            "icon_width_desktop": "4em",
+            "icon_width_mobile": "4em",
+            "title": "Icon Title 8",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua."
+          }
+        }
+      },
+      "block_order": [
+        "133f1968-1bc4-49bf-a213-2b7b713524c4",
+        "bd2010fa-0e3d-4d7b-8bdc-04fa5ef723f1",
+        "c606ed35-063f-4658-a19c-253c02edd687",
+        "7e3a4e0b-dc3b-4728-9271-9d20de7c9c88",
+        "f235c844-d454-49fa-aa3c-b2871e9505f7",
+        "d103bf4d-756b-41c3-9619-3aa46423fb0e",
+        "ba98ac57-6a67-4a4f-84fd-776e017f7724",
+        "6a91e948-c23d-4223-b956-b48dbfd62000"
+      ],
+      "settings": {
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "title": "why subscribe?",
+        "text_max_width_desktop": "90%",
+        "text_max_width_mobile": "100%",
+        "icons_position": "right"
+      }
+    },
+    "steps_with_images": {
+      "type": "steps_with_images",
+      "blocks": {
+        "24b11ee8-1861-43fc-9a48-793fad682603": {
+          "type": "step",
+          "settings": {
+            "title": "STEP 1:",
+            "subtitle": "CHOOSE YOUR PACKAGE",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequatur labore.<\/p>",
+            "image": "shopify:\/\/shop_images\/step_1.png",
+            "image_height": "100%"
+          }
+        },
+        "5bd2000c-79ec-4fbc-a26c-d276e3b57437": {
+          "type": "step",
+          "settings": {
+            "title": "STEP 2:",
+            "subtitle": "SELECT YOUR FREQUENCY",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequatur labore.<\/p>",
+            "image": "shopify:\/\/shop_images\/step_1.png",
+            "image_height": "100%"
+          }
+        },
+        "8912eeda-950d-4aa1-8e75-9de058a80e6e": {
+          "type": "step",
+          "settings": {
+            "title": "STEP 3:",
+            "subtitle": "FEEL YOUR BEST",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequatur labore.<\/p>",
+            "image": "shopify:\/\/shop_images\/step_1.png",
+            "image_height": "100%"
+          }
+        }
+      },
+      "block_order": [
+        "24b11ee8-1861-43fc-9a48-793fad682603",
+        "5bd2000c-79ec-4fbc-a26c-d276e3b57437",
+        "8912eeda-950d-4aa1-8e75-9de058a80e6e"
+      ],
+      "settings": {
+        "title": "HOW IT WORKS"
+      }
+    },
+    "cta_banner": {
+      "type": "cta_banner",
+      "settings": {
+        "title": "Already have a Black Wolf account?",
+        "button_url": "\/account\/login",
+        "button_label": "LOG IN",
+        "bg_color": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
+    "polaroid_cards": {
+      "type": "polaroid_cards",
+      "blocks": {
+        "15ae2fa8-63a1-4015-aefa-9fd58fa25c37": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bundle.png",
+            "text": "ACNE BODY SPRAY KITS",
+            "url": "shopify:\/\/products\/acne-fighting-body-kit"
+          }
+        },
+        "dd038311-2e73-4084-8ac7-c64176e332b4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bundle.png",
+            "text": "CHARCOAL WASH KITS",
+            "url": "shopify:\/\/products\/activated-charcoal-body-wash-three-pack"
+          }
+        },
+        "07047b04-3b96-40d7-8b31-6a0a81664f86": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bundle.png",
+            "text": "BUILD YOU OWN KIT",
+            "url": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "15ae2fa8-63a1-4015-aefa-9fd58fa25c37",
+        "dd038311-2e73-4084-8ac7-c64176e332b4",
+        "07047b04-3b96-40d7-8b31-6a0a81664f86"
+      ],
+      "settings": {
+        "title": "SUBSCRIBE TO OUR FAVORITES"
+      }
+    },
+    "accordion": {
+      "type": "accordion",
+      "blocks": {
+        "79f7874e-5389-4454-a443-509ac6ece476": {
+          "type": "item",
+          "settings": {
+            "title": "can I cancel my subscription at any time?",
+            "text": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi esse voluptates porro dolor eaque eveniet fugiat natus pariatur sunt sequi ipsa voluptatum eos alias blanditiis temporibus fuga delectus, cupiditate recusandae.<\/p>"
+          }
+        },
+        "89a28be1-98ff-411a-ae43-90c78a2014ad": {
+          "type": "item",
+          "settings": {
+            "title": "can I skip my next subscription refill?",
+            "text": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi esse voluptates porro dolor eaque eveniet fugiat natus pariatur sunt sequi ipsa voluptatum eos alias blanditiis temporibus fuga delectus, cupiditate recusandae.<\/p>"
+          }
+        },
+        "03277c36-6b47-48bb-9787-30a4aba389a3": {
+          "type": "item",
+          "settings": {
+            "title": "can I edit my subscription at any time?",
+            "text": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi esse voluptates porro dolor eaque eveniet fugiat natus pariatur sunt sequi ipsa voluptatum eos alias blanditiis temporibus fuga delectus, cupiditate recusandae.<\/p>"
+          }
+        },
+        "072df06a-f872-4215-8809-2f8d25fa852f": {
+          "type": "item",
+          "settings": {
+            "title": "is there free shipping?",
+            "text": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi esse voluptates porro dolor eaque eveniet fugiat natus pariatur sunt sequi ipsa voluptatum eos alias blanditiis temporibus fuga delectus, cupiditate recusandae.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "79f7874e-5389-4454-a443-509ac6ece476",
+        "89a28be1-98ff-411a-ae43-90c78a2014ad",
+        "03277c36-6b47-48bb-9787-30a4aba389a3",
+        "072df06a-f872-4215-8809-2f8d25fa852f"
+      ],
+      "settings": {
+        "title": "frequently asked questions"
+      }
+    },
+    "custom-css": {
+      "type": "custom-css",
+      "settings": {
+        "css": "#section-footer{margin-top: 0 !important;}"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "icons_and_text",
+    "steps_with_images",
+    "cta_banner",
+    "polaroid_cards",
+    "accordion",
+    "custom-css"
+  ]
+}

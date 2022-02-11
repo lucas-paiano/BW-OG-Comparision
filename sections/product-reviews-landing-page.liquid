@@ -1,0 +1,31 @@
+{%- if section.settings.reviews_enabled -%}
+  <div class="product-reviews product-reviews-alt">
+    <h2 class="product-reviews__title">loved by over 200,000 guys</h2>
+
+    <!--Start Stamped.io Auto Installation-->
+    <div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}">{{ product.metafields.stamped.reviews }}</div>
+    <!--End Stamped.io Auto Installation-->
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product Reviews",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Reviews"
+    },
+    {
+      "type": "paragraph",
+      "content": "You need to install [Shopify's free Product Reviews](https://apps.shopify.com/product-reviews) app before enabling this option."
+    },
+    {
+      "type": "checkbox",
+      "id": "reviews_enabled",
+      "label": "Enable",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

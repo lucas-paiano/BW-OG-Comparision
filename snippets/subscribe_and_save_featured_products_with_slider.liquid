@@ -1,0 +1,497 @@
+
+<style>
+  #shopify-section-{{section_id}} {padding-bottom: 1em; background-color: {{data.bg_color}};}
+  #shopify-section-{{section_id}} .container{text-align: center;}
+
+  #shopify-section-{{section_id}} h2,
+  #shopify-section-{{section_id}} h3,
+  #shopify-section-{{section_id}} .top-content p{font-family: {{settings.heading_font.family}}; font-weight: 600;}
+  #shopify-section-{{section_id}} h2{font-size: 4em; margin-bottom: 0;}
+  #shopify-section-{{section_id}} h3{font-size: 2.5em; margin-bottom: 0;}
+
+  #shopify-section-{{section_id}} .products{margin-top: 2em;}
+  #shopify-section-{{section_id}} .product{margin-bottom: 1em;}
+  #shopify-section-{{section_id}} .product>div{background-color: {{data.products_bg_color}}; padding: {{data.products_padding}};}
+  #shopify-section-{{section_id}} .product .image{padding-top: {{data.products_image_height_dkp}}%; background-size: cover; background-position: center; background-repeat: no-repeat; margin-bottom: 1.5em;}
+  #shopify-section-{{section_id}} .product h3{text-transform: uppercase; font-size: 1.5em; line-height: 1.3em;}
+  #shopify-section-{{section_id}} .product .price-container{margin-bottom: 1em;}
+  #shopify-section-{{section_id}} .product .price-container p{font-size: 1.5em; font-family: font-family: {{settings.heading_font.family}};}
+  #shopify-section-{{section_id}} .product .price-container .custom-price em{text-decoration: line-through; font-style: normal; margin-right: 0.5em;}
+  #shopify-section-{{section_id}} .product .retail{text-decoration: line-through; font-weight: 400 !important; margin-right: 1em;}
+  #shopify-section-{{section_id}} .product .price{font-weight: 600;}
+  #shopify-section-{{section_id}} .product .specs .heading_font{font-weight: 800; font-size: 1.2em; margin-bottom: 0.5em; line-height: 1.2em;}
+  #shopify-section-{{section_id}} .product .specs .price-container{margin-top: 1em;}
+  #shopify-section-{{section_id}} .product .gifts-title{margin-top: 2em;}
+  #shopify-section-{{section_id}} .product form{margin-top: 0.5em;}
+  #shopify-section-{{section_id}} .product .subscription-widget-container{display: none;}
+  #shopify-section-{{section_id}} .product .subscription-widget-container p{margin-bottom: 0;}
+  #shopify-section-{{section_id}} .product .subscription-widget-container button{margin-bottom: 1em;}
+  #shopify-section-{{section_id}} .product.free-product .subscription-widget-container button{margin-bottom: 0;}
+  #shopify-section-{{section_id}} .product .subscription-widget-container #rc_container{border: none; margin: 0 !important; padding: 0 0 1em !important;}
+  #shopify-section-{{section_id}} .product .subscription-widget-container .rc_label__autodeliver,
+  #shopify-section-{{section_id}} .product .subscription-widget-container .rc_block__type__onetime,
+  #shopify-section-{{section_id}} .product .subscription-widget-container .rc_label__delivery{display: none !important;}
+  #shopify-section-{{section_id}} .product .subscription-widget-container .rc_block__type__autodeliver{padding-bottom: 0 !important;}
+  #shopify-section-{{section_id}} .product .subscription-widget-container select.rc_select{max-width: 100%;}
+  #shopify-section-{{section_id}} .product .buttons-container{margin-top: 1em;}
+  #shopify-section-{{section_id}} .product .not-available .content-available{display: none;}
+  #shopify-section-{{section_id}} .product .not-available .content-soldout{display: block !important;}
+  #shopify-section-{{section_id}} .product:not(.product-with-subscription) .subscription-button{display: none !important;}
+  #shopify-section-{{section_id}} .product .one-time-button,
+  #shopify-section-{{section_id}} .product .one-time-button-custom-product{border: 3px solid #000; font-weight: 600;}
+  #shopify-section-{{section_id}} .product .one-time-button-custom-product{margin-top: 1em;}
+  #shopify-section-{{section_id}} .product.free-product .one-time-button{display: none;}
+  #shopify-section-{{section_id}} .product .subscription-button{margin-bottom: 1em; font-weight: 600; min-height: 49.2px;}
+  #shopify-section-{{section_id}} .product.free-product .subscription-button{margin-bottom: 0;}
+  #shopify-section-{{section_id}} .product .atc-button{min-height: 49.2px;}
+  #shopify-section-{{section_id}} .product .mobile-learn-more{font-style: italic; text-decoration: underline; color: #888888;}
+
+  /* slider & overlay */
+  #shopify-section-{{section_id}} .overlay{position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgb(0 0 0 / 34%); z-index: 5;}
+  #shopify-section-{{section_id}} .slider{width: 560px; background-color: #efefef; position: fixed; top: 0; right: -560px; height: 100%; z-index: 6; padding-bottom: 60px;}
+  #shopify-section-{{section_id}} .slider.active{right: 0;}
+  #shopify-section-{{section_id}} .slider .slider-header{border-bottom: 2px solid #4b5548; padding: 3em 20px 1em;}
+  #shopify-section-{{section_id}} .slider .slider-header .close-slider{width: 24px; height: 24px; border: 1px solid #c6ccc7; border-radius: 50%;}
+  #shopify-section-{{section_id}} .slider .slider-header .close-slider svg{width: 13px; height: 13px; position: relative; left: 1px;}
+
+  #shopify-section-{{section_id}} .slider .slider-content{padding: 1em; max-height: 80vh; overflow-y: auto;}
+  #shopify-section-{{section_id}} .slider .slider-content .item:not(:last-child){margin-bottom: 1em;}
+  #shopify-section-{{section_id}} .slider .slider-content .item.with-icon{padding: 0 2em;}
+  #shopify-section-{{section_id}} .slider .slider-content .item .img-col{width: 20%; background-position: center; background-repeat: no-repeat; margin-right: 2em;}
+  #shopify-section-{{section_id}} .slider .slider-content .item .text-col{width: 100%;}
+  #shopify-section-{{section_id}} .slider .slider-content .item.with-icon .text-col{width: 80%;}
+  #shopify-section-{{section_id}} .slider .slider-content .item h3{text-align: left; font-size: 2em !important;}
+  #shopify-section-{{section_id}} .slider .slider-content .item p{text-align: left;}
+
+  #shopify-section-{{section_id}} .slider .cta{width: 100%; margin-top: 1em;}
+
+  @media all and (max-width: 900px){
+    #shopify-section-{{section_id}}{padding-top: 1.5em;}
+
+    #shopify-section-{{section_id}} h2{font-size: 1.7em; line-height: 1.2em; width: 310px; max-width: 100%; margin: auto;}
+    #shopify-section-{{section_id}} h3{font-size: 1.1em; margin: 0.5em 0;}
+    #shopify-section-{{section_id}} .top-content p{font-size: 0.7em; width: 260px; max-width: 100%; margin: auto;}
+
+    #shopify-section-{{section_id}} .product:not(.active) .mobile-hidden-content{display: none;}
+    #shopify-section-{{section_id}} .product.active .mobile-hidden-content{height: auto; overflow: hidden;}
+
+    #shopify-section-{{section_id}} .products{margin-top: 1em;}
+    #shopify-section-{{section_id}} .product h3{margin-bottom: 0; font-size: 1.4em;}
+    #shopify-section-{{section_id}} .product .price-container > p{font-size: 1.2em;}
+    #shopify-section-{{section_id}} .product:not(.active)>div{padding: 0.5em;}
+    #shopify-section-{{section_id}} .product:not(.active) .price-container{margin-bottom: 0;}
+    #shopify-section-{{section_id}} .product.active .mobile-learn-more{display: none;}
+    #shopify-section-{{section_id}} .product .specs .heading_font{font-size: 1.1em;}
+    #shopify-section-{{section_id}} .product .specs p:not(.heading_font){font-size: 0.9em;}
+    #shopify-section-{{section_id}} .product form{margin-top: 0;}
+  }
+  @media all and (max-width: 600px){
+    #shopify-section-{{section_id}} h2{width: 310px; max-width: 100%; margin: auto;}
+    #shopify-section-{{section_id}} .top-content p{width: 260px; max-width: 100%; margin: auto;}
+    /* slider & overlay */
+    #shopify-section-{{section_id}} .slider{width: 100%;}
+    #shopify-section-{{section_id}} .slider .slider-content .item h3{font-size: 1.5em !important;}
+    #shopify-section-{{section_id}} .slider .slider-content .item.with-icon{padding: 0;}
+  }
+</style>
+
+{%- case blocks.size -%}
+  {%- when 1 -%}
+    {%- assign item-width-large = 'one-whole' -%}
+  {%- when 2 -%}
+    {%- assign item-width-large = 'one-half' -%}
+  {%- else -%}
+    {%- assign item-width-large = 'one-third' -%}
+{%- endcase -%}
+
+<div class="container">
+
+  <div class="top-content">
+    <h2>{{data.title}}</h2>
+    <h3>{{data.subtitle}}</h3>
+    {% if data.disclaimer != blank %}
+      {{data.disclaimer}}
+    {% endif %}
+  </div>
+
+  <div class="grid products justify-content-center">
+    {%- for block in blocks -%}
+      {%- if block.type == "product" -%}
+        {%- assign product = all_products[block.settings.product] -%}
+        {%- assign selected_variant = product.selected_or_first_available_variant -%}
+        <div class="product block-{{block.id}} grid__item {{item-width-large}} medium-down--one-whole {% if product.metafields.subscriptions.subscription_id %}product-with-subscription{% endif %} {% if block.settings.its_free_trial %}free-product{% endif %} {% if block.settings.subscription_slider_trigger %}subscription-slider-trigger{% endif %}" {{ block.shopify_attributes }} data-discount-price="$ {% if block.settings.popup_custom_price != blank %}{{block.settings.popup_custom_price}}{% else %}{{product.selected_or_first_available_variant.metafields.subscriptions.discount_variant_price | remove: '.00' }}{% endif %}" data-subscription-price="$ {{product.selected_or_first_available_variant.metafields.subscriptions.discount_variant_price | remove: '.00' }}" data-discount-percentage="{{product.metafields.subscriptions.discount_percentage | round}}" data-product-id="{{product.id}}">
+          <div class="flex direction-column justify-content-between">
+            <div class="Image--lazyLoad image" data-bgset="{% render 'lazy_src', image: product.featured_image %}"></div>
+            <div class="title-price-container">
+              {%- if block.settings.custom_title != blank -%}
+                <h3>{{block.settings.custom_title}}</h3>
+              {%- else -%}
+                <h3>{{product.title}}</h3>
+              {%- endif -%}
+              <div class="price-container flex justify-content-center">
+                {%- if block.settings.custom_price != blank -%}
+                  <div class="custom-price">{{block.settings.custom_price}}</div>
+                {%- else -%}
+                  {%- if data.products_price == 'one_time_price' -%}
+                    {% if product.price_min < product.compare_at_price_min %}
+                    <p data-price="retail" class="heading_font retail">{{ product.compare_at_price | money | remove: '.00' }}</p>
+                    {% endif %}
+                    <p data-price="deal" class="price heading_font">{{ product.price_min | money | remove: '.00' }}</p>
+                  {%- elsif data.products_price == 'discount_price' -%}
+                    <p data-price="deal" class="price heading_font">$ {{product.selected_or_first_available_variant.metafields.subscriptions.discount_variant_price | remove: '.00' }}</p>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            </div>
+            <button class="large--hide mobile-learn-more">CLICK TO LEARN MORE</button>
+            <div class="mobile-hidden-content animation">
+              <div class="specs">
+                <div class="includes">
+                  {%- if block.settings.includes_title != blank -%}
+                    <p class="heading_font">{{block.settings.includes_title}}</p>
+                  {%- endif -%}
+                  {%- if block.settings.includes_text != blank -%}
+                    {{block.settings.includes_text}}
+                  {%- endif -%}
+                </div>
+                <div class="gifts">
+                  {%- if block.settings.gifts_title != blank -%}
+                    <p class="heading_font gifts-title">{{block.settings.gifts_title}}</p>
+                  {%- endif -%}
+                  {%- if block.settings.gifts_text != blank -%}
+                    {{block.settings.gifts_text}}
+                  {%- endif -%}
+                </div>
+                <div class="shipping-and-price">
+                  {%- if block.settings.free_shipping != blank -%}
+                    <p class="heading_font free-shipping">{{block.settings.free_shipping}}</p>
+                  {%- endif -%}
+                  {% comment %}
+                    <div class="price-container flex justify-content-center">
+                      {%- if data.products_price == 'one_time_price' -%}
+                        {% if product.price_min < product.compare_at_price_min %}
+                        <p data-price="retail" class="heading_font retail">{{ product.compare_at_price | money | remove: '.00' }}</p>
+                        {% endif %}
+                        <p data-price="deal" class="price heading_font">{{ product.price_min | money | remove: '.00' }}</p>
+                      {%- elsif data.products_price == 'discount_price' -%}
+                        <p data-price="deal" class="price heading_font">$ {{product.selected_or_first_available_variant.metafields.subscriptions.discount_variant_price | remove: '.00' }}</p>
+                      {%- endif -%}
+                    </div>
+                  {% endcomment %}
+                </div>
+              </div>
+            </div>
+            <form action="/cart/add" method="post" class="variants add-to-cart-form {%- if product.available -%}available{%- else -%}not-available{%- endif -%}" enctype="multipart/form-data" data-productid="{{product.id}}">
+              <input type="text" class="hide product-data" name="id" value="{{product.first_available_variant.id}}" data-productid="{{product.id}}">
+              {%- if block.settings.its_free_trial -%}
+                <input type="hidden" name="properties[_freeTrial]" value="true">
+              {%- endif -%}
+              <div class="buttons-container">
+                <div class="content-available">
+                  <button class="{% if block.settings.subscription_slider_trigger %}subscription-slider-trigger-btn{% else %}subscription-button hide{% endif %} Button Button--primary Button--full">{{block.settings.subscription_options_btn_label}} {% if data.products_buttons_info == 'discount' %} {{product.metafields.subscriptions.discount_percentage | round}}%{% elsif data.products_buttons_info == 'price' %} - $ {{product.selected_or_first_available_variant.metafields.subscriptions.discount_variant_price | remove: '.00' }}{% endif %}</button>
+                  <div class="subscription-widget-container">
+                    <p>Choose your delivery schedule:</p>
+                    {%- render 'subscription-product', product: product -%}
+                    {%- if block.settings.subscription_slider_trigger -%}
+                      <button class="subscription-slider-trigger-btn Button Button--primary Button--full">{{block.settings.add_subscription_btn_label}}</button>
+                    {%- endif -%}
+                    <button class="atc-button Button Button--primary Button--full {% if block.settings.subscription_slider_trigger %}hide{% endif %}">{{block.settings.subscription_btn_label}}</button>
+                  </div>
+                  {%- if block.settings.one_time_custom_product != blank -%}
+                    <button class="one-time-button-custom-product Button Button--secondary Button--full" data-variant-id="{{block.settings.one_time_custom_product.selected_or_first_available_variant.id}}">{{block.settings.onetime_btn_label}} {% if data.products_buttons_info == 'price' %}- {{ product.price_min | money | remove: '.00' }}{% endif %}</button>
+                  {%- else -%}
+                    {%- unless block.settings.its_free_trial -%}
+                      <button class="one-time-button Button Button--secondary Button--full">{{block.settings.onetime_btn_label}} {% if data.products_buttons_info == 'price' %}- {{ product.price_min | money | remove: '.00' }}{% endif %}</button>
+                    {%- endunless -%}
+                  {%- endif -%}
+                </div>
+                <div class="content-soldout hide">
+                  This product is SOLD OUT.
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        {% comment %}
+        ------------------------------------------------------------------------------
+        Product Data. This must be outputted for all products (including home page).
+
+        IMPORTANT: THIS CODE IS VITAL. DO NOT EDIT IT NOT REMOVE IT. MAKE SURE TO KEEP
+        THE EXACT SAME ATTRIBUTES.
+        ------------------------------------------------------------------------------
+        {% endcomment %}
+        <script type="application/json" data-product-json>
+          {
+            "product": {{ product | json }},
+            "selected_variant_id": {{ selected_variant.id }}
+            {%- if data.show_inventory_quantity -%}
+              ,"inventories": {
+                {%- for variant in product.variants -%}
+                  {%- assign inventory_message = '' -%}
+
+                  {%- if data.inventory_quantity_threshold == 0 -%}
+                    {%- capture inventory_message -%}{{- 'product.form.inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+                  {%- else -%}
+                    {%- capture inventory_message -%}{{- 'product.form.low_inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+                  {%- endif -%}
+
+                  "{{ variant.id }}": {
+                    "inventory_management": {{ variant.inventory_management | json }},
+                    "inventory_policy": {{ variant.inventory_policy | json }},
+                    "inventory_quantity": {{ variant.inventory_quantity | json }},
+                    "inventory_message": {{ inventory_message | json }}
+                  }{% unless forloop.last %},{% endunless %}
+                {%- endfor -%}
+              }
+            {%- endif -%}
+          }
+        </script>
+        {% comment %}
+        ------------------------------------------------------------------------------
+        Product Data End
+        ------------------------------------------------------------------------------
+        {% endcomment %}
+
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% comment %}
+  Slider
+{% endcomment %}
+<div class="overlay animated hide"></div>
+<div class="slider animated">
+  <div class="slider-header">
+    <button class="close-slider flex justify-content-center align-items-center">
+      <svg viewBox="0 0 256 512" focusable="false" role="presentation"><path fill="#141316" d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"></path></svg>        
+    </button>
+  </div>
+  <div class="slider-content">
+    {%- for block in blocks -%}
+      {%- if block.type == "slider-content" -%}
+        <div class="item flex justify-content-start align-items-center {% if block.settings.icon %}with-icon{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon -%}
+            <div style="padding-top: {{block.settings.icon_height}}em; background-size: {{block.settings.icon_size}}%;" class="Image--lazyLoad img-col" data-bgset="{% render 'lazy_src', image: block.settings.icon %}" {% if block.settings.icon.alt != blank %} aria-label="{{block.settings.icon.alt}}"{% endif %}></div>
+          {%- endif -%}
+          <div class="text-col">
+            {%- if block.settings.title != blank -%}
+              <h3>{{block.settings.title}}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              {{block.settings.text}}
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+  <button class="cta Button Button--primary Button--full">Continue to trial - <span></span></button>
+</div>
+
+<script>
+  $(function(){
+
+    // check if side cart exists
+    var sideCart = false;
+    if ($("#side-cart").length > 0) {
+      sideCart = true;
+    }
+
+    // url param scroll to section
+    var url = window.location.href;
+    if (url.indexOf('subscribe-and-save') > -1) {
+      var currentSection = $('#shopify-section-{{section_id}}');
+      $("html, body").animate({
+          scrollTop: $(currentSection).offset().top-$('#section-header').height()
+      });
+    }     
+
+    // update slider's <p> html to add spans for replacing them with the selected item's price and discount %
+    $('#shopify-section-{{section_id}} .slider .item p').each(function(){
+      $(this).html($(this).html().replace('$$','<span class="price"></span>'));
+      $(this).html($(this).html().replace('%%','<span class="discount-percentage"></span>'));
+    });
+
+    function showSlider(price, subscriptionPrice, discountPercentage, prodId){
+      $('#shopify-section-{{section_id}} .slider .item .price').html(price);
+      $('#shopify-section-{{section_id}} .slider .item .discount-percentage').html(discountPercentage+'%');
+      $('#shopify-section-{{section_id}} .slider .cta').attr('data-product-id', prodId);
+      $('#shopify-section-{{section_id}} .slider .cta').html('Continue to trial - <span></span>');
+      $('#shopify-section-{{section_id}} .slider .cta span').html(subscriptionPrice);
+      $('#shopify-section-{{section_id}} .slider').addClass('active');
+      $('#shopify-section-{{section_id}} .overlay').removeClass('hide');      
+    }
+
+    function hideSlider(){
+      $('#shopify-section-{{section_id}} .slider').removeClass('active');
+      $('#shopify-section-{{section_id}} .overlay').addClass('hide');
+    }
+    
+    // subscription
+    $('#shopify-section-{{section_id}} .product .subscription-button').click(function(e){
+      e.preventDefault();
+      $(this).parents('.product').find('.rc_radio__autodeliver').trigger('click');
+      $(this).siblings('.subscription-widget-container').slideDown();
+    })
+    // one-time
+    $('#shopify-section-{{section_id}} .product .one-time-button').click(function(e){
+      e.preventDefault();
+      if ($(this).parents('.product').find('.rc_radio__onetime').length > 0) {
+        $(this).parents('.product').find('.rc_radio__onetime').trigger('click');
+      }
+      $(this).parents('form').unbind('submit').submit();
+    })
+    // one-time-custom
+    $('#shopify-section-{{section_id}} .product .one-time-button-custom-product').click(function(e){
+      e.preventDefault();
+      var variantId = $(this).data('variant-id');
+      $.ajax({
+          type: 'POST',
+          url: '/cart/add.js',
+          data:{
+          quantity: 1,
+          id: variantId
+        },
+          ataType: 'json'
+        })
+        .fail(function(status){
+          console.log('error',status);
+        })
+        .done(function(){
+          console.log('one-time added');
+          if (sideCart) {
+            $('#loading-overlay').show();
+            window.updateCartDesc(true);
+            $('#add-cart-overlay').fadeOut();
+          }else{
+            window.location.href = "/cart";
+          }
+        });      
+    })
+
+    // side cart open when one-time is added
+    if (sideCart) {
+      $('#shopify-section-{{section_id}} .product .one-time-button').click(function(e){
+        e.preventDefault();
+        var variantId = $(this).parents('form').find('input.product-data').val();
+        $.ajax({
+            type: 'POST',
+            url: '/cart/add.js',
+            data:{
+            quantity: 1,
+            id: variantId
+          },
+            ataType: 'json'
+          })
+          .fail(function(status){
+            console.log('error',status);
+          })
+          .done(function(){
+            $('#loading-overlay').show();
+            window.updateCartDesc(true);
+            $('#add-cart-overlay').fadeOut();
+          });      
+      })
+    }
+
+    // slider trigger
+    $('#shopify-section-{{section_id}} .product .subscription-slider-trigger-btn').click(function(e){
+      e.preventDefault();
+      $(this).parents('.product').find('.rc_radio__autodeliver').trigger('click');
+      var discountPrice = $(this).parents('.product').data('discount-price');
+      var subscriptionPrice = $(this).parents('.product').data('subscription-price');
+      var discountPercentage = $(this).parents('.product').data('discount-percentage');
+      var prodId = $(this).parents('.product').data('product-id');
+      showSlider(discountPrice,subscriptionPrice,discountPercentage,prodId);
+    });
+    // slider close
+    $('#shopify-section-{{section_id}} .close-slider, #shopify-section-{{section_id}} .overlay').click(function(e){
+      e.preventDefault();
+      hideSlider();
+    });    
+    // slider cta
+    $('#shopify-section-{{section_id}} .cta').click(function(e){
+      e.preventDefault();
+      var cta = $(this);
+      var prodId = cta.data('product-id');
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json'
+      })
+      .fail(function(status){
+        console.log('error',status);
+        cta.html('ERROR: Please reload this page')
+      })
+      .done(function(cart){
+        var freeTrialInCart = false;
+        // check if there's a free trial product in the cart
+        $.each(cart.items,function(index, item){
+          if(item.properties){
+            if(item.properties['_freeTrial'] === 'true'){
+              freeTrialInCart = true
+              return false;
+            }
+          }
+        })
+        if (freeTrialInCart){
+          cta.html('You already have a free trial in your cart')
+        }else{
+          $('#shopify-section-{{section_id}} .product[data-product-id="'+prodId+'"]').find('.subscription-widget-container .atc-button').trigger('click');
+        }
+      });
+    });
+
+    // make all product cards the same height
+    var elementsToEqualHeight = [];
+
+    elementsToEqualHeight.push($('#shopify-section-{{section_id}} .product .title-price-container'));
+    elementsToEqualHeight.push($('#shopify-section-{{section_id}} .product .includes'));
+    elementsToEqualHeight.push($('#shopify-section-{{section_id}} .product .gifts'));
+    elementsToEqualHeight.push($('#shopify-section-{{section_id}} .product .shipping-and-price'));
+
+    function equalHeight(mediaQuery,elements){
+      elements.forEach(function(elementsGroup){
+        if (mediaQuery.matches) {
+          // <900px
+          elementsGroup.css('height','auto');
+        }else{
+          // >900px
+          elementsGroup.css('height','auto');
+          var max_height = 0;
+          elementsGroup.each(function() {
+            var elementHeight = $(this).height();
+            if (elementHeight > max_height) {
+              max_height = elementHeight;
+            }  
+          });
+          elementsGroup.height(max_height);
+        }
+      })
+    }
+
+    var mq = window.matchMedia("(max-width: 900px)");
+    equalHeight(mq,elementsToEqualHeight);
+    mq.addListener(equalHeight(mq,elementsToEqualHeight));
+    
+    // wait until recharge widget is ready for showing the subscription button
+    $('#shopify-section-{{section_id}} .product').on('DOMNodeInserted ', '#rc_container', function(){
+      $('.subscription-button').removeClass('hide');
+      equalHeight(mq,elementsToEqualHeight);
+    });
+
+    // mobile open/close product cards
+    $('#shopify-section-{{section_id}} .mobile-learn-more').click(function(){
+      $('#shopify-section-{{section_id}} .product').removeClass('active');
+      $(this).parents('.product').addClass('active');
+    });
+    $(document).on('keydown', '#shopify-section-{{section_id}} .mobile-learn-more:focus', function(e){
+      if (e.which == 13) { //Enter
+        $(this).click();
+      }
+    });  
+  
+  })
+</script>

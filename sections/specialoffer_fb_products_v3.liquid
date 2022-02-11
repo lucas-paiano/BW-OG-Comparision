@@ -1,0 +1,65 @@
+<style>
+  #shopify-section-{{section.id}}{padding: 1em 0;}
+
+  #shopify-section-{{section.id}} .container{max-width: 1600px;}
+  #shopify-section-{{section.id}} .container>h2{font-size: 2em;font-weight: bolder;text-align: center;margin-bottom: 0.5em;}
+
+  #shopify-section-{{section.id}} .product-container{margin-bottom: 1em;}
+  #shopify-section-{{section.id}} .ProductItem__Image{width: 100%;}
+
+  @media all and (max-width: 1007px){
+    #shopify-section-{{section.id}} .container>h2{font-size: 1.5em;}
+  }
+</style>
+
+{%- case section.blocks.size -%}
+  {%- when 1 -%}
+    {%- assign item-width-large = 'one-whole' -%}
+  {%- when 2 -%}
+    {%- assign item-width-large = 'one-half' -%}
+  {%- when 3 -%}
+    {%- assign item-width-large = 'one-third' -%}
+  {%- else -%}
+    {%- assign item-width-large = 'one-quarter' -%}
+{%- endcase -%}
+
+<div class="container">
+  <h2>{{section.settings.title}}</h2>
+  <div class="grid">
+    {%- for block in section.blocks -%}
+      {%- assign product = all_products[block.settings.product] -%}
+      <div class="product-container grid__item {{item-width-large}} medium-down--one-half" {{ block.shopify_attributes }}>
+        {%- include 'product-item', show_product_info: true, show_labels: true -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+   "name":"Featured Products",
+   "tag": "section",
+   "class": "special-offer-featured-products",
+   "settings":[
+      {
+         "type":"text",
+         "id":"title",
+         "label":"Title",
+         "default":"SHOP OUR BEST SELLER"
+      }
+   ],
+   "blocks":[
+      {
+         "type":"product",
+         "name":"Product",
+         "settings":[
+            {
+              "type":"product",
+              "id":"product",
+              "label":"Product"
+            }
+         ]
+      }
+   ]
+}
+{% endschema %}

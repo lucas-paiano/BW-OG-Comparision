@@ -1,0 +1,76 @@
+{{ 'polaroid_cards.css' | asset_url | stylesheet_tag }}
+
+{%- case section.blocks.size -%}
+  {%- when 1 -%}
+    {%- assign item-width-large = 'one-whole' -%}
+  {%- when 2 -%}
+    {%- assign item-width-large = 'one-half' -%}
+  {%- else -%}
+    {%- assign item-width-large = 'one-third' -%}
+{%- endcase -%}
+
+<div class="container">
+  {%- if section.settings.title != blank -%}
+    <h2>{{section.settings.title}}</h2>
+  {%- endif -%}
+  <div class="items-container grid">
+    {%- for block in section.blocks -%}
+      <div class="item grid__item {{item-width-large}} small--one-whole flex" {{ block.shopify_attributes }}>
+        <div class="content">
+          {%- if block.settings.url != blank -%}
+            <a href="{{block.settings.url}}">
+          {%- endif -%}
+            {%- if block.settings.image != blank -%}
+              <div class="Image--lazyLoad image-container" data-bgset="{% render 'lazy_src', image: block.settings.image %}" {% if block.settings.image.alt != blank %} aria-label="{{block.settings.image.alt}}"{% endif %}></div>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <h3>{{block.settings.text}}</h3>
+            {%- endif -%}
+          {%- if block.settings.url != blank -%}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name":"Polaroid Cards",
+  "tag":"section",
+  "class":"polaroid-cards",
+  "settings":[
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"SUBSCRIBE TO OUR FAVORITES"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"item",
+      "name":"Item",
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"text",
+          "label":"Text"
+        },
+        {
+          "type":"url",
+          "id":"url",
+          "label":"URL",
+          "info":"Paste or search."
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

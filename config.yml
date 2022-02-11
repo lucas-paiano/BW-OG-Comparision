@@ -1,0 +1,8 @@
+development:
+  store: ${STORE}
+  password: ${PASSWORD}
+  theme_id: ${DEV_THEME_ID}
+  bucket_size: 40
+  refill_rate: 2
+  ignores: 
+    - .shopifyignore

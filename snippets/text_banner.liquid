@@ -1,0 +1,21 @@
+<style>
+  #shopify-section-{{section_id}} {background-color: {{data.bg_color}};}
+  #shopify-section-{{section_id}} div{background-color: {{data.bg_color}}; padding: 3em 20px;}
+  #shopify-section-{{section_id}} p{color: {{data.text_color}}; font-size: {{data.font_size}}; text-align: center;}
+
+  @media all and (max-width: 600px){
+    #shopify-section-{{section_id}} p{font-size: {{data.font_size_mobile}};}
+  }
+</style>
+
+{%- if data.url != blank -%}
+  <a href="{{data.url}}">
+{%- endif -%}
+
+  <div class="container">
+    {{data.text}}
+  </div>
+
+{%- if data.url != blank -%}
+  </a>
+{%- endif -%}

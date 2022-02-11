@@ -1,0 +1,51 @@
+{%- render 'specialoffer_fb_second_banner', data: section.settings, section_id: section.id -%}
+
+{% schema %}
+{
+   "name":"Second Banner",
+   "tag": "section",
+   "class": "fb-lander-banner-2",
+   "settings":[
+      {
+        "type":"url",
+        "id":"link_url",
+        "label":"Link URL",
+        "info":"Paste or search."
+      },
+      {
+        "type":"text",
+        "id":"alt",
+        "label":"Link Alt Text"
+      },
+      {
+         "type":"image_picker",
+         "id":"bg_dkp",
+         "label":"Background Image (Desktop)"
+      },
+      {
+        "type": "range",
+        "id": "padding_dkp",
+        "label": "Height (Desktop)",
+        "min": 5,
+        "max": 100,
+        "step": 1,
+        "default": 18
+      },
+      {
+         "type":"image_picker",
+         "id":"bg_sm",
+         "label":"Background Image (Mobile)",
+         "info":"Leave blank for using only the desktop image."
+      },
+      {
+        "type": "range",
+        "id": "padding_sm",
+        "label": "Height (Mobile)",
+        "min": 5,
+        "max": 100,
+        "step": 1,
+        "default": 90
+      }
+   ]
+}
+{% endschema %}

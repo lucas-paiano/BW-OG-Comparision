@@ -1,0 +1,245 @@
+{
+  "wrapper": "div.page",
+  "sections": {
+    "custom-css": {
+      "type": "custom-css",
+      "settings": {
+        "css": ".page{margin: 0;}\n#section-footer{margin-top: 0 !important;}"
+      }
+    },
+    "page-title": {
+      "type": "page-title",
+      "settings": {
+        "title": ""
+      }
+    },
+    "fb-lander-hero": {
+      "type": "fb-lander-hero",
+      "settings": {
+        "bg_color": "#353132",
+        "link_url": "",
+        "alt": "",
+        "img_1": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero_FB9.png",
+        "padding_img_1_dkp": 40,
+        "padding_img_2_dkp": 40,
+        "video_url": "https:\/\/vimeo.com\/536007938",
+        "video_custom_width_and_margin": true,
+        "video_custom_width": 100,
+        "video_custom_height": 125,
+        "video_custom_margin_left": 0,
+        "video_custom_margin_top": 0,
+        "img_1_sm": "shopify:\/\/shop_images\/BWFB6_LimitedTimeKit_LanderHero_FB9.png",
+        "padding_img_1_sm": 75,
+        "video_url_mobile": "https:\/\/vimeo.com\/536007938",
+        "video_custom_width_and_margin_mobile": true,
+        "video_custom_width_mobile": 100,
+        "video_custom_height_mobile": 123,
+        "video_custom_margin_left_mobile": 0,
+        "video_custom_margin_top_mobile": 0
+      }
+    },
+    "fb-lander-banner-1": {
+      "type": "fb-lander-banner-1",
+      "settings": {
+        "link_url": "",
+        "alt": "",
+        "bg_dkp": "shopify:\/\/shop_images\/FB9LanderScience_New_10818408-0530-4ae1-80a4-fe7713a289e6.png",
+        "padding_dkp": 45,
+        "padding_sm": 44
+      }
+    },
+    "fb-lander-banner-2": {
+      "type": "fb-lander-banner-2",
+      "settings": {
+        "link_url": "",
+        "alt": "",
+        "bg_dkp": "shopify:\/\/shop_images\/BWReviewsBanner_d68c53a0-e653-4897-a8bc-b1ce39779d8c.png",
+        "padding_dkp": 18,
+        "bg_sm": "shopify:\/\/shop_images\/BWReviewsBanner_Mobile_92b5ae58-8a4b-4853-9c4c-12bd071659ec.png",
+        "padding_sm": 90
+      }
+    },
+    "fb-lander-subscribe-and-save-feat-products-OG": {
+      "type": "fb-lander-subscribe-and-save-feat-products-OG",
+      "blocks": {
+        "099ca4eb-eec4-4480-9a94-1eb0be161991": {
+          "type": "product",
+          "settings": {
+            "product": "acne-fighting-body-kit",
+            "its_free_trial": true,
+            "subscription_slider_trigger": true,
+            "custom_title": "Acne Fighting Face & Body Kit",
+            "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+            "includes_title": "WHAT THE KIT INCLUDES",
+            "includes_text": "<p>Face Wash<br\/>Body Wash<br\/>Acne Spray<\/p>",
+            "gifts_title": "Your First 60 Days of<br>Products For Just $4.95",
+            "gifts_text": "<p>After today, your 60 day supply is just <strong>$40.80<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+            "free_shipping": "",
+            "subscription_options_btn_label": "Just $4.95<br>Subscribe Today",
+            "add_subscription_btn_label": "ADD SUBSCRIPTION",
+            "onetime_btn_label": "One-Time (60 Day Supply) $48.00",
+            "popup_custom_price": "40.80",
+            "one_time_custom_product": "acne-fighting-face-body-kit-one-time"
+          }
+        },
+        "63e079ad-00a7-417a-bc9d-f80e6dfab318": {
+          "type": "product",
+          "settings": {
+            "product": "acne-fighting-body-kit",
+            "its_free_trial": true,
+            "subscription_slider_trigger": true,
+            "custom_title": "ACNE FIGHTING BODY KIT",
+            "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+            "includes_title": "WHAT THE KIT INCLUDES",
+            "includes_text": "<p>Body Wash<br\/>Face Wash<br\/>Body Scrub<br\/>Acne Spray<br\/><\/p>",
+            "gifts_title": "Your First 60 Days of<br>Products For Just $4.95",
+            "gifts_text": "<p>After today, your 60 day supply is just <strong>$53.55 <\/strong>that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+            "free_shipping": "",
+            "subscription_options_btn_label": "Just $4.95<br>Subscribe Today",
+            "add_subscription_btn_label": "ADD SUBSCRIPTION",
+            "onetime_btn_label": "One-Time (60 Day Supply) $63.00",
+            "popup_custom_price": "53.55",
+            "one_time_custom_product": "acne-fighting-body-kit-one-time"
+          }
+        },
+        "82277ad2-c669-4249-a568-1c3745084527": {
+          "type": "product",
+          "settings": {
+            "product": "best-sellers-kit",
+            "its_free_trial": true,
+            "subscription_slider_trigger": true,
+            "custom_title": "Best Sellers Kit",
+            "custom_price": "<p>$4.95 + FREE Shipping<\/p>",
+            "includes_title": "WHAT THE KIT INCLUDES",
+            "includes_text": "<p>Body Wash<br\/>Face Wash<br\/>Face Scrub<br\/>Oil Free Moisturizer<\/p>",
+            "gifts_title": "Your First 60 Days of<br>Products For Just $4.95",
+            "gifts_text": "<p>After today, your 60 day supply is just <strong>$55.25<\/strong> that's <strong>15% OFF + FREE Shipping!<\/strong><\/p><p><strong>+ Get A Free Gift On Your Next Delivery!<\/strong><\/p>",
+            "free_shipping": "",
+            "subscription_options_btn_label": "Just $4.95<br>Subscribe Today",
+            "add_subscription_btn_label": "ADD SUBSCRIPTION",
+            "onetime_btn_label": "One-Time (60 Day Supply) $65.00",
+            "popup_custom_price": "55.25",
+            "one_time_custom_product": "blackwolf-best-sellers-kit"
+          }
+        },
+        "8f46052e-fafc-439d-901b-a2f570201c7e": {
+          "type": "slider-content",
+          "settings": {
+            "icon_height": 7,
+            "icon_size": 100,
+            "title": "Here's How Our Offer Works:",
+            "text": ""
+          }
+        },
+        "633710f2-00d3-47d7-ad2b-0891a85cb01b": {
+          "type": "slider-content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+            "icon_height": 7,
+            "icon_size": 80,
+            "title": "",
+            "text": "<p><strong>Try your first month of products for the limited time low price! <\/strong>If you’re not loving the experience, cancel your subscription at anytime in your account settings during your trial.<\/p>"
+          }
+        },
+        "d4f4d1bc-c2f0-4e7e-9cc2-21978acefc94": {
+          "type": "slider-content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/redo-icon.png",
+            "icon_height": 7,
+            "icon_size": 80,
+            "title": "",
+            "text": "<p>If you choose not to cancel, in <strong>60 Days<\/strong> we’ll send you another <strong>60 Day supply subscription box + a FREE Gift<\/strong> for only $$ ( 15% discount to retail price) AND free shipping. Your new subscription box will be shipped and billed <strong>every 2 months.<\/strong><\/p>"
+          }
+        },
+        "50d657fa-d850-4d5d-a281-1f40e80f8aa1": {
+          "type": "slider-content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/calendar-icon.png",
+            "icon_height": 7,
+            "icon_size": 100,
+            "title": "",
+            "text": "<p>You can delay an order, add\/remove products to your box at any time.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "099ca4eb-eec4-4480-9a94-1eb0be161991",
+        "63e079ad-00a7-417a-bc9d-f80e6dfab318",
+        "82277ad2-c669-4249-a568-1c3745084527",
+        "8f46052e-fafc-439d-901b-a2f570201c7e",
+        "633710f2-00d3-47d7-ad2b-0891a85cb01b",
+        "d4f4d1bc-c2f0-4e7e-9cc2-21978acefc94",
+        "50d657fa-d850-4d5d-a281-1f40e80f8aa1"
+      ],
+      "settings": {
+        "bg_color": "#efefef",
+        "title": "<small>LIMITED TIME SUBSCRIPTION OFFER<\/small>",
+        "subtitle": "<small> Your Choice! Just Pay $4.95 + FREE Shipping!<\/small>",
+        "disclaimer": "<p>*SUBSCRIBE & SAVE 15% + FREE SHIPPING ON ALL DELIVERIES + FREE GIFT ON NEXT DELIVERY!<\/p>",
+        "products_bg_color": "#ffffff",
+        "products_padding": "1em",
+        "products_image_height_dkp": 100,
+        "products_image_height_mobile": 100,
+        "products_price": "discount_price",
+        "products_buttons_info": "none"
+      }
+    },
+    "fb-lander-more-custom": {
+      "type": "fb-lander-more-custom",
+      "settings": {
+        "text_color": "#ffffff",
+        "background_color": "#000000",
+        "subheading": "",
+        "title": "EVEN MORE REASONS TO LOVE BLACK WOLF",
+        "icon_1": "shopify:\/\/shop_images\/globe.png",
+        "reason-headline_1": "Free Shipping On All US Orders",
+        "icon_2": "shopify:\/\/shop_images\/return_a49e900d-966f-4490-b514-d5d5ce40f6b0.png",
+        "reason-headline_2": "Easy 30-day exchange & return",
+        "icon_3": "shopify:\/\/shop_images\/phone.png",
+        "reason-headline_3": "24 \/ 7 Customer Support",
+        "icon_4": "shopify:\/\/shop_images\/lock.png",
+        "reason-headline_4": "100% Secure Checkout"
+      }
+    },
+    "fb-lander-text-banner": {
+      "type": "fb-lander-text-banner",
+      "settings": {
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "url": "shopify:\/\/pages\/trial-offer-policy",
+        "text": "<p>CLICK FOR MORE INFORMATION ON OUR LIMITED TIME OFFER POLICY<\/p>",
+        "font_size": "2em",
+        "font_size_mobile": "1.5em"
+      }
+    },
+    "fb-lander-newsletter": {
+      "type": "fb-lander-newsletter",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/IMG_7177_3.png",
+        "text_color": "#ffffff",
+        "button_color": "#000000",
+        "subheading": "Keep updated",
+        "title": "Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+      }
+    },
+    "side-cart": {
+      "type": "side-cart",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "custom-css",
+    "page-title",
+    "fb-lander-hero",
+    "fb-lander-banner-1",
+    "fb-lander-banner-2",
+    "fb-lander-subscribe-and-save-feat-products-OG",
+    "fb-lander-more-custom",
+    "fb-lander-text-banner",
+    "fb-lander-newsletter",
+    "side-cart"
+  ]
+}

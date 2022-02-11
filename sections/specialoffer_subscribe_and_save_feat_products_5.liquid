@@ -1,0 +1,161 @@
+{%- render 'specialoffer_subscribe_and_save_featured_products', data: section.settings, section_id: section.id, blocks: section.blocks -%}
+
+{% schema %}
+{
+   "name":"Subscribe & Save",
+   "tag": "section",
+   "class": "subscribe-and-save",
+   "settings":[
+      {
+        "type":"color",
+        "id":"bg_color",
+        "label":"Background Color",
+        "default":"#efefef"
+      },
+      {
+         "type":"text",
+         "id":"title",
+         "label":"Title",
+         "default":"SAVE ON OUR FEATURED BUNDLES"
+      },
+      {
+         "type":"text",
+         "id":"subtitle",
+         "label":"Subtitle",
+         "default":"SUBSCRIBE & SAVE 15% ON EVERY ORDER"
+      },
+      {
+         "type":"richtext",
+         "id":"disclaimer",
+         "label":"Disclaimer",
+         "default":"<p>* SUBSCRIBE & SAVE ON FUTURE DELIVERIES<br>(FREE GIFTS ON FIRST ORDER ONLY*)</p>"
+      },
+      {
+        "type":"header",
+        "content":"Products"
+      },
+      {
+        "type":"color",
+        "id":"products_bg_color",
+        "label":"Background Color",
+        "default":"#ffffff"
+      },
+      {
+         "type":"text",
+         "id":"products_padding",
+         "label":"Padding",
+         "default":"1em"
+      },
+      {
+        "type": "range",
+        "id": "products_image_height_dkp",
+        "label": "Image Height (Desktop)",
+        "min": 20,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "products_image_height_mobile",
+        "label": "Image Height (Mobile)",
+        "min": 20,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      },
+      {
+        "type":"select",
+        "id":"products_price",
+        "label":"Products Price",
+        "options":[
+          {
+            "value":"discount_price",
+            "label":"Discount Price"
+          },
+          {
+            "value":"one_time_price",
+            "label":"One-Time Price"
+          },
+          {
+            "value":"none",
+            "label":"None"
+          }
+        ],
+        "default":"discount_price"
+      },
+      {
+        "type":"select",
+        "id":"products_buttons_info",
+        "label":"Buttons Info",
+        "options":[
+          {
+            "value":"discount",
+            "label":"Discount %"
+          },
+          {
+            "value":"price",
+            "label":"Price"
+          },
+          {
+            "value":"none",
+            "label":"None"
+          }
+        ],
+        "default":"discount"
+      }
+   ],
+   "blocks":[
+      {
+         "type":"product",
+         "name":"Product",
+         "settings":[
+            {
+              "type":"product",
+              "id":"product",
+              "label":"Product"
+            },
+            {
+               "type":"text",
+               "id":"custom_title",
+               "label":"Custom Title",
+               "info":"It will replace the product title."
+            },
+            {
+               "type":"richtext",
+               "id":"custom_price",
+               "label":"Custom Price",
+               "info":"It will replace the product subscription and one-time price. Italic style will be shown as strikethrough text."
+            },
+            {
+               "type":"text",
+               "id":"includes_title",
+               "label":"Includes Title"
+            },
+            {
+               "type":"richtext",
+               "id":"includes_text",
+               "label":"Includes Text"
+            },
+            {
+               "type":"text",
+               "id":"gifts_title",
+               "label":"Gifts Title"
+            },
+            {
+               "type":"richtext",
+               "id":"gifts_text",
+               "label":"Gifts Text"
+            },
+            {
+               "type":"text",
+               "id":"free_shipping",
+               "label":"Free Shipping"
+            }
+         ]
+      }
+   ]
+}
+{% endschema %}

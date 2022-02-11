@@ -1,0 +1,164 @@
+var productPending = false;
+function freeItems(){
+  var freeItems = [
+    {
+      id: parseInt("{{settings.free_prod_1_variant_id}})"),
+      minTotal: parseInt("{{settings.free_prod_1_min_cart_total}})")*100,
+      pendingMessage: "{{settings.free_prod_1_pending_message}}",
+      successMessage: "{{settings.free_prod_1_success_message}}",
+      excludedProducts: [{{settings.free_prod_1_excluded_products | replace: ' ', ''}}]   
+    },
+    {
+      id: parseInt("{{settings.free_prod_2_variant_id}})"),
+      minTotal: parseInt("{{settings.free_prod_2_min_cart_total}})")*100,
+      pendingMessage: "{{settings.free_prod_2_pending_message}}",
+      successMessage: "{{settings.free_prod_2_success_message}}",
+      excludedProducts: [{{settings.free_prod_2_excluded_products | replace: ' ', ''}}]
+    }
+  ];
+
+  var cartItems;
+  var cartTotalPrice;
+  var template = window.location.pathname;
+
+  function addFreeItem(item){
+  	if (!productPending) {
+	    $.ajax({
+	      type: 'POST',
+	      url: '/cart/add.js',
+	      data:{
+	        quantity: 1,
+	        id: item.id
+	      },
+	      dataType: 'json'
+	    })
+	    .fail(function(){
+	      console.log('error adding the free item '+item.id);
+	      productPending = false;
+	    })
+	    .done(function(){
+	      console.log('free item '+item.id+' added');
+	      productPending = false;
+	  		updateFreeItemMessage(item);
+	      if (template === '/cart') {
+	        window.location.reload();
+	      }else if($('#side-cart').length > 0){
+          window.updateCartDesc(true);
+        }
+	    });
+  	}
+  	productPending = true;
+  }
+
+  function removeFreeItem(item){
+    var updates = {};
+    updates[item.id] = 0; 
+
+    $.ajax({
+      type: 'POST',
+      url: '/cart/update.js',
+      data:{
+        updates
+      },
+      dataType: 'json'
+    })
+    .fail(function(){
+      console.log('error removing the free item '+item.id);
+    })
+    .done(function(){
+      console.log('free item '+item.id+' deleted');
+  		updateFreeItemMessage(item);
+      if (template === '/cart') {
+        window.location.reload();
+      }else if($('#side-cart').length > 0){
+        window.updateCartDesc(true);
+      }
+    });
+  }
+
+  function updateFreeItemMessage(item){
+    if ($('.free-item-message').length > 0) { // message container exists
+      $('.free-item-message').addClass('enabled');
+      var remainingAmount = item.minTotal - cartTotalPrice;
+      if (remainingAmount <= 0 && item.successMessage.length > 0) { // free item is added
+        $('.free-item-message p').html(item.successMessage);
+      }else if(remainingAmount > 0 && item.pendingMessage.length > 0){ // free item is not added
+        var updatedMessage = item.pendingMessage.replace('$$','$'+remainingAmount/100);
+        $('.free-item-message p').html(updatedMessage);
+      }
+    }
+  }
+
+  function checkFreeItems(){
+    var freeProdsForEveryOrder = [];
+    if (cartItems.length > 0) {
+      freeItems.forEach(function(item){
+
+        // group free products with no minimum cart total
+        if (item.minTotal === 0) {
+          freeProdsForEveryOrder.push(item);
+        }
+
+        var freeItemAlreadyAdded = false;
+        var excludedByProduct = false;
+
+        if (item.id) { // free item is set in customizer
+
+        	// check if free item is already in cart
+          for (var i=0; i < cartItems.length && !freeItemAlreadyAdded; i++ ) {
+            if (cartItems[i].id === item.id) {
+              freeItemAlreadyAdded = true;
+            }
+          }
+          // check if there's a exluded product in cart (excluded products prevents the free item to be added)
+          for (var i=0; i < cartItems.length && !excludedByProduct; i++ ) {
+            if (item.excludedProducts.indexOf(cartItems[i].product_id) > -1) {
+              excludedByProduct = true;
+            }
+          }
+
+          if (!freeItemAlreadyAdded && !excludedByProduct && cartTotalPrice >= item.minTotal) { // add item when conditions are met
+            addFreeItem(item);
+          }else if(freeItemAlreadyAdded && cartTotalPrice < item.minTotal){ // remove item when minimum price conditions are not met
+            removeFreeItem(item);
+          }else if(freeItemAlreadyAdded && excludedByProduct){ // remove item when its excluded by product in cart
+            removeFreeItem(item);
+          }else if(!excludedByProduct){ // no need to add/remove items, just update the message when not excluded
+        		updateFreeItemMessage(item);
+          }
+        }
+
+      });
+    }
+    // remove free items if those are the only products in cart
+    if(cartItems.length == freeProdsForEveryOrder.length){
+      freeProdsForEveryOrder.forEach(function(item){
+        for (var i=0; i < cartItems.length && cartTotalPrice === 0; i++ ) {
+          if (cartItems[i].id === item.id) {
+            removeFreeItem(item);
+          }
+        }
+      });
+    }
+
+    // cart obj is empty but cart page is not
+    if (template === '/cart' && cartItems.length === 0 && $('.EmptyState').length < 1) {
+      window.location.reload();
+    }
+
+  }
+
+  $.ajax({
+    type: 'GET',
+    url: '/cart.js',
+    dataType: 'json'
+  })
+  .fail(function(){
+    console.log('error');
+  })
+  .done(function(cart){
+    cartItems = cart.items;
+    cartTotalPrice = cart.total_price;
+    checkFreeItems();
+  });
+}

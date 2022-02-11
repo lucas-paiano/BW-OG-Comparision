@@ -1,0 +1,39 @@
+{%- unless product.tags contains "hide" -%}
+
+	{% section 'product-template' %}
+
+	{% section 'product-tabs' %}
+
+	{% section 'product-reviews' %}
+
+	{% section 'related-products' %}
+
+	{% section 'product-usp' %}
+	
+    {%- unless product.handle contains "gift-card" -%}
+        {% comment %} Sezzle {% endcomment %}
+        <script type="text/javascript">
+          document.sezzleConfig =
+          {
+            targetXPath: '.product-single__price/span',
+            widgetType: 'product-page',
+            renderToPath: '../..',
+            theme: 'light',
+            alignment: 'auto',
+            fontFamily: 'inherit',
+            color: 'inherit',
+            fontSize: 12,
+            fontWeight: 300,
+            logoSize: 1.00,
+            maxWidth: 400,
+            marginTop: 0,
+            marginLeft: 0,
+            marginRight: 0
+          }
+        </script>
+        <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=d19bc6c1-c7dd-43d2-9bc6-71144957dd0d" defer></script>
+    {%- endunless -%}
+    
+{%- endunless -%}
+
+{% section 'sezzle-widget' %}

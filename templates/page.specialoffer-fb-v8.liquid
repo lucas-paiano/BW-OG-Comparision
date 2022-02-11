@@ -1,0 +1,38 @@
+<style>
+	.page-{{page.handle}}{margin: 0;}
+  #section-footer{margin-top: 0 !important;}
+</style>
+
+<div class="page page-{{page.handle}}">
+  <h1 class="visuallyhidden">{{page.title}}</h1>
+  {%- section 'specialoffer_fb_hero_8' -%}
+  {%- section 'specialoffer_fb_first_banner_8' -%}
+  {%- section 'specialoffer_fb_second_banner_8' -%}
+  {%- section 'specialoffer_subscribe_and_save_feat_products_8' -%}
+  {%- section 'specialoffer_fb_more_custom_8' -%}
+  {%- section 'specialoffer_fb_text_banner_8' -%}
+  {%- section 'specialoffer_fb_newsletter_8' -%}
+</div>
+
+{% comment %} side cart - start {% endcomment %}
+{% include 'side_cart' %}
+<script>
+  $(function(){
+
+    // revy upsells callback - update the side cart when an upsell product is added
+    window.revyUpsellDataLayer = window.revyUpsellDataLayer || [];
+    window.revyUpsellDataLayer.push({onAddToCartCallbacks: function() {
+      window.updateCartDesc(true);
+    }});
+
+    /*
+    $(document).click(function(event){
+      // hide side cart when clicking outside of it
+      if(!$(event.target).closest('#side-cart').length && $(event.target).attr('id')!="loading-overlay" && $('#side-cart').hasClass('open')) {
+        window.hideSideCart();
+      }
+    });
+    */
+  })
+</script>
+{% comment %} side cart - end {% endcomment %}

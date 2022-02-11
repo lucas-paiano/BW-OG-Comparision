@@ -1,0 +1,252 @@
+{%- render 'subscribe_and_save_featured_products_with_slider', data: section.settings, section_id: section.id, blocks: section.blocks -%}
+
+{% schema %}
+{
+   "name":"Subscribe & Save",
+   "tag": "section",
+   "class": "fb-lander-subscribe-and-save-feat-products",
+   "settings":[
+      {
+        "type":"color",
+        "id":"bg_color",
+        "label":"Background Color",
+        "default":"#efefef"
+      },
+      {
+         "type":"text",
+         "id":"title",
+         "label":"Title",
+         "default":"<small>LIMITED TIME SUBSCRIPTION OFFER</small>"
+      },
+      {
+         "type":"text",
+         "id":"subtitle",
+         "label":"Subtitle",
+         "default":"<small> Your Choice! Just Pay $4.95 + FREE Shipping!</small>"
+      },
+      {
+         "type":"richtext",
+         "id":"disclaimer",
+         "label":"Disclaimer",
+         "default":"<p>*SUBSCRIBE & SAVE 15% + FREE SHIPPING ON ALL DELIVERIES + FREE GIFT ON NEXT DELIVERY!</p>"
+      },
+      {
+        "type":"header",
+        "content":"Products"
+      },
+      {
+        "type":"color",
+        "id":"products_bg_color",
+        "label":"Background Color",
+        "default":"#ffffff"
+      },
+      {
+         "type":"text",
+         "id":"products_padding",
+         "label":"Padding",
+         "default":"1em"
+      },
+      {
+        "type": "range",
+        "id": "products_image_height_dkp",
+        "label": "Image Height (Desktop)",
+        "min": 20,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "products_image_height_mobile",
+        "label": "Image Height (Mobile)",
+        "min": 20,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      },
+      {
+        "type":"select",
+        "id":"products_price",
+        "label":"Products Price",
+        "options":[
+          {
+            "value":"discount_price",
+            "label":"Discount Price"
+          },
+          {
+            "value":"one_time_price",
+            "label":"One-Time Price"
+          },
+          {
+            "value":"none",
+            "label":"None"
+          }
+        ],
+        "default":"discount_price"
+      },
+      {
+        "type":"select",
+        "id":"products_buttons_info",
+        "label":"Buttons Info",
+        "options":[
+          {
+            "value":"discount",
+            "label":"Discount %"
+          },
+          {
+            "value":"price",
+            "label":"Price"
+          },
+          {
+            "value":"none",
+            "label":"None"
+          }
+        ],
+        "default":"none"
+      }
+   ],
+   "blocks":[
+      {
+         "type":"product",
+         "name":"Product",
+         "settings":[
+            {
+              "type":"product",
+              "id":"product",
+              "label":"Product"
+            },
+            {
+              "type": "checkbox",
+              "id": "its_free_trial",
+              "label": "It's A Free Trial",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "subscription_slider_trigger",
+              "label": "Its Subscription Will Trigger The Slider",
+              "default": true
+            },
+            {
+               "type":"text",
+               "id":"custom_title",
+               "label":"Custom Title",
+               "info":"It will replace the product title."
+            },
+            {
+               "type":"richtext",
+               "id":"custom_price",
+               "label":"Custom Price",
+               "info":"It will replace the product subscription and one-time price. Italic style will be shown as strikethrough text."
+            },
+            {
+               "type":"text",
+               "id":"includes_title",
+               "label":"Includes Title"
+            },
+            {
+               "type":"richtext",
+               "id":"includes_text",
+               "label":"Includes Text"
+            },
+            {
+               "type":"text",
+               "id":"gifts_title",
+               "label":"Gifts Title"
+            },
+            {
+               "type":"richtext",
+               "id":"gifts_text",
+               "label":"Gifts Text"
+            },
+            {
+               "type":"text",
+               "id":"free_shipping",
+               "label":"Free Shipping"
+            },
+            {
+               "type":"text",
+               "id":"subscription_options_btn_label",
+               "label":"Subscription Options Button Label",
+               "default":"SUBSCRIBE & SAVE"
+            },
+            {
+               "type":"text",
+               "id":"add_subscription_btn_label",
+               "label":"Add Subscription Button Label",
+               "default":"ADD SUBSCRIPTION"
+            },
+            {
+               "type":"text",
+               "id":"onetime_btn_label",
+               "label":"One-Time Button Label",
+               "default":"ONE TIME PURCHASE"
+            },
+            {
+              "type":"header",
+              "content":"Subscription Slider Pop-up Custom Settings"
+            },
+            {
+               "type":"text",
+               "id":"popup_custom_price",
+               "label":"Pop-up Custom Price",
+               "info":"Leave blank for using the subscription price."
+            },
+            {
+              "type":"header",
+              "content":"One-Time Custom Product"
+            },
+            {
+              "type":"product",
+              "id":"one_time_custom_product",
+              "label":"One-Time Custom Product"
+            }
+         ]
+      },
+      {
+         "type":"slider-content",
+         "name":"Slider Content",
+         "settings":[
+            {
+              "type":"image_picker",
+              "id":"icon",
+              "label":"Icon"
+            },
+            {
+              "type": "range",
+              "id": "icon_height",
+              "label": "Icon Height",
+              "min": 1,
+              "max": 20,
+              "step": 1,
+              "unit": "em",
+              "default": 7
+            },
+            {
+              "type": "range",
+              "id": "icon_size",
+              "label": "Icon Size",
+              "min": 30,
+              "max": 100,
+              "step": 5,
+              "unit": "%",
+              "default": 100
+            },
+            {
+               "type":"text",
+               "id":"title",
+               "label":"Title"
+            },
+            {
+               "type":"richtext",
+               "id":"text",
+               "label":"Text",
+               "info":"Use $$ for dynamic price and %% for dynamic discount."
+            }
+         ]
+      }
+   ]
+}
+{% endschema %}
