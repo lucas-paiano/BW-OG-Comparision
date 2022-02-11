@@ -1,3 +1,8 @@
+{% if customer.metafields.subscriptions.customer_string %}
+<!-- Begin ReCharge code -->
+<p><a href="/tools/recurring/customers/{{ customer.metafields.subscriptions.customer_string }}/subscriptions/">Manage Subscriptions</a></p>
+<!-- End ReCharge code -->
+{% endif %}
 <div class="Container Container--narrow">
   <header class="PageHeader">
     <a href="/account/logout" class="PageHeader__Back Heading Text--subdued Link Link--primary u-h7">{{ 'customer.account.logout' | t }}</a>

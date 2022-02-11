@@ -1,26 +1,26 @@
-{%- if section.settings.css != blank -%}
-  <style>
-    {{section.settings.css}}
-  </style>
-{%- endif -%}
-
-{% schema %}
-{
-  "name":"Custom CSS",
-  "tag":"section",
-  "class":"custom-css",
-  "presets":[
-    {
-      "name":"Custom CSS",
-      "category":"Home"
-    }
-  ],
-  "settings":[
-    {
-      "type":"textarea",
-      "id":"css",
-      "label":"CSS"
-    }
-  ]
-}
+{%- if section.settings.css != blank -%}
+  <style>
+    {{section.settings.css}}
+  </style>
+{%- endif -%}
+
+{% schema %}
+{
+  "name":"Custom CSS",
+  "tag":"section",
+  "class":"custom-css",
+  "presets":[
+    {
+      "name":"Custom CSS",
+      "category":"Home"
+    }
+  ],
+  "settings":[
+    {
+      "type":"textarea",
+      "id":"css",
+      "label":"CSS"
+    }
+  ]
+}
 {% endschema %}

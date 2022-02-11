@@ -58,6 +58,11 @@
               <span class="CartItem__Price Price" data-money-convertible>{{ line_item.price | money_without_trailing_zeros }}</span>
             {%- endif -%}
           </div>
+          
+          {% comment %} Ordergroove added selling plan display {% endcomment %}
+          {%- if line_item.selling_plan_allocation -%}
+          <p>{{line_item.selling_plan_allocation.selling_plan.name}}</p>
+          {%- endif -%}
         </div>
 
         {%- capture item_actions -%}

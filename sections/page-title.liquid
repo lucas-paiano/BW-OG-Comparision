@@ -1,22 +1,22 @@
-<h1 class="visuallyhidden">{%- if section.settings.title != blank -%}{{section.settings.title}}{%- else -%}{{page.title}}{%- endif -%}</h1>
-
-{% schema %}
-{
-  "name":"Page Title",
-  "class":"hide",
-  "presets":[
-    {
-      "name":"Page Title",
-      "category":"Home"
-    }
-  ],
-  "settings":[
-  	{
-      "type":"text",
-      "id":"title",
-      "label":"Page Title",
-      "info":"This will be hidden. It's only for SEO purposes."
-    }
-  ]
-}
+<h1 class="visuallyhidden">{%- if section.settings.title != blank -%}{{section.settings.title}}{%- else -%}{{page.title}}{%- endif -%}</h1>
+
+{% schema %}
+{
+  "name":"Page Title",
+  "class":"hide",
+  "presets":[
+    {
+      "name":"Page Title",
+      "category":"Home"
+    }
+  ],
+  "settings":[
+  	{
+      "type":"text",
+      "id":"title",
+      "label":"Page Title",
+      "info":"This will be hidden. It's only for SEO purposes."
+    }
+  ]
+}
 {% endschema %}

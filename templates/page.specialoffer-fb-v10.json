@@ -59,8 +59,8 @@
         "padding_sm": 90
       }
     },
-    "fb-lander-subscribe-and-save-feat-products-OG": {
-      "type": "fb-lander-subscribe-and-save-feat-products-OG",
+    "fb-lander-subscribe-and-save-feat-products": {
+      "type": "fb-lander-subscribe-and-save-feat-products",
       "blocks": {
         "099ca4eb-eec4-4480-9a94-1eb0be161991": {
           "type": "product",
@@ -226,8 +226,7 @@
     },
     "side-cart": {
       "type": "side-cart",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
@@ -236,7 +235,7 @@
     "fb-lander-hero",
     "fb-lander-banner-1",
     "fb-lander-banner-2",
-    "fb-lander-subscribe-and-save-feat-products-OG",
+    "fb-lander-subscribe-and-save-feat-products",
     "fb-lander-more-custom",
     "fb-lander-text-banner",
     "fb-lander-newsletter",

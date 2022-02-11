@@ -709,8 +709,7 @@
           "1532956825139",
           "1532956835601"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "page-contact-template": {
         "type": "page-contact-template",
@@ -727,8 +726,7 @@
         "block_order": [
           "page-contact-template-0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "1533135474911": {
         "type": "timeline",
@@ -1152,8 +1150,7 @@
           "1570022853079",
           "1570022872309"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "product-reviews": {
         "type": "product-reviews",
@@ -1188,8 +1185,7 @@
           "1570192903116",
           "1570192913675"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "landing-page-1": {
         "type": "landing-page-1",
@@ -1288,8 +1284,7 @@
           "landing-page-5-3",
           "landing-page-5-4"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "product-reviews-landing-page": {
         "type": "product-reviews-landing-page",
@@ -1931,7 +1926,7 @@
         "settings": {
           "link_url": "https:\/\/blackwolfnation.com\/pages\/specialoffer-fb-6?subscribe-and-save%EF%BB%BF%EF%BB%BF",
           "alt": "",
-          "bg_dkp": "shopify:\/\/shop_images\/PhenomenScience.png",
+          "bg_dkp": "shopify:\/\/shop_images\/banner_2.png",
           "padding_dkp": 41,
           "padding_sm": 43
         }
@@ -2486,7 +2481,7 @@
         "settings": {
           "link_url": "",
           "alt": "",
-          "bg_dkp": "shopify:\/\/shop_images\/FB6LanderScience_New2.png",
+          "bg_dkp": "shopify:\/\/shop_images\/FB6LanderScience_New_3166e11f-2f1b-4338-92f4-62f0fcb5481b.png",
           "padding_dkp": 45,
           "padding_sm": 44
         }

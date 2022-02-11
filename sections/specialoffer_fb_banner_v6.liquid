@@ -1,73 +1,73 @@
-{%- if section.settings.bg_dkp -%}
-  <style>
-    #shopify-section-{{section.id}}{position: relative;padding-top: {{section.settings.padding_dkp}}%;}
-    #shopify-section-{{section.id}} .bg-container{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center;background-repeat: no-repeat;}
-    
-    @media all and (max-width: 600px){
-      #shopify-section-{{section.id}}{padding-top: {{section.settings.padding_sm}}%;}
-    }
-  </style>
-
-  {%- if section.settings.link_url != blank -%}
-    <a href="{{section.settings.link_url}}" aria-label="{{section.settings.alt}}">
-  {%- endif -%}
-
-    <div class="Image--lazyLoad bg-container big {% if section.settings.bg_sm %}small--hide{% endif %}" data-bgset="{% render 'lazy_src', image: section.settings.bg_dkp %}" {% if section.settings.bg_dkp_alt != blank %} aria-label="{{section.settings.bg_dkp_alt}}"{% endif %}></div>
-    {%- if section.settings.bg_sm -%}
-      <div class="Image--lazyLoad bg-container small hide small--show" data-bgset="{% render 'lazy_src', image: section.settings.bg_sm %}" {% if section.settings.bg_sm_alt != blank %} aria-label="{{section.settings.bg_sm_alt}}"{% endif %}></div>
-    {%- endif -%}
-
-  {%- if section.settings.link_url != blank -%}
-    </a>
-  {%- endif -%}
-{%- endif -%}
-
-{% schema %}
-{
-   "name":"Banner",
-   "tag": "section",
-   "class": "special-offer-banner",
-   "settings":[
-      {
-        "type":"url",
-        "id":"link_url",
-        "label":"Link URL",
-        "info":"Paste or search."
-      },
-      {
-        "type":"text",
-        "id":"alt",
-        "label":"Link Alt Text"
-      },
-      {
-         "type":"image_picker",
-         "id":"bg_dkp",
-         "label":"Background Image (Desktop)"
-      },
-      {
-        "type": "range",
-        "id": "padding_dkp",
-        "label": "Height (Desktop)",
-        "min": 5,
-        "max": 100,
-        "step": 1,
-        "default": 18
-      },
-      {
-         "type":"image_picker",
-         "id":"bg_sm",
-         "label":"Background Image (Mobile)",
-         "info":"Leave blank for using only the desktop image."
-      },
-      {
-        "type": "range",
-        "id": "padding_sm",
-        "label": "Height (Mobile)",
-        "min": 5,
-        "max": 100,
-        "step": 1,
-        "default": 90
-      }
-   ]
-}
+{%- if section.settings.bg_dkp -%}
+  <style>
+    #shopify-section-{{section.id}}{position: relative;padding-top: {{section.settings.padding_dkp}}%;}
+    #shopify-section-{{section.id}} .bg-container{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center;background-repeat: no-repeat;}
+    
+    @media all and (max-width: 600px){
+      #shopify-section-{{section.id}}{padding-top: {{section.settings.padding_sm}}%;}
+    }
+  </style>
+
+  {%- if section.settings.link_url != blank -%}
+    <a href="{{section.settings.link_url}}" aria-label="{{section.settings.alt}}">
+  {%- endif -%}
+
+    <div class="Image--lazyLoad bg-container big {% if section.settings.bg_sm %}small--hide{% endif %}" data-bgset="{% render 'lazy_src', image: section.settings.bg_dkp %}" {% if section.settings.bg_dkp_alt != blank %} aria-label="{{section.settings.bg_dkp_alt}}"{% endif %}></div>
+    {%- if section.settings.bg_sm -%}
+      <div class="Image--lazyLoad bg-container small hide small--show" data-bgset="{% render 'lazy_src', image: section.settings.bg_sm %}" {% if section.settings.bg_sm_alt != blank %} aria-label="{{section.settings.bg_sm_alt}}"{% endif %}></div>
+    {%- endif -%}
+
+  {%- if section.settings.link_url != blank -%}
+    </a>
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+   "name":"Banner",
+   "tag": "section",
+   "class": "special-offer-banner",
+   "settings":[
+      {
+        "type":"url",
+        "id":"link_url",
+        "label":"Link URL",
+        "info":"Paste or search."
+      },
+      {
+        "type":"text",
+        "id":"alt",
+        "label":"Link Alt Text"
+      },
+      {
+         "type":"image_picker",
+         "id":"bg_dkp",
+         "label":"Background Image (Desktop)"
+      },
+      {
+        "type": "range",
+        "id": "padding_dkp",
+        "label": "Height (Desktop)",
+        "min": 5,
+        "max": 100,
+        "step": 1,
+        "default": 18
+      },
+      {
+         "type":"image_picker",
+         "id":"bg_sm",
+         "label":"Background Image (Mobile)",
+         "info":"Leave blank for using only the desktop image."
+      },
+      {
+        "type": "range",
+        "id": "padding_sm",
+        "label": "Height (Mobile)",
+        "min": 5,
+        "max": 100,
+        "step": 1,
+        "default": 90
+      }
+   ]
+}
 {% endschema %}

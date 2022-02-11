@@ -1,27 +1,27 @@
-{% comment %} side cart - start {% endcomment %}
-{% include 'side_cart' %}
-<script>
-  $(function(){
-    // revy upsells callback - update the side cart when an upsell product is added
-    window.revyUpsellDataLayer = window.revyUpsellDataLayer || [];
-    window.revyUpsellDataLayer.push({onAddToCartCallbacks: function() {
-      window.updateCartDesc(true);
-    }});
-  })
-</script>
-{% comment %} side cart - end {% endcomment %}
-
-{% schema %}
-{
-  "name":"Side Cart",
-  "tag":"section",
-  "class":"side-cart",
-  "presets":[
-    {
-      "name":"side-cart",
-      "category":"Home"
-    }
-  ],
-  "settings":[]
-}
+{% comment %} side cart - start {% endcomment %}
+{% include 'side_cart' %}
+<script>
+  $(function(){
+    // revy upsells callback - update the side cart when an upsell product is added
+    window.revyUpsellDataLayer = window.revyUpsellDataLayer || [];
+    window.revyUpsellDataLayer.push({onAddToCartCallbacks: function() {
+      window.updateCartDesc(true);
+    }});
+  })
+</script>
+{% comment %} side cart - end {% endcomment %}
+
+{% schema %}
+{
+  "name":"Side Cart",
+  "tag":"section",
+  "class":"side-cart",
+  "presets":[
+    {
+      "name":"side-cart",
+      "category":"Home"
+    }
+  ],
+  "settings":[]
+}
 {% endschema %}

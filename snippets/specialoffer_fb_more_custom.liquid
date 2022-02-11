@@ -1,71 +1,71 @@
-<section id="section-{{ section_id }}" class="more-custom">
-
-  <div class="FlexboxIeFix">
-
-      {%- if data.subheading != blank or data.title != blank -%}
-        
-        <div class="ImageHero__ContentOverlay">
-          {%- if data.subheading != blank or data.title != blank -%}
-            <header class="SectionHeader">
-              
-              {%- if data.subheading != blank -%}
-                <h3 class="SectionHeader__SubHeading Heading u-h6">{{ data.subheading | escape }}</h3>
-              {%- endif -%}
-
-              {%- if data.title != blank -%}
-                <h2 class="SectionHeader__Heading Heading u-h1">{{ data.title | escape }}</h2>
-              {%- endif -%}
-
-              {%- if data.reason-headline_1 != blank -%}
-                <div class="SectionHeader__Reasons">
-
-                    <div class="reason-custom">                    
-                      <img src="{{ data.icon_1 | img_url: '240x' }}" alt="{{ data.icon_1.alt | escape }}" class="reason_icon">
-                      <p>{{ data.reason-headline_1 }}</p>                   
-                    </div>
-
-
-                    <div class="reason-custom">                    
-                      <img src="{{ data.icon_2 | img_url: '240x' }}" alt="{{ data.icon_2.alt | escape }}" class="reason_icon">
-                      <p>{{ data.reason-headline_2 }}</p>                   
-                    </div>
-
-
-                    <div class="reason-custom">                    
-                      <img src="{{ data.icon_3 | img_url: '240x' }}" alt="{{ data.icon_3.alt | escape }}" class="reason_icon">
-                      <p>{{ data.reason-headline_3 }}</p>                   
-                    </div>                                        
-
-
-                    <div class="reason-custom">                    
-                      <img src="{{ data.icon_4 | img_url: '240x' }}" alt="{{ data.icon_4.alt | escape }}" class="reason_icon">
-                      <p>{{ data.reason-headline_4}}</p>                   
-                    </div>
-
-                    <div class="clearfix"></div>
-
-                </div><!--/.SectionHeader_Testimonials -->
-              {%- endif -%}
-
-            </header>
-          {%- endif -%}
-        </div>
-      {%- endif -%}
-  </div>
-
-</section>
-
-<style>
-  #section-{{ section_id }},
-  #section-{{ section_id }} .Heading {
-    color: {{ data.text_color }}
-  }
-  #section-{{ section_id }} {
-    background-color: {{ data.background_color }}
-  }
-  @media all and (max-width: 640px){
-    #shopify-section-{{section_id}} .more-custom .ImageHero__ContentOverlay{margin-bottom: 2em;}
-    #shopify-section-{{section_id}} .SectionHeader__Reasons{display: flex;flex-wrap: wrap;margin-top: 2em;}
-    #shopify-section-{{section_id}} .more-custom .reason-custom{width: 50%;padding: 0 1em;}
-  }
+<section id="section-{{ section_id }}" class="more-custom">
+
+  <div class="FlexboxIeFix">
+
+      {%- if data.subheading != blank or data.title != blank -%}
+        
+        <div class="ImageHero__ContentOverlay">
+          {%- if data.subheading != blank or data.title != blank -%}
+            <header class="SectionHeader">
+              
+              {%- if data.subheading != blank -%}
+                <h3 class="SectionHeader__SubHeading Heading u-h6">{{ data.subheading | escape }}</h3>
+              {%- endif -%}
+
+              {%- if data.title != blank -%}
+                <h2 class="SectionHeader__Heading Heading u-h1">{{ data.title | escape }}</h2>
+              {%- endif -%}
+
+              {%- if data.reason-headline_1 != blank -%}
+                <div class="SectionHeader__Reasons">
+
+                    <div class="reason-custom">                    
+                      <img src="{{ data.icon_1 | img_url: '240x' }}" alt="{{ data.icon_1.alt | escape }}" class="reason_icon">
+                      <p>{{ data.reason-headline_1 }}</p>                   
+                    </div>
+
+
+                    <div class="reason-custom">                    
+                      <img src="{{ data.icon_2 | img_url: '240x' }}" alt="{{ data.icon_2.alt | escape }}" class="reason_icon">
+                      <p>{{ data.reason-headline_2 }}</p>                   
+                    </div>
+
+
+                    <div class="reason-custom">                    
+                      <img src="{{ data.icon_3 | img_url: '240x' }}" alt="{{ data.icon_3.alt | escape }}" class="reason_icon">
+                      <p>{{ data.reason-headline_3 }}</p>                   
+                    </div>                                        
+
+
+                    <div class="reason-custom">                    
+                      <img src="{{ data.icon_4 | img_url: '240x' }}" alt="{{ data.icon_4.alt | escape }}" class="reason_icon">
+                      <p>{{ data.reason-headline_4}}</p>                   
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div><!--/.SectionHeader_Testimonials -->
+              {%- endif -%}
+
+            </header>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+  </div>
+
+</section>
+
+<style>
+  #section-{{ section_id }},
+  #section-{{ section_id }} .Heading {
+    color: {{ data.text_color }}
+  }
+  #section-{{ section_id }} {
+    background-color: {{ data.background_color }}
+  }
+  @media all and (max-width: 640px){
+    #shopify-section-{{section_id}} .more-custom .ImageHero__ContentOverlay{margin-bottom: 2em;}
+    #shopify-section-{{section_id}} .SectionHeader__Reasons{display: flex;flex-wrap: wrap;margin-top: 2em;}
+    #shopify-section-{{section_id}} .more-custom .reason-custom{width: 50%;padding: 0 1em;}
+  }
 </style>

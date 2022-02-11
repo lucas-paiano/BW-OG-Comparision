@@ -1,188 +1,188 @@
-<style>
-  #shopify-section-{{section.id}}{padding: 6em 0;}
-  #shopify-section-{{section.id}} .container{max-width: 1100px;}
-  #shopify-section-{{section.id}} .container{text-align: center;}
-  #shopify-section-{{section.id}} .header{margin-bottom: 4em;}
-  #shopify-section-{{section.id}} h2{font-size: {{section.settings.header_font_size_dkp}}em;margin-bottom: 0.35em;}
-  #shopify-section-{{section.id}} p{font-size: 1.145em;}
-
-  #shopify-section-{{section.id}} .products-grid .product{flex-direction: column;}
-
-  #shopify-section-{{section.id}} .product h3{font-size: 1.3em;font-weight: 600;line-height: 1.3em;margin-bottom: 1em;}
-  #shopify-section-{{section.id}} .product .cta-container{text-align: center;flex-direction: column;justify-content: flex-end;height: 100%;}
-  #shopify-section-{{section.id}} .product .cta-container p em{text-decoration: line-through;margin-right: 1em;}
-
-  #shopify-section-{{section.id}} .image-container{position: relative;margin-bottom: 1.5em;max-width: 100%;}
-  #shopify-section-{{section.id}} .image-container>div{background-size: cover;background-repeat: no-repeat;background-position: center;width: {{section.settings.image_size}}px;height: {{section.settings.image_size}}px;border-radius: {{section.settings.image_border_radius}}%;max-width: 100%}
-  #shopify-section-{{section.id}} .btn{background-color: {{settings.content_main_color}};color: #fff;font-size: 1.43em;padding: 0.7em 0.5em;width: 220px;max-width: 100%;margin: 1.5em auto 0;}
-  .isNotMobile #shopify-section-{{section.id}} .btn:hover{background-color: #000;}
-
-  @media all and (max-width: 900px){
-    #shopify-section-{{section.id}}{padding: 2em 0;}
-
-    #shopify-section-{{section.id}} .header{margin-bottom: 1.5em;}
-
-    #shopify-section-{{section.id}} h2{font-size: {{section.settings.header_font_size_sm}}em;}
-    #shopify-section-{{section.id}} p{font-size: 1em;}
-
-    #shopify-section-{{section.id}} .products-grid{width: 350px;margin: auto; max-width: 100%;}
-    #shopify-section-{{section.id}} .products-grid .product{flex-direction: row;}
-    #shopify-section-{{section.id}} .product{justify-content: center;margin-bottom: 1.5em;padding-left: 0;}
-    #shopify-section-{{section.id}} .product h3{font-size: 0.9em;}
-    #shopify-section-{{section.id}} .product .cta-container{text-align: left;justify-content: center;padding-left: 10px;width: 60%;}
-
-    #shopify-section-{{section.id}} .image-container{margin-bottom: 0;width: 50%;}
-    #shopify-section-{{section.id}} .image-container>div{width: 140px;height: 140px;}
-    #shopify-section-{{section.id}} .btn{font-size: 1.1em;padding: 0.68em;width: 144px;max-width: 100%;margin-top: 0.5em;margin-left: 0;}
-  }
-</style>
-
-{%- assign item-width-large = 'one-whole' -%}
-{%- case section.blocks.size -%}
-  {%- when 2 -%}
-    {%- assign item-width-large = 'one-half' -%}
-  {%- else -%}
-    {%- assign item-width-large = 'one-third' -%}
-{%- endcase -%}
-
-<div class="container">
-  {%- if section.settings.title != "" or section.settings.subtitle != "" -%}
-    <div class="header">
-      {%- if section.settings.title != "" -%}
-        <h2>{{section.settings.title}}</h2>
-      {%- endif -%}
-      {%- if section.settings.title != "" -%}
-        {{section.settings.subtitle}}
-      {%- endif -%}
-    </div>
-  {%- endif -%}
-
-  <div class="grid products-grid">
-    {%- for block in section.blocks -%}
-    <div class="grid__item {{item-width-large}} medium-down--one-whole product flex align-items-center" {{ block.shopify_attributes }}>
-      <div class="image-container medium-down--flex">
-        {%- if block.settings.image -%}
-          <div class="Image--lazyLoad" data-bgset="{% render 'lazy_src', image: block.settings.image %}" {% if block.settings.image.alt != blank %} aria-label="{{block.settings.image.alt}}"{% endif %}></div>
-        {%- endif -%}
-      </div>
-      <div class="flex cta-container">
-        {%- if block.settings.title != "" -%}
-          <h3>{{block.settings.title}}</h3>
-        {%- endif -%}
-        {%- if block.settings.subtitle != "" -%}
-          {{block.settings.subtitle}}
-        {%- endif -%}
-        {%- if block.settings.button_url -%}
-          <a href="{{block.settings.button_url}}" class="Button Button--primary">{{block.settings.button_label}}</a>
-        {%- endif -%}
-      </div>
-    </div>
-    {%- endfor -%}
-  </div>
-</div>
-
-{% schema %}
-{
-   "name":"Featured Products",
-   "tag": "section",
-   "class": "featured-products",
-   "presets":[
-      {
-         "name":"Featured Products",
-         "category": "Home"
-      }
-   ],
-   "settings":[
-      {
-         "type":"text",
-         "id":"title",
-         "label":"Title"
-      },
-      {
-        "type": "range",
-        "id": "header_font_size_dkp",
-        "label": "Header Font Size (Desktop)",
-        "min": 1,
-        "max": 4,
-        "step": 0.1,
-        "unit": "em",
-        "default": 2.8
-      },
-      {
-        "type": "range",
-        "id": "header_font_size_sm",
-        "label": "Header Font Size (Mobile)",
-        "min": 1,
-        "max": 4,
-        "step": 0.1,
-        "unit": "em",
-        "default": 1.5
-      },
-      {
-         "type":"richtext",
-         "id":"subtitle",
-         "label":"Subtitle"
-      },
-      {
-        "type":"header",
-        "content":"Product Images"
-      },
-      {
-        "type": "range",
-        "id": "image_border_radius",
-        "label": "Image Border Radius",
-        "min": 0,
-        "max": 50,
-        "step": 1,
-        "unit": "%",
-        "default": 50
-      },
-      {
-        "type": "range",
-        "id": "image_size",
-        "label": "Image Size",
-        "min": 150,
-        "max": 500,
-        "step": 10,
-        "unit": "px",
-        "default": 300
-      }
-   ],
-   "blocks":[
-      {
-         "type":"product",
-         "name":"Product",
-         "settings":[
-            {
-               "type":"image_picker",
-               "id":"image",
-               "label":"image"
-            },
-            {
-              "type":"text",
-              "id":"title",
-              "label":"Title"
-            },
-            {
-              "type":"richtext",
-              "id":"subtitle",
-              "label":"Subtitle",
-              "info":"Use italics for dashed text."
-            },
-            {
-              "type":"url",
-              "id":"button_url",
-              "label":"Button Link",
-              "info":"Paste or search."
-            },
-            {
-              "type":"text",
-              "id":"button_label",
-              "label":"Button Label",
-              "default":"Shop Now"
-            }
-         ]
-      }
-   ]
-}
+<style>
+  #shopify-section-{{section.id}}{padding: 6em 0;}
+  #shopify-section-{{section.id}} .container{max-width: 1100px;}
+  #shopify-section-{{section.id}} .container{text-align: center;}
+  #shopify-section-{{section.id}} .header{margin-bottom: 4em;}
+  #shopify-section-{{section.id}} h2{font-size: {{section.settings.header_font_size_dkp}}em;margin-bottom: 0.35em;}
+  #shopify-section-{{section.id}} p{font-size: 1.145em;}
+
+  #shopify-section-{{section.id}} .products-grid .product{flex-direction: column;}
+
+  #shopify-section-{{section.id}} .product h3{font-size: 1.3em;font-weight: 600;line-height: 1.3em;margin-bottom: 1em;}
+  #shopify-section-{{section.id}} .product .cta-container{text-align: center;flex-direction: column;justify-content: flex-end;height: 100%;}
+  #shopify-section-{{section.id}} .product .cta-container p em{text-decoration: line-through;margin-right: 1em;}
+
+  #shopify-section-{{section.id}} .image-container{position: relative;margin-bottom: 1.5em;max-width: 100%;}
+  #shopify-section-{{section.id}} .image-container>div{background-size: cover;background-repeat: no-repeat;background-position: center;width: {{section.settings.image_size}}px;height: {{section.settings.image_size}}px;border-radius: {{section.settings.image_border_radius}}%;max-width: 100%}
+  #shopify-section-{{section.id}} .btn{background-color: {{settings.content_main_color}};color: #fff;font-size: 1.43em;padding: 0.7em 0.5em;width: 220px;max-width: 100%;margin: 1.5em auto 0;}
+  .isNotMobile #shopify-section-{{section.id}} .btn:hover{background-color: #000;}
+
+  @media all and (max-width: 900px){
+    #shopify-section-{{section.id}}{padding: 2em 0;}
+
+    #shopify-section-{{section.id}} .header{margin-bottom: 1.5em;}
+
+    #shopify-section-{{section.id}} h2{font-size: {{section.settings.header_font_size_sm}}em;}
+    #shopify-section-{{section.id}} p{font-size: 1em;}
+
+    #shopify-section-{{section.id}} .products-grid{width: 350px;margin: auto; max-width: 100%;}
+    #shopify-section-{{section.id}} .products-grid .product{flex-direction: row;}
+    #shopify-section-{{section.id}} .product{justify-content: center;margin-bottom: 1.5em;padding-left: 0;}
+    #shopify-section-{{section.id}} .product h3{font-size: 0.9em;}
+    #shopify-section-{{section.id}} .product .cta-container{text-align: left;justify-content: center;padding-left: 10px;width: 60%;}
+
+    #shopify-section-{{section.id}} .image-container{margin-bottom: 0;width: 50%;}
+    #shopify-section-{{section.id}} .image-container>div{width: 140px;height: 140px;}
+    #shopify-section-{{section.id}} .btn{font-size: 1.1em;padding: 0.68em;width: 144px;max-width: 100%;margin-top: 0.5em;margin-left: 0;}
+  }
+</style>
+
+{%- assign item-width-large = 'one-whole' -%}
+{%- case section.blocks.size -%}
+  {%- when 2 -%}
+    {%- assign item-width-large = 'one-half' -%}
+  {%- else -%}
+    {%- assign item-width-large = 'one-third' -%}
+{%- endcase -%}
+
+<div class="container">
+  {%- if section.settings.title != "" or section.settings.subtitle != "" -%}
+    <div class="header">
+      {%- if section.settings.title != "" -%}
+        <h2>{{section.settings.title}}</h2>
+      {%- endif -%}
+      {%- if section.settings.title != "" -%}
+        {{section.settings.subtitle}}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="grid products-grid">
+    {%- for block in section.blocks -%}
+    <div class="grid__item {{item-width-large}} medium-down--one-whole product flex align-items-center" {{ block.shopify_attributes }}>
+      <div class="image-container medium-down--flex">
+        {%- if block.settings.image -%}
+          <div class="Image--lazyLoad" data-bgset="{% render 'lazy_src', image: block.settings.image %}" {% if block.settings.image.alt != blank %} aria-label="{{block.settings.image.alt}}"{% endif %}></div>
+        {%- endif -%}
+      </div>
+      <div class="flex cta-container">
+        {%- if block.settings.title != "" -%}
+          <h3>{{block.settings.title}}</h3>
+        {%- endif -%}
+        {%- if block.settings.subtitle != "" -%}
+          {{block.settings.subtitle}}
+        {%- endif -%}
+        {%- if block.settings.button_url -%}
+          <a href="{{block.settings.button_url}}" class="Button Button--primary">{{block.settings.button_label}}</a>
+        {%- endif -%}
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+   "name":"Featured Products",
+   "tag": "section",
+   "class": "featured-products",
+   "presets":[
+      {
+         "name":"Featured Products",
+         "category": "Home"
+      }
+   ],
+   "settings":[
+      {
+         "type":"text",
+         "id":"title",
+         "label":"Title"
+      },
+      {
+        "type": "range",
+        "id": "header_font_size_dkp",
+        "label": "Header Font Size (Desktop)",
+        "min": 1,
+        "max": 4,
+        "step": 0.1,
+        "unit": "em",
+        "default": 2.8
+      },
+      {
+        "type": "range",
+        "id": "header_font_size_sm",
+        "label": "Header Font Size (Mobile)",
+        "min": 1,
+        "max": 4,
+        "step": 0.1,
+        "unit": "em",
+        "default": 1.5
+      },
+      {
+         "type":"richtext",
+         "id":"subtitle",
+         "label":"Subtitle"
+      },
+      {
+        "type":"header",
+        "content":"Product Images"
+      },
+      {
+        "type": "range",
+        "id": "image_border_radius",
+        "label": "Image Border Radius",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "%",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "image_size",
+        "label": "Image Size",
+        "min": 150,
+        "max": 500,
+        "step": 10,
+        "unit": "px",
+        "default": 300
+      }
+   ],
+   "blocks":[
+      {
+         "type":"product",
+         "name":"Product",
+         "settings":[
+            {
+               "type":"image_picker",
+               "id":"image",
+               "label":"image"
+            },
+            {
+              "type":"text",
+              "id":"title",
+              "label":"Title"
+            },
+            {
+              "type":"richtext",
+              "id":"subtitle",
+              "label":"Subtitle",
+              "info":"Use italics for dashed text."
+            },
+            {
+              "type":"url",
+              "id":"button_url",
+              "label":"Button Link",
+              "info":"Paste or search."
+            },
+            {
+              "type":"text",
+              "id":"button_label",
+              "label":"Button Label",
+              "default":"Shop Now"
+            }
+         ]
+      }
+   ]
+}
 {% endschema %}

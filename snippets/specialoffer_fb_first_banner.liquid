@@ -1,43 +1,43 @@
-{%- if data.bg_dkp -%}
-  <style>
-    #shopify-section-{{section_id}}{position: relative;padding-top: {{data.padding_dkp}}%;}
-    #shopify-section-{{section_id}} .bg-container{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center;background-repeat: no-repeat;}
-    
-    @media all and (max-width: 600px){
-      #shopify-section-{{section_id}}{padding-top: {{data.padding_sm}}%;}
-    }
-  </style>
-
-  {%- if data.link_url != blank -%}
-    <a href="{{data.link_url}}" aria-label="{{data.alt}}">
-  {%- endif -%}
-
-    <div class="Image--lazyLoad bg-container big {% if data.bg_sm %}small--hide{% endif %}" data-bgset="{% render 'lazy_src', image: data.bg_dkp %}" {% if data.bg_dkp_alt != blank %} aria-label="{{data.bg_dkp_alt}}"{% endif %}></div>
-    {%- if data.bg_sm -%}
-      <div class="Image--lazyLoad bg-container small hide small--show" data-bgset="{% render 'lazy_src', image: data.bg_sm %}" {% if data.bg_sm_alt != blank %} aria-label="{{data.bg_sm_alt}}"{% endif %}></div>
-    {%- endif -%}
-
-  {%- if data.link_url != blank -%}
-    </a>
-  {%- endif -%}
-
-<script>
-  $(function(){
-    // link scroll to section
-    var link = $('#shopify-section-{{section_id}} a');
-    var linkUrl = link.attr('href');
-
-    if (linkUrl.indexOf('#') > -1) {
-      link.click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        var section = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: $(section).offset().top-$('#section-header').height()
-        });
-        // window.scrollTo(section, 1625, {offset : -100});
-      })
-    }
-  });
-</script>
+{%- if data.bg_dkp -%}
+  <style>
+    #shopify-section-{{section_id}}{position: relative;padding-top: {{data.padding_dkp}}%;}
+    #shopify-section-{{section_id}} .bg-container{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center;background-repeat: no-repeat;}
+    
+    @media all and (max-width: 600px){
+      #shopify-section-{{section_id}}{padding-top: {{data.padding_sm}}%;}
+    }
+  </style>
+
+  {%- if data.link_url != blank -%}
+    <a href="{{data.link_url}}" aria-label="{{data.alt}}">
+  {%- endif -%}
+
+    <div class="Image--lazyLoad bg-container big {% if data.bg_sm %}small--hide{% endif %}" data-bgset="{% render 'lazy_src', image: data.bg_dkp %}" {% if data.bg_dkp_alt != blank %} aria-label="{{data.bg_dkp_alt}}"{% endif %}></div>
+    {%- if data.bg_sm -%}
+      <div class="Image--lazyLoad bg-container small hide small--show" data-bgset="{% render 'lazy_src', image: data.bg_sm %}" {% if data.bg_sm_alt != blank %} aria-label="{{data.bg_sm_alt}}"{% endif %}></div>
+    {%- endif -%}
+
+  {%- if data.link_url != blank -%}
+    </a>
+  {%- endif -%}
+
+<script>
+  $(function(){
+    // link scroll to section
+    var link = $('#shopify-section-{{section_id}} a');
+    var linkUrl = link.attr('href');
+
+    if (linkUrl.indexOf('#') > -1) {
+      link.click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var section = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section).offset().top-$('#section-header').height()
+        });
+        // window.scrollTo(section, 1625, {offset : -100});
+      })
+    }
+  });
+</script>
 {%- endif -%}
